@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>1903FC33-5E95-4AFD-9563-46C27A4BF892</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="40" height="40"></rect>
+    </defs>
+    <g id="Screen" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0_mb_index" transform="translate(-686.000000, -112.000000)">
+            <g id="nav" transform="translate(0.000000, 80.000000)">
+                <g id="icon_search" transform="translate(686.000000, 32.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="@bound"></g>
+                    <path d="M17.2520971,29.069016 C11.0254096,29.069016 5.97836717,23.9142241 5.97836717,17.5558427 C5.97836717,11.1972682 11.0257958,6.04305552 17.2520971,6.04305552 C23.4768536,6.04305552 28.5238961,11.1972682 28.5238961,17.5558427 C28.5238961,23.9142241 23.4768536,29.069016 17.2520971,29.069016 L17.2520971,29.069016 Z M28.8156695,26.040443 C30.5004629,23.6508363 31.5036149,20.7257646 31.5036149,17.5558427 C31.5036149,9.51672299 25.1226409,3 17.2520971,3 C9.38097402,3 3,9.51730229 3,17.5560358 C3,25.5949624 9.38097402,32.1118785 17.2520971,32.1118785 C20.5006105,32.1118785 24.2687548,30.2749226 26.6666648,28.4045606 L34.6665853,37 L37,34.3734602 L28.8156695,26.040443 Z" id="path" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,84 @@
+// RWD setting
+$xl: 1200px;
+$lg_max: 1199px;
+$lg: 992px;
+$md_max: 991px;
+$md: 768px;
+$sm_max: 767px;
+$sm: 576px;
+$xs_max: 575px;
+$xs: 0px;
+// 
+$Color_1: #fbc02d;
+$Color_2: #0277bd;
+$Color_3: #4dd0e1;
+$Color_4: #01578b;
+$Color_5: #002642;
+$Color_6: #00db1e;
+// 
+$gray_0: #b3b3b3;
+$gray_1: #111;
+$gray_3: #333;
+$gray_6: #666;
+$gray_9: #999;
+$gray_c: #ccc;
+$gray_c7: #c7c7c7;
+$gray_f5: #f5f5f5;
+// breakpoint up to
+// 小手機
+@mixin media_xs() {
+  @media (min-width: $xs){
+    @content;
+  }
+}
+// 手機
+@mixin media_sm() {
+  @media (min-width: $sm){
+    @content;
+  }
+}
+// 平板直立
+@mixin media_md() {
+  @media (min-width: $md) {
+    @content;
+  }
+}
+// 平板橫向
+@mixin media_lg() {
+  @media (min-width:$lg) {
+    @content;
+  }
+}
+
+// 電腦
+@mixin media_xl() {
+  @media (min-width: $xl) {
+      @content;
+    }
+}
+
+// media between
+// 平板橫向
+@mixin media_between_lg() {
+  @media all and (min-width:$lg) and (max-width: $lg_max) {
+    @content;
+  }
+}
+// 平板直立
+@mixin media_between_md() {
+  @media all and (min-width: $md) and (max-width:$md_max) {
+    @content;
+  }
+}
+// 手機
+@mixin media_between_sm() {
+  @media all and (min-width: $sm) and (max-width:$sm_max) {
+    @content;
+  }
+}
+// 小手機
+@mixin media_between_xs() {
+  @media all and (min-width: $xs) and (max-width:$xs_max) {
+    @content;
+  }
+}

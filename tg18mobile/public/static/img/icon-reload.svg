@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>DC836289-5369-4567-88AE-1A1B481C2583</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-1.4%" y="-3.2%" width="102.8%" height="106.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M35.5555556,20 C35.5555556,28.5910961 28.5910961,35.5555556 20,35.5555556 C11.4089039,35.5555556 4.44444444,28.5910961 4.44444444,20 C4.44444444,11.4089039 11.4089039,4.44444444 20,4.44444444 C28.5910961,4.44444444 35.5555556,11.4089039 35.5555556,20 Z M20,10.6666667 C14.8456667,10.6666667 10.6666667,14.6292487 10.6666667,19.5166545 L14.4,19.5166545 C14.4,16.585096 16.9083333,14.2066618 20,14.2066618 C23.0916667,14.2066618 25.6,16.585096 25.6,19.5166545 C25.6,22.448213 23.0916667,24.8266472 20,24.8266472 L20,22.2955507 L14.5236667,26.5501823 L20,30.8888889 L20,28.3666424 C25.1543333,28.3666424 29.3333333,24.4040603 29.3333333,19.5166545 C29.3333333,14.6292487 25.1543333,10.6666667 20,10.6666667 Z" id="path-2"></path>
+    </defs>
+    <g id="Screen" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.2_mb_member-pocket" transform="translate(-614.000000, -739.000000)">
+            <g id="pocket-items" filter="url(#filter-1)" transform="translate(48.000000, 630.000000)">
+                <g id="icon/reload" transform="translate(566.000000, 109.000000)">
+                    <rect id="@bound" x="0" y="0" width="40" height="40"></rect>
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="circle-restore" fill="#262626" xlink:href="#path-2"></use>
+                    <g id="color/grayDarker" mask="url(#mask-3)" fill="#595959">
+                        <rect id="color" x="0" y="0" width="40" height="40"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

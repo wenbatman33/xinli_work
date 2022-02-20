@@ -1,0 +1,70 @@
+clone:
+    git:
+        image: plugins/git
+        tags: true
+
+pipeline:
+  Develop_Web_Server_Git-Pull:
+    image: appleboy/drone-ssh
+    pull: true
+    secrets:
+       - source: Develop_Web_key
+         target: ssh_key
+       - source: Develop_Web_host
+         target: ssh_host
+       - source: Develop_Web_port
+         target: ssh_port
+       - source: Develop_Web_username
+         target: ssh_username
+#       - source: Develop_Web_password
+#         target: ssh_password
+    command_timeout: 5m
+ #   script:
+ #     - /bin/bash /Script/Git-Pull.sh 18tgcity_game Develop
+    when:
+        event: push
+        branch: Develop
+        
+  Dev_Web_Git-Pull:
+    image: appleboy/drone-ssh
+    pull: true
+    secrets:
+       - source: Dev_Web_key
+         target: ssh_key
+       - source: Dev_Web_host
+         target: ssh_host
+       - source: Dev_Web_port
+         target: ssh_port
+       - source: Dev_Web_user
+         target: ssh_username
+#       - source: Develop_Web_password
+#         target: ssh_password
+    command_timeout: 5m
+    script:
+ #     - /bin/bash /Script/Git-Pull.sh 18tgcity_game Develop
+    when:
+        event: push
+        branch: Develop
+        
+  telegram:
+    image: appleboy/drone-telegram
+    token: 622271738:AAGJEfH-uUhC5wKLn8rj_0Betjcd-1hxo9Q
+    to: -257711092
+    message: >
+     {{#success build.status}}
+       build {{build.number}} succeeded. Good job.
+       <Project> : {{repo.name}}
+       <user> : {{commit.email}}
+       <branch> : {{commit.branch}}
+       <Message> : {{commit.message}}
+     {{else}}
+       build {{build.number}} failed. Fix me please.
+       <Project> : {{repo.name}}
+       <user> : {{commit.email}}
+       <branch> : {{commit.branch}}
+       <Message> : {{commit.message}}
+     {{/success}}     
+
+    when:
+        status: failure
+        

@@ -1,0 +1,2875 @@
+@charset "UTF-8";
+/*-- Css Document --*/
+
+/*-- Member Header --*/
+.memberhder {
+	width: 100%;
+	padding: 33px 0;
+	color: rgba(255,255,255,1);
+	font-size: 34px;
+	line-height: 34px;
+	text-align: center;
+	box-sizing: border-box;
+}
+.previous {
+	width: 40px;
+	height: 30px;
+	padding: 35px 30px;
+	background: url(/static/img/previous.png) 0% 50% no-repeat content-box;
+}
+.gohome {
+	width: 40px;
+	height: 40px;
+	padding: 30px;
+	background: url(/static/img/icon-home.svg) 50% 50% no-repeat content-box;
+}
+.previous, .gohome {
+	display: block;
+	background-size: contain;
+	position: absolute;
+	left: 0;
+	cursor: pointer;
+	box-sizing: unset;
+}
+.service {
+	background: url(/static/img/icon-headphone.svg) 50% 50% no-repeat content-box;
+}
+.icon_clock {
+	background: url(/static/img/clock.svg) 50% 50% no-repeat content-box;
+}
+.icon_trash {
+	background: url(/static/img/icon-trash.svg) 50% 50% no-repeat content-box;
+	cursor: pointer;
+}
+.service, .icon_clock, .icon_trash {
+	display: block;
+	width: 40px;
+	height: 40px;
+	padding: 30px;
+	background-size: contain;
+	position: absolute;
+	right: 0;
+	box-sizing: unset;
+}
+/*-- Mobile --*/
+@media screen and (max-width: 750px) {
+	.memberhder {
+		padding: 4.4vw 0;
+		font-size: 4.53vw;
+		line-height: 4.53vw;
+	}
+	.previous {
+		width: 5.33vw;
+		height: 4vw;
+		padding: 4.67vw 4vw;
+	}
+	.gohome {
+		width: 5.33vw;
+		height: 5.33vw;
+		padding: 4vw;
+	}
+	.service, .icon_clock, .icon_trash {
+		width: 5.33vw;
+		height: 5.33vw;
+		padding: 4vw;
+	}
+}
+/*-- Mobile End --*/
+
+/*-- Member Tab --*/
+.membertab, .membertab_a, .membertab_b, .membertab_c {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.membertab_a {
+	padding: 80px 0;
+}
+.membertab ul, .membertab_a ul, .membertab_b ul, .membertab_c ul {
+	border-bottom: 1px solid rgba(221,221,221,1);
+}
+.membertab ul, .membertab_b ul, .membertab_c ul {
+	display: block;
+	float: left;
+	width: 100%;
+}
+.membertab_a ul {
+	display: inline-block;
+	width: 50%;
+}
+.membertab ul li, .membertab_a ul li, .membertab_b ul li, .membertab_c ul li {
+	display: block;
+	float: left;
+	text-align: center;
+}
+.membertab ul li {
+	width: 20%;
+}
+.membertab_a ul li {
+	width: 50%;
+}
+.membertab_b ul li {
+	width: 33.33%;
+}
+.membertab_c ul li {
+	width: 25%;
+}
+.membertab a, .membertab_a a, .membertab_b a, .membertab_c a {
+	display: block;
+	margin-bottom: -1px;
+	padding: 20px 0;
+	color: rgba(48,48,48,1);
+	font-family: 'PingFangTC';
+	font-size: 30px;
+	cursor: pointer;
+}
+.membertab a:hover, a.membertab_active, 
+.membertab_a a:hover, a.membertab_a_active, 
+.membertab_b a:hover, a.membertab_b_active, 
+.membertab_c a:hover, a.membertab_c_active {
+	color: rgba(0,80,179,1);
+	border-bottom: 4px solid rgba(0,80,179,1);
+	text-decoration: none;
+}
+a.membertab_active, .membertab_a_active, .membertab_b_active, .membertab_c_active {
+	cursor: default;
+}
+/*-- Mobile --*/
+@media screen and (max-width: 750px) {
+	.membertab_a {
+		padding: 11.95% 0;
+	}
+	.membertab a, .membertab_a a, .membertab_b a, .membertab_c a {
+		padding: 2.67vw 0;
+		font-size: 4vw;
+	}
+}
+/*-- Mobile End --*/
+
+/*-- Member input --*/
+.memberinput {
+	float: left;
+	width: 100%;
+	font-size: 30px;
+	line-height: 30px;
+}
+.memberinput ul, .memberinput ul li {
+	display: block;
+	float: left;
+	width: 100%;
+}
+.memberinput ul li {
+	margin: 20px 0;
+	border: 2px solid rgba(217,217,217,1);
+	border-radius: 8px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.memberinput ul li:first-child {
+	margin-top: 0;
+}
+.memberinput ul li:last-child {
+	margin-bottom: 0;
+}
+.memberinput ul a, .memberinput ul button {
+	display: block;
+	float: right;
+	margin: 15px 10px;
+	padding: 15px 10px;
+	border-radius: 8px;
+}
+.memberinput ul a:hover, .memberinput ul button:hover {
+	text-decoration: inherit;
+}
+.memberinput ul span {
+	float: left;
+}
+.memberinput input, .memberinput select {
+	display: block;
+	float: left;
+	box-sizing: border-box;
+	line-height: 30px;
+	color: rgba(38,38,38,1);
+}
+.username, .password, .verification, .phone, .email, 
+.personalname, .gender, .birthday, .personalphone, .personalemail, 
+.provincialcapital, .street, .postalcode, 
+.phonevtcod {
+	padding: 30px 20px;
+}
+.username, .password, .verification, .phone, .email, 
+.personalname, .birthday, .personalphone, .personalemail, 
+.provincialcapital, .street, .postalcode, 
+.phonevtcod {
+	color: rgba(191,191,191,1);
+}
+.gender {
+	color: rgba(38,38,38,1);
+}
+.username, .password, .phone, .email, 
+.gender, .birthday, .provincialcapital, .street, .postalcode, .phonevtcod {
+	width: 100%;
+}
+.personalname {
+	width: 66%;
+}
+.personalphone, .personalemail{
+	width: 50vw;
+}
+.gender, .birthday, .provincialcapital {
+	background: transparent url(/static/img/select_arrow.png) 100% 50% no-repeat content-box;
+	background-size: contain;
+	appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.gender option, .birthday option, .provincialcapital option {
+	font-size: 30px;
+	line-height: 30px;
+}
+.verification {
+	width: 55%;
+}
+.vtcod_code {
+	float: right;
+	width: 172px;
+	padding: 16px 24px;	
+}
+.vtcod_code img {
+	display: block;
+	width: 100%;
+	border: 2px solid rgba(217,217,217,1);
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.check {
+	width: 42px;
+	height: 42px;
+	margin: -2px 5px 0;
+	border: none;
+	vertical-align: top;
+}
+.cashire_check span {
+	color: rgba(200, 49, 49, 1);
+}
+a.verify_btn, button.verify_btn {
+	background: rgba(0,80,179,1);
+	color: rgba(255,255,255,1) !important;
+}
+button.verify_btn:disabled {
+	background: rgba(180,180,180,1);
+	color: rgba(255,255,255,1) !important;
+}
+/*-- Mobile --*/
+@media screen and (max-width: 750px) {
+	.memberinput {
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+	.memberinput ul li {
+		margin: 2.66vw 0;
+		border: 0.26vw solid rgba(217,217,217,1);
+		border-radius: 1.07vw;
+	}
+	.memberinput ul a, .memberinput ul button {
+		margin: 2vw 1.33vw;
+		padding: 2vw 1.33vw;
+		border-radius: 1.07vw;
+		line-height: 4vw;
+	}
+	.memberinput input, .memberinput select {
+		line-height: 4vw;
+	}
+	.username, .password, .verification, .phone, .email, 
+	.personalname, .gender, .birthday, .personalphone, .personalemail, 
+	.provincialcapital, .street, .postalcode, 
+	.phonevtcod {
+		padding: 4vw 2.66vw;
+	}
+	.gender option, .birthday option, .provincialcapital option {
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+	.vtcod_code {
+		width: 22.93vw;
+		padding: 2.13vw 3.2vw;	
+	}
+	.vtcod_code img {
+		border: 0.27vw solid rgba(217,217,217,1);
+	}
+	.check {
+		width: 5.6vw;
+		height: 5.6vw;
+		margin: -0.27vw 0.67vw 0;
+	}
+}
+@media screen and (max-width: 450px) {
+	.memberinput ul li {
+		border: 1px solid rgba(217,217,217,1);
+	}
+	.vtcod_code img {
+		border: 1px solid rgba(217,217,217,1);
+	}
+}
+/*-- Mobile End --*/
+
+/*-- Member --*/
+.member, .memberpocket {
+	float: left;
+	width: 100%;
+}
+.member_caption, .memberpocket_caption {
+	float: left;
+	width: 100%;
+	padding: 70px 0;
+	background: url(/static/img/member_caption.svg) 50% 50% no-repeat, linear-gradient( 302deg, rgba(0,63,163,1), rgba(0,19,50,1));
+	background-size: cover;
+	font-family: 'PingFangTC-Regular';
+	font-size: 30px;
+	line-height: 60px;
+	text-align: center;
+	box-sizing: border-box;
+}
+.member_caption {
+	color: rgba(255,255,255,1);
+}
+.memberpocket_caption {
+	color: rgba(255,255,255,0.6);
+}
+.member_quota, .memberpocket_quota {
+	float: left;
+	width: 100%;
+	margin: 20px 0;
+	font-size: 52px;
+}
+.member_quota {
+	color: rgba(250,219,20,1);
+}
+.memberpocket_quota {
+	color: rgba(255,255,255,1);
+}
+.member_quota_info, .member_quota_info ul, 
+.member_quota_info ul li, .member_quota_info ul span, 
+.member_quota_info ul hr, .memberpocket_quota_info {
+	display: block;
+	float: left;
+	box-sizing: border-box;
+}
+.member_quota_info, .member_quota_info ul, .member_quota_info ul span, 
+.memberpocket_quota_info {
+	width: 100%;
+}
+.member_quota_info ul li {
+	width: 49.9%;
+	font-size: 28px;
+	line-height: 50px;
+}
+.member_quota_info ul span, .memberpocket_quota_info {
+	color: rgba(24,144,255,1);
+	font-size: 30px;
+}
+.memberpocket_quota_info span {
+	margin-left: 1%;
+}
+.member_quota_info ul hr {
+	width: 0.2%;
+	height: 60px;
+	margin: 20px 0;
+	background: rgba(255,255,255,0.2);
+}
+.member form, .memberpocket form {
+	display: block;
+	float: left;
+	width: 100%;
+	margin: -45px auto;
+	text-align: center;
+	position: relative;
+	z-index: 50;
+}
+.member_recover, .member_recover:focus, .memberpocket_recover {
+	display: inline-block;
+	width: 70%;
+	width: 0 auto;
+	background: rgba(0,80,179,1) !important;
+	color: rgba(255,255,255,1) !important;
+	font-family: 'PingFangTC';
+	font-size: 30px;
+	line-height: 90px;
+	border-radius: 50px;
+	box-shadow: 0 8px 30px 0 rgba(0,80,179,0.4);
+	cursor: pointer;
+}
+.member_recover_o {
+	display: inline-block !important;
+	width: 70% !important;
+	width: 0 auto !important;
+	background: rgba(190,190,190,1) !important;
+	color: rgba(255,255,255,0.7) !important;
+	font-family: 'PingFangTC' !important;
+	font-size: 30px !important;
+	line-height: 90px !important;
+	border-radius: 50px !important;
+	box-shadow: 0 8px 30px 0 rgba(0,0,0,0.4) !important;
+	cursor: pointer !important;
+}
+.member_funciton, .member_funciton_caption, 
+.member_funciton ul, .member_funciton ul li, 
+.member_funciton a, .member_funciton ul span {
+	display: block;
+	float: left;
+	box-sizing: border-box;
+}
+.member_funciton, .member_funciton_caption, 
+.member_funciton ul, 
+.member_funciton a, .member_funciton ul span {
+	width: 100%;
+}
+.member_funciton {
+	padding: 90px 0;
+	background: rgba(245,245,245,1);
+	font-size: 28px;
+	line-height: 28px;
+}
+.member_funciton_caption, .member_funciton ul {
+	background: rgba(255,255,255,1);
+	box-shadow: inset 0 1px 0 0 rgba(232,232,232,1), inset 0 -1px 0 0 rgba(232,232,232,1);
+}
+.member_funciton_caption {
+	padding: 20px 40px;
+	color: rgba(140,140,140,1);
+}
+.member_funciton ul {
+	margin-bottom: 30px;
+	padding: 30px 0;
+}
+.member_funciton ul li {
+	width: 33.33%;
+	text-align: center;
+}
+.member_funciton .el-badge {
+	width: 100%;
+}
+.member_funciton .el-badge__content.is-fixed {
+	right: 90px;
+}
+.member_funciton ul a, .member_funciton ul:first-child a:hover {
+	color: rgba(0,80,179,1);
+}
+.member_funciton ul:first-child a {
+	color: rgba(0,0,0,1);
+}
+.member_funciton ul span {
+	padding-top: 20px;
+}
+.member_funciton ul img {
+	display: inline-block;
+	width: 64px;
+	height: auto;
+}
+.icon_deposit {
+	background: url(/static/img/icon-deposit.svg) 50% 50% no-repeat, linear-gradient( 180deg, rgba(0,136,218,1), rgba(0,80,179,1));
+}
+.icon_withdrawal {
+	background: url(/static/img/icon-withdrawal.svg) 50% 50% no-repeat, linear-gradient( 180deg, rgba(0,136,218,1), rgba(0,80,179,1));
+}
+.icon_transfer {
+	background: url(/static/img/icon-transfer.svg) 50% 50% no-repeat, linear-gradient( 180deg, rgba(0,136,218,1), rgba(0,80,179,1));
+}
+.icon_deposit, .icon_withdrawal, .icon_transfer {
+	display: inline-block;
+	width: 84px;
+	height: 84px;
+	background-size: contain;
+	border-radius: 50px;
+	box-shadow: 0 2px 8px 0 rgba(0,136,218,0.5);
+}
+.memberpocket_game, .memberpocket_over, 
+.memberpocket_over ul, .memberpocket_over ul li, 
+.memberpocket_over ul li a, .memberpocket_info {
+	display: block;
+	float: left;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.memberpocket_game, .memberpocket_over, 
+.memberpocket_over ul, .memberpocket_over ul button, 
+.memberpocket_info {
+	width: 100%;
+}
+.memberpocket_game {
+	min-height: 48vh;
+	padding: 90px 40px;
+	background: rgba(245,245,245,1);
+	font-size: 28px;
+	line-height: 28px;
+}
+.memberpocket_title {
+	float: left;
+	padding-top: 45px;
+}
+.memberpocket_over ul {
+	margin: 25px 0;
+	background: rgba(255,255,255,1);
+	border: 1px solid rgba(230,230,230,1);
+	border-radius: 8px 0 8px 8px;
+	box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+}
+.memberpocket_over ul li {
+	width: 33.33%;
+	background: rgba(245,245,245,1);
+	text-align: center;
+	border-top: 1px solid rgba(230,230,230,1);
+	box-shadow: -1px 0 0 0 rgba(230,230,230,1);
+}
+.memberpocket_over ul button {
+	float: left;
+	margin: 25px 0;
+	background-color: transparent;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+.transfer {
+	color: rgba(38,38,38,1);
+}
+.transfergame {
+	background: url(/static/img/icon-transfergame.svg) 30% 50% no-repeat;
+	background-size: contain;
+	color: rgba(103,194,58,1);
+}
+.transferall {
+	background: url(/static/img/icon-transferall.svg) 30% 50% no-repeat;
+	background-size: contain;
+	color: rgba(250,85,85,1);
+}
+.transfergame, .transferall {
+	padding-left:20%;
+}
+.memberpocket_info {
+	padding: 35px 45px;
+}
+.memberpocket_info h1, .memberpocket_info h2 {
+	display: block;
+	float: left;
+	width: 79%;
+	padding-left: 40px;
+	font-family: 'PingFangTC-Regular';
+	font-weight: normal;
+}
+.memberpocket_info h1 {
+	color: rgba(140,140,140,1);
+	font-size: 28px;
+	margin: 16px 0;
+}
+.memberpocket_info h2 {
+	color: rgba(0,0,0,1);
+	font-size: 34px;
+	line-height: 50px;
+}
+.memberpocket_info h2 a {
+	display: block;
+	float: right;
+	width: 40px;
+	height: 40px;
+	margin: 5px 0;
+	padding: 0;
+	background: url(/static/img/icon-reload.svg) 50% 50% no-repeat content-box;
+	background-size: contain;
+}
+/*-- Mobile --*/
+@media screen and (max-width: 750px) {
+	.member_caption, .memberpocket_caption {
+		padding: 9.33% 0;
+		font-size: 4vw;
+		line-height: 8vw;
+	}
+	.member_quota, .memberpocket_quota {
+		margin: 2.67% 0;
+		font-size: 6.94vw;
+	}
+	.member_quota_info ul li {
+		font-size: 3.74vw;
+		line-height: 6.66vw;
+	}
+	.member_quota_info ul span, .memberpocket_quota_info {
+		font-size: 4vw;
+	}
+	.member_quota_info ul hr {
+		height: 8vw;
+		margin: 2.67% 0;
+	}
+	.member form, .memberpocket form {
+		margin: -6% auto;
+	}
+	.member_recover, .memberpocket_recover, .member_recover_o {
+		font-size: 4vw !important;
+		line-height: 12vw !important;
+		padding: unset !important;
+    border: unset !important;
+	}
+	.member_funciton {
+		padding: 12% 0;
+		font-size: 3.74vw;
+		line-height: 3.74vw;
+	}
+	.member_funciton_caption {
+		padding: 2.67% 5.34%;
+	}
+	.member_funciton ul {
+		margin-bottom: 4%;
+		padding: 4% 0;
+	}
+	.member_funciton .el-badge__content.is-fixed {
+		right: 12vw;
+	}
+	.member_funciton ul span {
+		padding-top: 8%;
+	}
+	.member_funciton ul img {
+		width: 8.5vw;
+	}
+	.icon_deposit, .icon_withdrawal, .icon_transfer {
+		width: 11.2vw;
+		height: 11.2vw;
+	}
+	.memberpocket_game {
+		padding: 12% 5.3%;
+		font-size: 3.7vw;
+		line-height: 3.7vw;
+	}
+	.memberpocket_title {
+		padding-top: 6vw;
+	}
+	.memberpocket_over ul {
+		margin: 3.33vw 0;
+	}
+	.memberpocket_over ul button {
+		margin: 3.33vw 0;
+	}
+	.memberpocket_info {
+		padding: 5.24% 6.75%;
+	}
+	.memberpocket_info h1, .memberpocket_info h2 {
+		padding-left: 5.33vw;
+	}
+	.memberpocket_info h1 {
+		font-size: 3.73vw;
+		margin: 2.13vw 0;
+	}
+	.memberpocket_info h2 {
+		font-size: 4.53vw;
+		line-height: 6.67vw;
+}
+	.memberpocket_info h2 a {
+		width: 5.33vw;
+		height: 5.33vw;
+		margin: 0.67vw 0;
+	}
+}
+@media screen and (max-width: 450px) {
+	.member_funciton {
+		font-size: 4.5vw;
+	}
+	.member_funciton ul img {
+		width: 11.2vw;
+	}
+	.memberpocket_game {
+		font-size: 4.5vw;
+	}
+	.memberpocket_info h1 {
+		font-size: 4.5vw;
+	}
+	.memberpocket_info h2 {
+		font-size: 5vw;
+	}
+	.memberpocket_info h2 a {
+		width: 6vw;
+		height: 6vw;
+		margin: 0;
+	}
+}
+/*-- Mobile End --*/
+
+/*-- Member Login & Register --*/
+.memberlogin, .memberregister {
+	float: left;
+	width: 100%;
+	min-height: 69vh;
+	padding: 0 5.3% 5.3%;
+	box-sizing: border-box;
+}
+.memberregister_check {
+	float: left;
+	width: 100%;
+	margin-top: 40px;
+	color: rgba(140,140,140,1);
+	font-family: 'PingFangTC-Regular';
+	font-size: 28px;
+	line-height: 42px;
+	text-align: center;
+}
+.memberregister_check a {
+	color: rgba(24,144,255,1);
+}
+.memberlogin_link, .memberregister_link {
+	float: left;
+	width: 100%;
+	margin-bottom: 60px;
+	color: rgba(140,140,140,1);
+	font-family: 'PingFangTC-Regular';
+	font-size: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.memberlogin_link a, .memberregister_link a {
+	display: inline-block;
+	color: rgba(24,144,255,1);
+	border-right: 2px solid rgba(140,140,140,1);
+	box-sizing: border-box;
+}
+.memberlogin_link a {
+	padding: 0 35px;
+}
+.memberlogin_link a:last-child, .memberregister_link a:last-child {
+	border: none;
+}
+.memberlogin form, .memberlogin_btn, 
+.memberregister form, .memberregister_btn {
+	display: block;
+	float: left;
+	width: 100%;
+}
+.memberlogin_btn, .memberregister_btn {
+	margin: 60px 0;
+	background: rgba(0,80,179,1);
+	color: rgba(255,255,255,1);
+	font-family: 'PingFangTC';
+	font-size: 30px;
+	line-height: 90px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+/*-- Mobile --*/
+@media screen and (max-width: 750px) {
+	.memberregister_check {
+		margin-top: 5.95%;
+		font-size: 3.73vw;
+		line-height: 5.6vw;
+	}
+	.memberlogin_link, .memberregister_link {
+		margin-bottom: 8.95%;
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+	.memberlogin_link a {
+		padding: 0 5.2%;
+	}
+	.memberlogin_btn, .memberregister_btn {
+		margin: 8.95% 0;
+		font-size: 4vw;
+		line-height: 12vw;
+	}
+}
+/*-- Mobile End --*/
+
+/*-- Member Deposit --*/
+.memberdeposit {
+	float: left;
+	width: 100%;
+}
+.memberdeposit_channel, .memberdeposit_info {
+	float: left;
+	width: 100%;
+	padding: 5.3%;
+	color: rgba(38,38,38,1);
+	font-size: 30px;
+	line-height: 30px;
+	box-sizing: border-box;
+}
+.memberdeposit_info {
+	background: rgba(245,245,245,1);
+}
+.memberdeposit_channel ul, .memberdeposit_channel ul li, 
+.memberdeposit_channel ul span, .memberdeposit_channel a, 
+.memberdeposit_info ul, .memberdeposit_info ul li, 
+.memberdeposit_info ul span {
+	display: block;
+	float: left;
+	width: 100%;
+}
+.memberdeposit_channel ul li, 
+.memberdeposit_info ul li {
+	margin: 20px 0;
+	background: rgba(255,255,255,1);
+	border: 2px solid rgba(217,217,217,1);
+	border-radius: 8px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.memberdeposit_channel ul li:first-child, 
+.memberdeposit_info ul li:first-child {
+	margin-top: 0;
+}
+.memberdeposit_channel ul li:last-child, 
+.memberdeposit_info ul li:last-child {
+	margin-bottom: 0;
+}
+.memberdeposit_channel ul span, .memberdeposit_info ul span {
+	margin: 20px 0;
+}
+.memberdeposit_channel a {
+	margin-top: 40px;
+	color: rgba(0,80,179,1);
+	font-family: 'PingFangTC';
+	text-align: center;
+}
+.memberdeposit_channel input, .memberdeposit_info input, 
+.memberdeposit_channel label, .memberdeposit_info label, 
+.memberdeposit_info select {
+	display: block;
+	float: left;
+	box-sizing: border-box;
+}
+.speedpay_icon {
+	background: url(/static/img/icon-fast.svg) 15% 50% no-repeat;
+}
+.pointcard_icon {
+	background: url(/static/img/icon-card-point.svg) 15% 50% no-repeat;
+}
+.speedpay_icon, .pointcard_icon {
+	margin: 20px 0;
+	padding: 10px 10px 10px 90px;
+	background-size: contain;
+	text-align: right;
+}
+input.deposit_check {
+	display: block;
+	float: right;
+	width: 50px;
+	height: 50px;
+	margin: 20px 20px 20px 10px;
+}
+.bank_name {
+	display: inline-block;
+	margin: 15px 15px 15px 0; 
+	padding: 15px;
+	background: rgba(103,194,58,0.1);
+	color: rgba(103,194,58,1);
+	font-size: 30px;
+	border: 2px solid rgba(103,194,58,0.2);
+	border-radius: 15px;
+	box-sizing: border-box;
+}
+.speedpay, .pointcard, .depositamount {
+	padding: 30px 20px;
+	color: rgba(191,191,191,1);
+	line-height: normal;
+}
+.speedpay, .pointcard {
+	width: 50%;
+	font-size: 28px;
+}
+.depositamount {
+	width: 100%;
+}
+.choosebank {
+	width: 90%;
+	padding: 30px 20px;
+	background: transparent url(/static/img/select_arrow.png) 100% 50% no-repeat content-box;
+	background-size: contain;
+	color: rgba(38,38,38,1);
+	line-height: normal;
+	appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.choosebank option {
+	font-size: 28px;
+}
+.bank_icon {
+	width: 40px;
+	height: 40px;
+	margin: 30px 0 30px 20px;
+}
+.bank_icon img {
+	width: 100%;
+	height: auto;
+}
+.memberdeposit form, .memberdeposit_btn {
+	display: block;
+	float: left;
+	width: 100%;
+}
+.memberdeposit_btn {
+	margin: 60px 0;
+	background: rgba(0,80,179,1);
+	color: rgba(255,255,255,1);
+	font-family: 'PingFangTC';
+	font-size: 30px;
+	line-height: 90px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+/*-- Mobile --*/
+@media screen and (max-width: 750px) {
+	.memberdeposit_channel, .memberdeposit_info {
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+	.memberdeposit_channel ul li, 
+	.memberdeposit_info ul li {
+		margin: 3% 0;
+		border: 0.27vw solid rgba(217,217,217,1);
+	}
+	.memberdeposit_channel ul span, .memberdeposit_info ul span {
+		margin: 3% 0;
+	}
+	.memberdeposit_channel a {
+		margin-top: 6%;
+	}
+	.speedpay_icon, .pointcard_icon {
+		margin: 3% 0;
+		padding: 1.5% 1.5% 1.5% 13.5%;
+	}
+	input.deposit_check {
+		width: 6.65vw;
+		height: 6.65vw;
+		margin: 3% 3% 3% 1.5%;
+	}
+	.bank_name {
+		margin: 2vw 2vw 2vw 0; 
+		padding: 2vw;
+		font-size: 4vw;
+		border: 0.27vw solid rgba(103,194,58,0.2);
+		border-radius: 2vw;
+	}
+	.speedpay, .pointcard, .depositamount {
+		padding: 4.5% 3%;
+	}
+	.speedpay, .pointcard {
+		font-size: 3.73vw;
+	}
+	.choosebank {
+		padding: 4.5% 3%;
+	}
+	.choosebank option {
+		font-size: 3.73vw;
+	}
+	.bank_icon {
+		width: 5.35vw;
+		height: 5.35vw;
+		margin: 4.5% 0 4.5% 3%;
+	}
+	.memberdeposit_btn {
+		margin: 8.95% 0;
+		font-size: 4vw;
+		line-height: 12vw;
+	}
+}
+@media screen and (max-width: 450px) {
+	.memberdeposit_channel ul li, 
+	.memberdeposit_info ul li {
+		border: 1px solid rgba(217,217,217,1);
+	}
+}
+/*-- Mobile End --*/
+
+/*-- Member BankCard & BankQRcode --*/
+.bankcard, .bankqrcode {
+	float: left;
+	width: 100%;
+	margin: 30px 0;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.bankcard {
+	background: rgba(255,255,255,1);
+	border-radius: 28px;
+}
+.bankcard_caption {
+	float: left;
+	width: 100%;
+	padding: 15px;
+	background: linear-gradient( -90deg, rgba(0,136,218,1), rgba(0,80,179,1));
+	box-sizing: border-box;
+}
+.bankqrcode_caption {
+	float: left;
+	width: 100%;
+	font-size: 30px;
+	line-height: 60px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.bankcard_content, .bankcard_content ul, .bankcard_content ul li {
+	display: block;
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+}
+.bankcard_content {
+	padding: 60px;
+}
+.bankcard_content ul li {
+	color: rgba(191,191,191,1);
+	font-size: 30px;
+	line-height: 30px;
+	border: none;
+	border-radius: inherit;
+}
+.bankcard_content ul li span {
+	display: inline-block;
+	float: left;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	color: rgba(0,0,0,1);
+	font-size: 30px;
+	line-height: 30px;
+}
+.bankqrcode_content {
+	float: left;
+	width: 100%;
+	padding: 30px;
+	background: rgba(255,255,255,1);
+	border: 1px solid rgba(217,217,217,1);
+	box-sizing: border-box;
+}
+.bankqrcode_img {
+	float: left;
+	width: 100%;
+	padding: 15px 30px 60px;
+	text-align: center;
+	box-sizing: border-box;
+}
+.bankqrcode_img img {
+	display: inline-block;
+	width: 100%;
+	max-width: 300px;
+}
+.bankqrcode_content ul, .bankqrcode_content ul li {
+	display: block;
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+}
+.bankqrcode_content ul li {
+	border: none;
+	border-radius: inherit;
+}
+.bankqrcode_content ul li h1, .bankqrcode_content ul li h2, .bankqrcode_content ul li h3 {
+	display: block;
+	float: left;
+	font-size: 30px;
+	line-height: 30px;
+}
+.bankqrcode_content ul li h1 {
+	width: 30%;
+	color: rgba(140,140,140,1);
+	text-align: right;
+}
+.bankqrcode_content ul li h2 {
+	width: 70%;
+	color: rgba(0,0,0,1);
+	text-align: left;
+}
+.bankqrcode_content ul li h3 {
+	width: 70%;
+	color: rgba(250,85,85,1);
+	text-align: left;
+}
+.bankcard_caption img {
+	display: block;
+	float: right;
+	width: 100%;
+	max-width: 360px;
+}
+.bankcard_copy {
+	display: inline-block;
+	float: right;
+	color: rgba(24,144,255,1);
+	font-size: 30px;
+	line-height: 30px;
+	cursor: pointer;
+}
+.bankcard_note, .bankcard_note ol, .bankcard_note ol li {
+	float: left;
+	width: 100%;
+	font-size: 30px;
+	line-height: 60px;
+	box-sizing: border-box;
+}
+.bankcard_note ol, .bankcard_note ol li {
+	background: inherit;
+	border: none;
+	list-style: decimal;
+}
+.bankcard_note ol {
+	padding-left: 40px;
+}
+.bankcard form, .bankqrcode form {
+	display: block;
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.bankcard_btn {
+	display: inline-block;
+	width: auto;
+	margin: 60px 10px 0;
+	padding: 0 30px;
+	background: rgba(0,80,179,1);
+	color: rgba(255,255,255,1);
+	font-family: 'PingFangTC';
+	font-size: 30px;
+	line-height: 90px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.proceed_btn {
+	display: inline-block;
+	width: auto;
+	margin: 60px 10px 0;
+	padding: 0 30px;
+	background: rgba(255,255,255,1);
+	color: rgba(0,80,179,1);
+	font-family: 'PingFangTC';
+	font-size: 30px;
+	line-height: 90px;
+	box-shadow: inset 0 0 0 1px rgba(0,80,179,1);
+	border-radius: 10px;
+	cursor: pointer;
+}
+/*-- Mobile --*/
+@media screen and (max-width: 750px) {
+	.bankcard {
+		margin: 4vw 0;
+		border-radius: 3.73vw;
+	}
+	.bankqrcode {
+		margin: 4vw 0;
+	}
+	.bankcard_caption {
+		padding: 2vw;
+	}
+	.bankqrcode_caption {
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+	.bankcard_content {
+		padding: 8vw;
+	}
+	.bankcard_content ul li {
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+	.bankcard_content ul li span {
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+	.bankqrcode_content {
+		padding: 4vw;
+	}
+	.bankqrcode_img {
+		padding: 2vw 4vw 8vw;
+	}
+	.bankqrcode_img img {
+		max-width: 40vw;
+	}
+	.bankqrcode_content ul li h1, .bankqrcode_content ul li h2, .bankqrcode_content ul li h3 {
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+	.bankcard_caption img {
+		max-width: 48vw;
+	}
+	.bankcard_copy {
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+	.bankcard_note, .bankcard_note ol, .bankcard_note ol li {
+		font-size: 4vw;
+		line-height: 8vw;
+	}
+	.bankcard_note ol {
+		padding-left: 5.33vw;
+	}
+	.bankcard_btn, .proceed_btn {
+		margin: 8vw 1.33vw 0;
+		padding: 0 4vw;
+		font-size: 4vw;
+		line-height: 12vw;
+		border-radius: 1.33vw;
+	}
+}
+/*-- Mobile End --*/
+
+/*-- Member Withdrawal --*/
+.memberwithdrawal, .memberwithdrawal_note, 
+.memberwithdrawal_amount, .memberwithdrawal_caption, 
+.memberwithdrawal_bank, 
+.memberwithdrawal_popup {
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+}
+.memberwithdrawal_note {
+	padding: 3.35% 5.3%;
+	background: rgba(230,247,255,1);
+	color: rgba(24,144,255,1);
+	font-size: 30px;
+	line-height: 46px;
+}
+.memberwithdrawal_amount, .memberwithdrawal_popup {
+	padding: 5.3%;
+	color: rgba(38,38,38,1);
+	font-size: 30px;
+	line-height: 30px;
+}
+.memberwithdrawal_caption, 
+.memberwithdrawal_amount h1, 
+.memberwithdrawal_popup h1 {
+	display: block;
+	float: left;
+	margin: 20px 0;
+	font-weight: normal;
+}
+.memberwithdrawal_amount h1, 
+.memberwithdrawal_popup h1 {
+	font-size: 30px;
+	line-height: 30px;
+}
+.memberwithdrawal_caption span {
+	padding-left: 25px;
+}
+.memberwithdrawal_amount ul, .memberwithdrawal_amount ul li, 
+.memberwithdrawal_popup ul, .memberwithdrawal_popup ul li {
+	display: block;
+	float: left;
+	width: 100%;
+}
+.memberwithdrawal_amount ul li, 
+.memberwithdrawal_popup ul li {
+	margin: 20px 0;
+	background: rgba(255,255,255,1);
+	border: 2px solid rgba(217,217,217,1);
+	border-radius: 8px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.memberwithdrawal_amount input, 
+.memberwithdrawal_popup input, 
+.memberwithdrawal_popup select {
+	display: block;
+	float: left;
+	box-sizing: border-box;
+}
+.withdrawalamount, .backnumber, 
+.accountbank, .accountprovince, 
+.accountcity, .accountcounty {
+	width: 100%;
+	padding: 30px 20px;
+	color: rgba(150,150,150,1);
+	line-height: normal;
+}
+.accountbank, .accountprovince {
+	background: transparent url(/static/img/select_arrow.png) 100% 50% no-repeat content-box;
+	background-size: contain;
+	appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.accountbank option, .accountprovince option {
+	font-size: 30px;
+	line-height: 30px;
+}
+.memberwithdrawal_bank {
+	margin-top: 20px;
+	color: rgba(255,255,255,1);
+	border: 2px solid rgba(217,217,217,1);
+	border-radius: 8px;
+}
+.memberwithdrawal form, .memberwithdrawal_addbank, .memberwithdrawal_btn {
+	display: block;
+	float: left;
+	width: 100%;
+}
+.memberwithdrawal_addbank, .memberwithdrawal_btn {
+	font-family: 'PingFangTC';
+	font-size: 30px;
+	line-height: 90px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.memberwithdrawal_addbank:hover {
+	text-decoration: inherit;
+}
+.memberwithdrawal_addbank {
+	margin: 20px 0;
+	padding: 110px 0 30px 0;
+	background: url(/static/img/icon-plus.svg) 50% 30% no-repeat, rgba(255,255,255,1);
+	background-size: 7.2%;
+	color: rgba(89,89,89,1);
+	border: 2px solid rgba(217,217,217,1);
+	text-align: center;
+}
+.memberwithdrawal_btn {
+	margin: 60px 0;
+	background: rgba(0,80,179,1);
+	color: rgba(255,255,255,1);
+}
+/*-- Mobile --*/
+@media screen and (max-width: 750px) {
+	.memberwithdrawal_note {
+		font-size: 4vw;
+		line-height: 6.14vw;
+	}
+	.memberwithdrawal_amount, 
+	.memberwithdrawal_popup {
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+	.memberwithdrawal_caption, 
+	.memberwithdrawal_amount h1, 
+	.memberwithdrawal_popup h1 {
+		margin: 3% 0;
+	}
+	.memberwithdrawal_amount h1, 
+	.memberwithdrawal_popup h1 {
+		font-size: 4vw;
+		line-height: 4vw;
+}
+	.memberwithdrawal_caption span {
+		padding-left: 3.75%;
+	}
+	.memberwithdrawal_amount ul li, 
+	.memberwithdrawal_popup ul li {
+		margin: 3% 0;
+		border: 0.27vw solid rgba(217,217,217,1);
+	}
+	.withdrawalamount, .backnumber, 
+	.accountbank, .accountprovince, 
+	.accountcity, .accountcounty {
+		padding: 4.5% 3%;
+	}
+	.accountbank option, .accountprovince option {
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+	.memberwithdrawal_bank {
+		margin-top: 2.67vw;
+		border: 0.27vw solid rgba(217,217,217,1);
+	}
+	.memberwithdrawal_addbank, .memberwithdrawal_btn {
+		font-size: 4vw;
+		line-height: 12vw;
+	}
+	.memberwithdrawal_btn{
+		line-height: 12vw;
+	}
+	.submitbankcard_btn{
+		line-height: 12vw;
+	}
+	.memberwithdrawal_addbank {
+		margin: 3% 0;
+		padding: 16.5% 0 4.5% 0;
+		border: 0.27vw solid rgba(217,217,217,1);
+	}
+	.memberwithdrawal_btn {
+		margin: 8.95% 0;
+	}
+}
+@media screen and (max-width: 450px) {
+	.memberwithdrawal_amount ul li, 
+	.memberwithdrawal_popup ul li {
+		border: 1px solid rgba(217,217,217,1);
+	}
+	.memberwithdrawal_bank {
+		border: 1px solid rgba(217,217,217,1);
+	}
+	.memberwithdrawal_addbank {
+		border: 1px solid rgba(217,217,217,1);
+	}
+}
+/*-- Mobile End --*/
+
+/*-- Member Transfer --*/
+.membertransfer, .membertransfer_amount, 
+.membertransfer_amount h1, .transfer_icon {
+	display: block;
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+}
+.membertransfer_amount {
+	min-height: 65vh;
+	padding: 5.3%;
+	color: rgba(38,38,38,1);
+	font-size: 30px;
+	line-height: 30px;
+}
+.membertransfer_amount h1 {
+	margin: 20px 0;
+	font-size: 30px;
+	font-weight: normal;
+	line-height: 30px;
+}
+.transfer_infoName {
+	float: left;
+	padding-left: 45px;
+	color: rgba(140,140,140,1);
+}
+.transfer_infoCash {
+	float: right;
+}
+.transfer_infoName, .transfer_infoCash {
+	width: auto;
+	line-height: 90px;
+}
+.transfer_icon {
+	height: auto;
+	margin: 10px 0;
+	text-align: center;
+}
+.transfer_icon img {
+	width: auto;
+	height: 100%;
+	transform: rotate(-270deg)
+}
+.membertransfer_amount ul, .membertransfer_amount ul li {
+	display: block;
+	float: left;
+	width: 100%;
+}
+.membertransfer_amount ul li {
+	margin: 20px 0;
+	background: rgba(255,255,255,1);
+	border: 2px solid rgba(217,217,217,1);
+	border-radius: 8px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.membertransfer_amount input, .membertransfer_amount select {
+	display: block;
+	float: left;
+	box-sizing: border-box;
+}
+.turnout, .turninto, .transferamount {
+	width: 100%;
+	padding: 30px 20px;
+	color: rgba(120,120,120,1);
+	font-size: 30px;
+	line-height: 30px;
+}
+.turnout option, .turninto option {
+	font-size: 30px;
+	line-height: 30px;
+}
+.turnout, .turninto {
+	background: transparent url(/static/img/select_arrow.png) 100% 50% no-repeat content-box;
+	background-size: contain;
+	appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.membertransfer form, .membertransfer_btn {
+	display: block;
+	float: left;
+	width: 100%;
+}
+.membertransfer_btn {
+	margin: 60px 0;
+	background: rgba(0,80,179,1);
+	color: rgba(255,255,255,1);
+	font-family: 'PingFangTC';
+	font-size: 30px;
+	line-height: 90px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+/*-- Mobile --*/
+@media screen and (max-width: 750px) {
+	.membertransfer_amount {
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+	.membertransfer_amount h1 {
+		margin: 3% 0;
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+	.transfer_infoName {
+		padding-left: 6vw;
+	}
+	.transfer_infoName, .transfer_infoCash {
+		line-height: 12vw;
+	}
+	.transfer_icon {
+		margin: 1.33vw 0;
+	}
+	.membertransfer_amount ul li {
+		margin: 3% 0;
+		border: 0.27vw solid rgba(217,217,217,1);
+	}
+	.turnout, .turninto, .transferamount {
+		padding: 4.5% 3%;
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+	.turnout option, .turninto option {
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+	.membertransfer_btn {
+		margin: 8.95% 0;
+		font-size: 4vw;
+		line-height: 12vw;
+	}
+}
+@media screen and (max-width: 450px) {
+	.membertransfer_amount ul li {
+		border: 1px solid rgba(217,217,217,1);
+	}
+}
+/*-- Mobile End --*/
+
+/*-- Member Cashback & Morecoupon --*/
+.membercashback, 
+.membercashback_tab, .membercashback_tab ul, 
+.membercashback_content, .membercashback_content ul, 
+.membercashback_content ul li, .membercashback_date, 
+.membercashback_bonus, 
+.membercashback_info, .membercashback_note, 
+.membermorecoupon 
+.membermorecoupon_tab, .membermorecoupon_tab ul, 
+.membermorecoupon_content, .membermorecoupon_content ul, 
+.membermorecoupon_content ul li, .membermorecoupon_date, 
+.membermorecoupon_bonus, 
+.membermorecoupon_info, .membermorecoupon_note {
+	display: block;
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.membercashback_tab, .membercashback_content, 
+.membermorecoupon_tab, .membermorecoupon_content {
+	background: rgba(245,245,245,1);
+	font-size: 30px;
+	line-height: 30px;
+}
+.membercashback_tab {
+	width: 100%;
+	padding: 40px;
+	border-radius: 8px;
+	select {
+		display: block;
+		float: left;
+		box-sizing: border-box;
+		line-height: 30px;
+		width: 100%;
+		padding: 30px 20px;
+		background: url(/static/img/select_arrow.png) 100% 50% no-repeat content-box, rgba(0,80,179,1);
+		background-size: contain;
+		color: rgba(255,255,255,1);
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		text-align:center;
+		text-align-last:center;
+		option {
+			font-size: 30px;
+			line-height: 30px;
+		};
+	};
+}
+.membermorecoupon_tab ul {
+	padding: 30px;
+}
+.membermorecoupon_tab ul li, .membermorecoupon_tab ul a {
+	display: block;
+	float: left;
+	width: auto;
+	box-sizing: border-box;
+}
+.membermorecoupon_tab ul li {
+	margin-right: 45px;
+	padding: 0 !important;
+}
+.membermorecoupon_tab ul li:last-child {
+	margin: 0;
+	padding-bottom: 0 !important;
+}
+.membermorecoupon_tab ul a {
+	padding: 15px 30px;
+	background: rgba(255,255,255,1);
+	color: rgba(0,80,179,1) !important;
+	border: 2px solid rgba(0,80,179,1);
+	border-radius: 50px;
+}
+.membermorecoupon_tab ul a:hover, 
+.membermorecoupon_tab ul a.membermorecoupon_tab_active {
+	background: rgba(0,80,179,1);
+	color: rgba(255,255,255,1) !important;
+	text-decoration: inherit;
+}
+.membercashback_date, 
+.membermorecoupon_date {
+	padding: 15px 40px;
+	background: rgba(217,217,217,1);
+	color: rgba(140,140,140,1);
+	text-align: left;
+}
+.membercashback_content, 
+.membermorecoupon_content {
+	min-height: 55vh;
+	padding-bottom: 30px;
+	text-align: center;
+}
+.membercashback_content ul li, 
+.membermorecoupon_content ul li {
+	padding: 50px 40px 0 40px;
+}
+.membercashback_content ul li:last-child, 
+.membermorecoupon_content ul li:last-child {
+	padding-bottom: 50px;
+}
+.membercashback_bonus, 
+.membermorecoupon_bonus {
+	border: 1px solid rgba(191,191,191,1);
+	border-radius: 8px;
+	position: relative;
+}
+.membercashback_info, .membercashback_note, 
+.membermorecoupon_info, .membermorecoupon_note {
+	text-align: center;
+}
+.membercashback_info, 
+.membermorecoupon_info {
+	padding: 40px 80px 25px;
+	background: rgba(255,255,255,1);
+	color: rgba(0,0,0,1);
+}
+.membercashback_note, 
+.membermorecoupon_note {
+	padding: 20px 40px;
+	color: rgba(139,139,140,1);
+	border-top: 1px solid rgba(191,191,191,1);
+}
+.membercashback_info h1, .membercashback_info h2, 
+.membercashback_note h1, .membercashback_note h2, 
+.membermorecoupon_info h1, 
+.membermorecoupon_note h1, .membermorecoupon_note h2 {
+	display: block;
+	float: left;
+	width: 100%;
+	font-family: 'Arial','微軟正黑體';
+	font-weight: normal;
+}
+.membercashback_info h1, 
+.membermorecoupon_info h1 {
+	padding-bottom: 20px;
+	font-size: 34px;
+	line-height: 50px;
+}
+.membercashback_info h2 {
+	font-size: 30px;
+	line-height: 30px;
+} 
+.membercashback_note h1, .membercashback_note h2, 
+.membermorecoupon_note h1, .membermorecoupon_note h2 {
+	font-size: 24px;
+	line-height: 24px;
+}
+.membercashback_note h1, 
+.membermorecoupon_note h1 {
+	padding-bottom: 15px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.icon_application, .icon_review, .icon_account {
+	width: 200px;
+	height: 24px;
+	margin: 75px 0;
+	padding: 15px 0 10px 0;
+	color: rgba(255,255,255,1);
+	font-size: 24px;
+	font-family: 'PingFangTC-Regular';
+	line-height: 24px;
+	text-align: center;
+	box-sizing: unset;
+	transform: rotate(-45deg);
+	position: absolute;
+	top: -50px;
+	left: -50px;
+	z-index: 10;
+}
+.icon_application {
+	background: rgba(103,194,58,1);
+}
+.icon_review {
+	background: rgba(250,173,20,1);
+}
+.icon_account {
+	background: rgba(191,191,191,1);
+}
+.membercashback_content form {
+	display: inline-block;
+	width: 89%;
+}
+.membercashback_btn {
+	width: 100%;
+	margin: 60px 0;
+	background: rgba(0,80,179,1);
+	color: rgba(255,255,255,1);
+	font-family: 'PingFangTC';
+	font-size: 30px;
+	line-height: 90px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+/*-- Mobile --*/
+@media screen and (max-width: 750px) {
+	.membercashback_tab, .membercashback_content, 
+	.membermorecoupon_tab, .membermorecoupon_content {
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+	.membercashback_tab {
+		padding: 5.33vw;
+		select {
+			line-height: 4vw;
+			padding: 4vw 2.67vw;
+			option {
+				font-size: 4vw;
+				line-height: 4vw;
+			};
+		};
+	}
+	.membermorecoupon_tab ul {
+		padding: 4vw;
+	}
+	.membermorecoupon_tab ul li {
+		margin-right: 6vw;
+	}
+	.membermorecoupon_tab ul a {
+		padding: 2vw 4vw;
+	}
+	.membercashback_date, 
+	.membermorecoupon_date {
+		padding: 2% 5.3%;
+	}
+	.membercashback_content, 
+	.membermorecoupon_content {
+		padding-bottom: 4%;
+	}
+	.membercashback_content ul li, 
+	.membermorecoupon_content ul li {
+		padding: 6.66% 5.3% 0 5.3%;
+	}
+	.membercashback_content ul li:last-child, 
+	.membermorecoupon_content ul li:last-child {
+		padding-bottom: 6.67vw;
+	}
+	.membercashback_info, 
+	.membermorecoupon_info {
+		padding: 5.96% 11.92% 3.75%;
+	}
+	.membercashback_note, 
+	.membermorecoupon_note {
+		padding: 3% 6%;
+	}
+	.membercashback_info h1, 
+	.membermorecoupon_info h1 {
+		padding-bottom: 3.24%;
+		font-size: 4.53vw;
+		line-height: 6.65vw;
+	}
+	.membercashback_info h2 {
+		font-size: 4vw;
+		line-height: 4vw;
+	} 
+	.membercashback_note h1, .membercashback_note h2, 
+	.membermorecoupon_note h1, .membermorecoupon_note h2 {
+		font-size: 3.2vw;
+		line-height: 3.2vw;
+	}
+	.membercashback_note h1, 
+	.membermorecoupon_note h1 {
+		padding-bottom: 2.35%;
+	}
+	.icon_application, .icon_review, .icon_account {
+		width: 26.65vw;
+		height: 3.15vw;
+		margin: 10vw 0;
+		padding: 2vw 0 1.3vw 0;
+		font-size: 3.2vw;
+		line-height: 3.2vw;
+		top: -6.65vw;
+		left: -6.65vw;
+	}
+	.membercashback_btn {
+		margin: 8vw 0;
+		font-size: 4vw;
+		line-height: 12vw;
+	}
+}
+@media screen and (max-width: 450px) {
+	.membercashback_info h1, 
+	.membermorecoupon_info h1 {
+		font-size: 5vw;
+	}
+	.membercashback_info h2 {
+		font-size: 4.5vw;
+	} 
+	.membercashback_note h1, .membercashback_note h2, 
+	.membermorecoupon_note h1, .membermorecoupon_note h2 {
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+	.icon_application, .icon_review, .icon_account {
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+}
+/*-- Mobile End --*/
+
+/*-- Member History --*/
+.memberhistory, .memberhistory_list, .memberhistory_list ul, 
+.memberhistory_list ul li, .memberhistory_list ul a, 
+.memberhistory_date {
+	display: block;
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.memberhistory {
+	text-align: center;
+}
+.memberhistory_list {
+	min-height: 65vh;
+	padding-bottom: 40px;
+	background: rgba(255,255,255,1);
+	font-size: 30px;
+	line-height: 30px;
+}
+.memberhistory_list ul:last-child {
+	margin-bottom: 60px;
+}
+.memberhistory_list ul li {
+	background: rgba(255,255,255,1);
+	box-shadow: inset 0 -1px 0 0 rgba(217,217,217,1);
+}
+.memberhistory_list ul a {
+	padding: 40px;
+	background: url(/static/img/historylist_previous.png) 100% 50% no-repeat content-box;
+	background-size: 2vw;
+}
+.memberhistory_date {
+	padding: 15px 40px;
+	background: rgba(217,217,217,1);
+	color: rgba(140,140,140,1);
+	text-align: left;
+}
+.list_deposit {
+	background: url(/static/img/pic-mb-deposit.svg) 50% 50% no-repeat;
+}
+.list_withdrawal {
+	background: url(/static/img/pic-mb-withdrawal.svg) 50% 50% no-repeat;
+}
+.list_transfer {
+	background: url(/static/img/pic-mb-transfer.svg) 50% 50% no-repeat;
+}
+.list_bonus {
+	background: url(/static/img/pic-mb-bonus.svg) 50% 50% no-repeat;
+}
+.list_deposit, .list_withdrawal, .list_transfer, .list_bonus {
+	float: left;
+	width: 80px;
+	height: 80px;
+	background-size: contain;
+}
+.memberhistory_info {
+	float: left;
+	width: 86%;
+	padding: 0 35px;
+	box-sizing: border-box;
+}
+.memberhistory_caption, .memberhistory_content {
+	float: left;
+	width: 100%;
+	text-align: left;
+	box-sizing: border-box;
+}
+.memberhistory_caption {
+	padding-bottom: 10px;
+}
+.memberhistory_content {
+	padding-top: 10px;
+}
+.memberhistory_caption h1, 
+.change_amount, .change_amount_r, .fettle_success, .fettle_fail, .fettle_review, 
+.memberhistory_content h1, .memberhistory_content h2 {
+	display: inline-block;
+	font-weight: normal;
+	font-family: 'Arial';
+}
+.memberhistory_caption h1, 
+.memberhistory_content h1, .memberhistory_content h2 {
+	font-size: 30px;
+	line-height: 30px;
+}
+.memberhistory_caption h1, .memberhistory_content h1 {
+	float: left;
+}
+.change_amount, .change_amount_r, .fettle_success, .fettle_fail, .fettle_review, 
+.memberhistory_content h2 {
+	float: right;
+}
+.memberhistory_caption h1 {
+	color: rgba(139,139,140,1);
+}
+.change_amount, .fettle_success {
+	color: rgba(103,194,58,1);
+}
+.fettle_fail, .change_amount_r {
+	color: rgba(250,85,85,1);
+}
+.fettle_review {
+	color: rgba(250,173,20,1);
+}
+.memberhistory_content h1, .memberhistory_content h2 {
+	color: rgba(0,0,0,1);
+}
+.memberhistory form {
+	display: inline-block;
+	width: 89%;
+}
+.memberhistory_btn {
+	width: 100%;
+	margin: 60px 0;
+	background: rgba(0,80,179,1);
+	color: rgba(255,255,255,1);
+	font-family: 'PingFangTC';
+	font-size: 30px;
+	line-height: 90px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+/*-- Mobile --*/
+@media screen and (max-width: 750px) {
+	.memberhistory_list {
+		padding-bottom: 5.3vw;
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+	.memberhistory_list ul:last-child {
+		margin-bottom: 8vw;
+	}
+	.memberhistory_list ul a {
+		padding: 5.3vw;
+	}
+	.memberhistory_date {
+		padding: 2vw 5.3vw;
+	}
+	.list_deposit, .list_withdrawal, .list_transfer, .list_bonus {
+		width: 10.67vw;
+		height: 10.67vw;
+	}
+	.memberhistory_info {
+		padding: 0 4.66vw;
+	}
+	.memberhistory_caption {
+		padding-bottom: 1.33vw;
+	}
+	.memberhistory_content {
+		padding-top: 1.33vw;
+	}
+	.memberhistory_caption h1, 
+	.memberhistory_content h1, .memberhistory_content h2 {
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+	.memberhistory_btn {
+		margin: 8vw 0;
+		font-size: 4vw;
+		line-height: 12vw;
+	}
+}
+/*-- Mobile End --*/
+
+/*-- MemberBet --*/
+.memberbet, .memberbet_note, .memberbet_list, .memberbet_list ul, 
+.memberbet_list ul li, .memberbet_list ul a, 
+.memberbet_date {
+	display: block;
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.memberbet {
+	text-align: center;
+}
+.memberbet_note {
+	padding: 3.35% 5.3%;
+	background: rgba(230,247,255,1);
+	color: rgba(24,144,255,1);
+	font-size: 30px;
+	line-height: 46px;
+}
+.memberbet_list {
+	min-height: 65vh;
+	padding-bottom: 40px;
+	background: rgba(255,255,255,1);
+	font-size: 30px;
+	line-height: 30px;
+}
+.memberbet_list ul:last-child {
+	margin-bottom: 60px;
+}
+.memberbet_list ul li {
+	background: rgba(255,255,255,1);
+	border-top: 1px solid rgba(217,217,217,1);
+}
+.memberbet_list ul li:last-child {
+	border-bottom: 1px solid rgba(217,217,217,1);
+}
+.memberbet_list ul a {
+	padding: 40px;
+	background: url(/static/img/historylist_previous.png) 100% 50% no-repeat content-box;
+	background-size: 2vw;
+}
+.memberbet_display {
+	float: left;
+	padding: 40px;
+}
+.memberbet_date {
+	padding: 15px 40px;
+	background: rgba(217,217,217,1);
+	color: rgba(140,140,140,1);
+	text-align: center;
+}
+.memberbet_from {
+	float: left;
+	width: 80px;
+	height: auto;
+}
+.groupname_deposit {
+	float: left;
+	width: 80px;
+	height: 80px;
+	margin: 15px 0;
+	background: rgba(0,136,218,0.5);
+	background-size: contain;
+	border-radius: 80px;
+}
+.memberbet_info {
+	float: left;
+	width: 100%;
+	padding: 0 35px;
+	box-sizing: border-box;
+}
+.memberbet_caption, .memberbet_content {
+	float: left;
+	width: 100%;
+	text-align: left;
+	box-sizing: border-box;
+}
+.memberbet_caption h1, .memberbet_caption h2, 
+.memberbet_content h1, .memberbet_content h2, 
+.balance_amount, .balance_amount_r {
+	display: inline-block;
+	font-weight: normal;
+	font-family: 'Arial';
+	font-size: 30px;
+	line-height: 45px;
+}
+.memberbet_caption h1, .memberbet_content h1 {
+	float: left;
+}
+.memberbet_caption h2, .memberbet_content h2, 
+.balance_amount, .balance_amount_r {
+	float: right;
+}
+.memberbet_caption h1, .memberbet_content h1 {
+	color: rgba(139,139,140,1);
+}
+.memberbet_caption h2, .memberbet_content h2 {
+	color: rgba(0,0,0,1);
+}
+.balance_amount {
+	color: rgba(103,194,58,1);
+}
+.balance_amount_r {
+	color: rgba(250,85,85,1);
+}
+.memberbet form {
+	display: inline-block;
+	width: 89%;
+}
+.memberbet_btn {
+	width: 100%;
+	margin: 60px 0;
+	background: rgba(0,80,179,1);
+	color: rgba(255,255,255,1);
+	font-family: 'PingFangTC';
+	font-size: 30px;
+	line-height: 90px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+/*-- Mobile --*/
+@media screen and (max-width: 750px) {
+	.memberbet_note {
+		font-size: 4vw;
+		line-height: 6.14vw;
+	}
+	.memberbet_list {
+		padding-bottom: 5.3vw;
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+	.memberbet_list ul:last-child {
+		margin-bottom: 8vw;
+	}
+	.memberbet_list ul a {
+		padding: 5.3vw;
+	}
+	.memberbet_display {
+		padding: 5.3vw;
+	}
+	.memberbet_date {
+		padding: 2vw 5.3vw;
+	}
+	.memberbet_from {
+		width: 10.67vw;
+	}
+	.groupname_deposit {
+		width: 10.67vw;
+		height: 10.67vw;
+		margin: 2vw 0;
+		border-radius: 10.76vw;
+	}
+	.memberbet_info {
+		padding: 0 4.66vw;
+	}
+	.memberbet_caption h1, .memberbet_caption h2, 
+	.memberbet_content h1, .memberbet_content h2, 
+	.balance_amount, .balance_amount_r {
+		font-size: 4vw;
+		line-height: 6vw;
+	}
+	.memberbet_btn {
+		margin: 8vw 0;
+		font-size: 4vw;
+		line-height: 12vw;
+	}
+}
+/*-- Mobile End --*/
+
+/*-- Member Personal & Password & Forget --*/
+.memberpersonal, .memberpassword, .memberforget, 
+.memberforget_step, .memberforget_step ul, 
+.memberforget_step ul span, 
+.memberforget_caption, .memberforget_phone, .memberforget_content, .memberforget_sucess, .memberforget_return, .resendphone {
+	display: block;
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+}
+.memberpersonal, .memberpassword {
+	padding: 120px 40px;
+}
+.memberforget {
+	padding: 0 0 120px;
+	text-align: center;
+}
+.memberpassword, .memberforget {
+	min-height: 70vh;
+}
+.memberforget_step {
+	padding: 60px 0;
+	background: rgba(245,245,245,1);
+}
+.memberforget_step ul li {
+	display: block;
+	float: left;
+	width: 33%;
+	position: relative;
+	overflow: hidden;
+}
+.memberforget_step ul li:first-child, 
+.memberforget_step ul li:last-child {
+	width: 33.5%;
+}
+.memberforget_step ul span {
+	padding-top: 25px;
+	font-size: 28px;
+	line-height: 28px;
+}
+.step01 hr, .step02 hr, .step03 hr {
+	display: block;
+	width: 100%;
+	height: 4px;
+	margin: 0;
+	position: absolute;
+	top: 28px;
+	z-index: 10;
+}
+.step01 hr {
+	left: 50%;
+}
+.step03 hr {
+	right: 50%;
+}
+hr.hr_fettle01 {
+	background: rgba(0,80,179,1);;
+}
+hr.hr_fettle02 {
+	background: rgba(140,140,140,1);
+}
+.step_fettle01, .step_fettle02, .step_fettle03 {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	font-family: 'HelveticaNeue-Bold';
+	font-size: 28px;
+	line-height: 60px;
+	border-radius: 50px;
+	box-sizing: border-box;
+	position: relative;
+	z-index: 20;
+}
+.step_fettle01 {
+	background: rgba(0,80,179,1);
+	color: rgba(255,255,255,1);
+	box-shadow: 0 0 0 4px rgba(0,80,179,1) inset;
+}
+.step_fettle02 {
+	background: rgba(140,140,140,1);
+	color: rgba(255,255,255,1);
+	box-shadow: 0 0 0 4px rgba(140,140,140,1) inset;
+}
+.step_fettle03 {
+	background: rgba(255,255,255,1);
+	color: rgba(140,140,140,1);
+	box-shadow: 0 0 0 4px rgba(140,140,140,1) inset;
+}
+.memberforget_step ul span.span_fettle01 {
+	color: rgba(0,80,179,1);
+}
+.memberforget_step ul span.span_fettle02 {
+	color: rgba(38,38,38,1);
+}
+.memberforget_step ul span.span_fettle03 {
+	color: rgba(140,140,140,1);
+}
+.memberforget_caption {
+	padding: 80px 0;
+	color: rgba(0,0,0,1);
+	font-family: 'PingFangTC-Medium';
+	font-size: 34px;
+	font-weight: 500;
+	line-height: 50px;
+}
+.memberforget_phone {
+	padding-bottom: 50px;
+	color: rgba(38,38,38,1);
+	font-size: 30px;
+	line-height: 30px;
+}
+.memberforget_content {
+	padding: 0 40px;
+	text-align: center;
+}
+.memberforget_sucess {
+	padding: 80px 0 40px 0;
+}
+.memberforget_sucess img {
+	display: inline-block;
+	width: 180px;
+	height: 180px;
+	margin: 70px 0;
+}
+.memberforget_sucess span {
+	display: block;
+	float: left;
+	width: 100%;
+	color: rgba(0,0,0,1);
+	font-family: 'PingFangTC-Medium';
+	font-size: 34px;
+	font-family: 500;
+	line-height: 50px;
+}
+.memberforget_return {
+	color: rgba(140,140,140,1);
+	font-size: 30px;
+	line-height: 46px;
+}
+.memberforget_return span {
+	color: rgba(24,144,255,1);
+}
+.resendphone {
+	padding-top: 40px;
+	color: rgba(191,191,191,1);
+	font-size: 30px;
+	line-height: 30px;
+}
+.resendphone span {
+	color: rgba(24,144,255,1);
+}
+.memberpersonal form, .memberpersonal_btn, 
+.memberpassword form, .memberpassword_btn, 
+.memberforget form, .memberforget_btn {
+	display: block;
+	float: left;
+	width: 100%;
+}
+.memberpersonal_btn, .memberpassword_btn, .memberforget_btn {
+	width: 100%;
+	margin: 60px 0;
+	background: rgba(0,80,179,1);
+	color: rgba(255,255,255,1);
+	font-family: 'PingFangTC';
+	font-size: 30px;
+	line-height: 90px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+/*-- Mobile --*/
+@media screen and (max-width: 750px) {
+	.memberpersonal, .memberpassword {
+		padding: 16vw 5.33vw;
+	}
+	.memberforget {
+		padding: 0 0 16vw;
+	}
+	.memberforget_step {
+		padding: 8vw 0;
+	}
+	.memberforget_step ul span {
+		padding-top: 3.33vw;
+		font-size: 3.73vw;
+		line-height: 3.73vw;
+	}
+	.step01 hr, .step02 hr, .step03 hr {
+		height: 0.53vw;
+		top: 3.73vw;
+	}
+	.step_fettle01, .step_fettle02, .step_fettle03 {
+		width: 8vw;
+		height: 8vw;
+		font-size: 3.73vw;
+		line-height: 8vw;
+	}
+	.step_fettle01 {
+		box-shadow: 0 0 0 0.53vw rgba(0,80,179,1) inset;
+	}
+	.step_fettle02 {
+		box-shadow: 0 0 0 0.53vw rgba(140,140,140,1) inset;
+	}
+	.step_fettle03 {
+		box-shadow: 0 0 0 0.53vw rgba(140,140,140,1) inset;
+	}
+	.memberforget_caption {
+		padding: 10.67vw 0;
+		font-size: 4.53vw;
+		line-height: 6.67vw;
+	}
+	.memberforget_phone {
+		padding-bottom: 6.67vw;
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+	.memberforget_content {
+		padding: 0 5.33vw;
+	}
+	.memberforget_sucess {
+		padding: 10.67vw 0 5.33vw 0;
+	}
+	.memberforget_sucess img {
+		width: 24vw;
+		height: 24vw;
+		margin: 9.33vw 0;
+	}
+	.memberforget_sucess span {
+		font-size: 4.53vw;
+		line-height: 6.67vw;
+	}
+	.memberforget_return {
+		font-size: 4vw;
+		line-height: 6.13vw;
+	}
+	.resendphone {
+		padding-top: 5.33vw;
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+	.memberpersonal_btn, .memberpassword_btn, .memberforget_btn {
+		margin: 8vw 0;
+		font-size: 4vw;
+		line-height: 12vw;
+	}
+}
+/*-- Mobile End --*/
+
+/*-- Member Inbox & Delete & Detail--*/
+.memberinbox, .memberinbox_list, .memberinbox_list ul, 
+.memberinbox_list ul li, .memberinbox_list ul a, 
+.memberinbox_detail {
+	display: block;
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.memberinbox {
+	text-align: center;
+}
+.memberinbox_list {
+	min-height: 70vh;
+	padding-bottom: 50px;
+	background: rgba(245,245,245,1);
+}
+.memberinbox_list ul {
+	margin-bottom: 50px;
+}
+.memberinbox_list ul li {
+	background: rgba(255,255,255,1);
+	box-shadow: inset 0 -1px 0 0 rgba(217,217,217,1);
+	position: relative;
+}
+.memberinbox_list ul a {
+	padding: 35px 40px;
+}
+.memberinbox_list ul a.unread {
+	background: rgba(250,219,20,0.08);
+}
+.memberinbox_info {
+	float: left;
+	width: 90%;
+	text-align: left;
+	box-sizing: border-box;
+}
+.memberinbox_caption, .memberinbox_content {
+	float: left;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	box-sizing: border-box;
+}
+.memberinbox_caption {
+	padding-bottom: 10px;
+	color: rgba(0,0,0,1);
+	font-family: 'PingFangTC-Regular';
+	font-size: 34px;
+	line-height: 50px;
+}
+.memberinbox_content {
+	color: rgba(139,139,140,1);
+	font-size: 28px;
+	line-break: 28px;
+}
+.icon_unread {
+	float: left;
+	width: auto;
+	margin: 5px 15px 0 0;
+	padding: 10px;
+	background: rgba(255,59,48,1);
+	color: rgba(255,255,255,1);
+	font-family: 'PingFangSC-Regular';
+	font-size: 20px;
+	line-height: 20px;
+	border-radius: 50px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.memberdelete_check {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	width: 30%;
+  right: 0;
+	position: absolute;
+	z-index: 20;
+}
+.check_delete {
+	display: block;
+	float: right;
+	margin: 60px 30px;
+	margin-left: 0;
+	padding: 10px 0;
+	color: rgba(204,204,204,1);
+	font-size: 30px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.check_confirm {
+	display: block;
+	width: 80px;
+	margin: 20px 30px 10px;
+	padding: 10px 0;
+	background: rgb(7, 122, 0);
+	color: rgba(255,255,255,1);
+	font-size: 28px;
+	line-height: 28px;
+	border: 2px solid  rgba(7, 122, 0, 0.75);
+	border-radius: 10px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.check_cancel {
+	display: block;
+	width: 80px;
+	margin: 10px 30px 20px;
+	padding: 10px 0;
+	background: rgba(200, 49, 49, 1);
+	color: rgba(255,255,255,1);
+	font-size: 28px;
+	line-height: 28px;
+	border: 2px solid rgba(200, 49, 49, 0.75);
+	border-radius: 10px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.memberinbox_detail {
+	min-height: 70vh;
+	padding: 80px 40px;
+	text-align: justify;
+}
+.memberinbox_detail_caption, .memberinbox_detail_date, .memberinbox_detail_content {
+	float: left;
+	width: 100%;
+}
+.memberinbox_detail_caption {
+	color: rgba(38,38,38,1);
+	font-family: 'PingFangTC-Medium';
+	font-size: 40px;
+	font-weight: 500;
+	line-height: 56px;
+}
+.memberinbox_detail_date {
+	margin: 35px 0 25px 0;
+	color: rgba(139,139,140,1);
+	font-size: 28px;
+	line-height: 28px;
+}
+.memberinbox_detail_content {
+	color: rgba(89,89,89,1);
+	font-family: 'PingFangTC-Regular';
+	font-size: 30px;
+	line-height: 46px;
+}
+.memberinbox form {
+	display: inline-block;
+	width: 89%;
+}
+.memberinbox_btn {
+	width: 100%;
+	margin: 60px 0;
+	background: rgba(0,80,179,1);
+	color: rgba(255,255,255,1);
+	font-family: 'PingFangTC';
+	font-size: 30px;
+	line-height: 90px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+/*-- Mobile --*/
+@media screen and (max-width: 750px) {
+	.memberinbox_list {
+		padding-bottom: 6.67vw;
+	}
+	.memberinbox_list ul {
+		margin-bottom: 6.67vw;
+	}
+	.memberinbox_list ul a {
+		padding: 4.67vw 5.33vw;
+	}
+	.memberinbox_caption {
+		padding-bottom: 1.33vw;
+		font-size: 4.53vw;
+		line-height: 6.67vw;
+	}
+	.memberinbox_content {
+		font-size: 3.73vw;
+		line-break: 3.73vw;
+	}
+	.icon_unread {
+		width: auto;
+		margin: 0.67vw 2vw 0 0;
+		padding: 1.33vw;
+		font-size: 2.67vw;
+		line-height: 2.67vw;
+	}
+	.check_delete {
+		margin: 8vw 4vw;
+		padding: 1.33vw 0;
+		font-size: 4vw;
+	}
+	.check_confirm {
+		width: 10.67vw;
+		margin: 2.67vw 4vw 1.33vw;
+		padding: 1.33vw 0;
+		font-size: 3.73vw;
+		line-height: 3.73vw;
+		border: 0.27vw solid rgba(7, 122, 0, 0.75);
+		border-radius: 1.33vw;
+	}
+	.check_cancel {
+		width: 10.67vw;
+		margin: 1.33vw 4vw 2.67vw;
+		padding: 1.33vw 0;
+		font-size: 3.73vw;
+		line-height: 3.73vw;
+		border: 0.27vw solid rgba(200, 49, 49, 0.75);
+		border-radius: 1.33vw;
+	}
+	.memberinbox_detail {
+		padding: 10.67vw 5.33vw;
+	}
+	.memberinbox_detail_caption {
+		font-size: 5.33vw;
+		line-height: 7.47vw;
+	}
+	.memberinbox_detail_date {
+		margin: 4.67vw 0 3.33vw 0;
+		font-size: 3.73vw;
+		line-height: 3.73vw;
+	}
+	.memberinbox_detail_content {
+		font-size: 4vw;
+		line-height: 6.13vw;
+	}
+	.memberinbox_btn {
+		margin: 8vw 0;
+		font-size: 4vw;
+		line-height: 12vw;
+	}
+}
+/*-- Mobile End --*/
+
+/*-- Member Detail & History Detail --*/
+.memberdetail, .memberdetail_bonus, 
+.memberdetail_caption, 
+.memberdetail_caption h1, .memberdetail_caption h2, .memberdetail_caption h3, 
+.memberdetail_content, .memberdetail_content ul, .memberdetail_content ul li, 
+hr.dashed, 
+.memberhistorydetail, .memberhistorydetail_bonus, 
+.memberhistorydetail_caption, 
+.memberhistorydetail_caption h1, .memberhistorydetail_caption h2, .memberhistorydetail_caption h3, 
+.memberhistorydetail_content, .memberhistorydetail_content ul, .memberhistorydetail ul li {
+	display: block;
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.memberdetail, 
+.memberhistorydetail {
+	padding: 10.6% 5.3%;
+	background: rgba(245,245,245,1);
+}
+.memberdetail_bonus, 
+.memberhistorydetail_bonus {
+	padding-top: 90px;
+	background: rgba(255,255,255,1);
+}
+.memberdetail_bonus {
+	border-radius: 20px;
+}
+.memberhistorydetail_bonus {
+	border-radius: 4px;
+}
+.memberdetail_caption, .memberdetail_content, 
+.memberhistorydetail_caption, .memberhistorydetail_content {
+	padding: 0 60px;
+	font-size: 30px;
+	line-height: 30px;
+}
+.memberdetail_caption, 
+.memberhistorydetail_caption {
+	text-align: center;
+}
+.memberdetail_icon {
+	background: url(/static/img/icon_bonus.svg) 50% 50% no-repeat content-box;
+}
+.memberhistorydetail_icon_sucess {
+	background: url(/static/img/icon-history-sucess.svg) 50% 50% no-repeat content-box;
+}
+.memberhistorydetail_icon_wait {
+	background: url(/static/img/icon-history-wait.svg) 50% 50% no-repeat content-box;
+}
+.memberhistorydetail_icon_cancel {
+	background: url(/static/img/icon-history-cancel.svg) 50% 50% no-repeat content-box;
+}
+.memberdetail_icon, 
+.memberhistorydetail_icon_sucess, 
+.memberhistorydetail_icon_wait, 
+.memberhistorydetail_icon_cancel {
+	width: 100%;
+	max-width: 310px;
+	height: 100vw;
+	max-height: 196px;
+	margin: 0 auto;
+	padding: 0 4vw;
+	background-size: contain;
+}
+.memberdetail_caption, .memberhistorydetail_caption {
+	margin-top: 50px;
+}
+.memberdetail_caption h1, 
+.memberdetail_caption h2, 
+.memberdetail_caption h3, 
+.memberhistorydetail_caption h1 {
+	font-weight: normal;
+	margin-bottom: 40px;
+}
+.memberdetail_caption h1, 
+.memberhistorydetail_caption h1 {
+	color: rgba(38,38,38,1);
+	font-family: 'PingFangTC-Medium';
+	font-weight: 500;
+}
+.memberdetail_caption h1 {
+	font-size: 52px;
+	line-height: 57px;
+}
+.memberhistorydetail_caption h1 {
+	font-size: 36px;
+	line-height: 41px;
+}
+.memberdetail_caption h2 {
+	color: rgba(38,38,38,1);
+	font-size: 30px;
+	line-height: 42px;
+}
+.memberdetail_caption h3 {
+	color: rgba(38,38,38,0.5);
+	font-size: 30px;
+	line-height: 30px;
+}
+.memberdetail_content, 
+.memberhistorydetail_content {
+	margin: 40px 0;
+}
+.memberdetail_content ul li, 
+.memberhistorydetail_content ul li {
+	padding: 20px 0;
+	color: rgba(140,140,140,1);
+}
+.memberdetail_content ul span, 
+.memberhistorydetail_content ul span {
+	float: right;
+	color: rgba(38,38,38,1);
+	font-family: 'PingFangTC-Regular';
+	text-align: right;
+}
+.memberdetail_not {
+	float: right;
+	color: rgba(250,85,85,1);
+	font-family: 'PingFangTC-Regular';
+	text-align: right;
+}
+.memberdetail_content ul span.fettle {
+	color: rgba(103,194,58,1);
+}
+hr.dashed {
+	margin: 20px 0 -2px 0;
+	border-bottom: 3px dashed rgba(191,191,191,1);
+}
+.memberdetail form, .memberdetail_btn, 
+.memberhistorydetail form, .memberhistorydetail_btn {
+	display: block;
+	float: left;
+	width: 100%;
+}
+.memberhistorydetail form {
+	padding: 0 60px;
+	box-sizing: border-box;
+}
+.memberdetail_btn {
+	margin: 0;
+	background: rgba(0,80,179,1);
+	color: rgba(255,255,255,1);
+	font-family: 'PingFangTC';
+	font-size: 30px;
+	text-align: center;
+	line-height: 90px;
+	border-radius: 0;
+	cursor: pointer;
+}
+.memberhistorydetail_btn {
+	margin: 20px 0;
+	background: rgba(0,80,179,1);
+	color: rgba(255,255,255,1);
+	font-family: 'PingFangTC';
+	font-size: 30px;
+	line-height: 90px;
+	text-align: center;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.memberhistorydetail_btn:last-child {
+	margin-bottom: 80px;
+}
+/*-- Mobile --*/
+@media screen and (max-width: 750px) {
+	.memberdetail_bonus, .memberhistorydetail_bonus {
+		padding-top: 12vw;
+	}
+	.memberdetail_bonus {
+		border-radius: 2.66vw;
+	}
+	.memberdetail_caption, .memberdetail_content, 
+	.memberhistorydetail_caption, .memberhistorydetail_content {
+		padding: 0 8vw;
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+	.memberdetail_caption, .memberhistorydetail_caption {
+		margin-top: 6.65vw;
+	}
+	.memberdetail_caption h1, .memberdetail_caption h2, .memberdetail_caption h3, 
+	.memberhistorydetail_caption h1 {
+		margin-bottom: 5.35vw;
+	}
+	.memberdetail_caption h1 {
+		font-size: 6.93vw;
+		line-height: 7.6vw;
+	}
+	.memberhistorydetail_caption h1 {
+		font-size: 4.8vw;
+		line-height: 5.5vw;
+	}
+	.memberdetail_caption h2, .memberdetail_caption h3 {
+		font-size: 4vw;
+		line-height: 5.6vw;
+	}
+	.memberdetail_content, .memberhistorydetail_content {
+		margin: 5.35vw 0;
+	}
+	.memberdetail_content ul li, .memberhistorydetail_content ul li {
+		padding: 2.67vw 0;
+	}
+	hr.dashed {
+		margin-top: 2.67vw;
+	}
+	.memberhistorydetail form {
+		padding: 0 8vw;
+	}
+	.memberdetail_btn, .memberhistorydetail_btn {
+		font-size: 4vw;
+		line-height: 12vw;
+	}
+	.memberhistorydetail_btn {
+		margin: 2.67vw 0;
+	}
+	.memberhistorydetail_btn:last-child {
+		margin-bottom: 10.7vw;
+	}
+}
+/*-- Mobile End --*/

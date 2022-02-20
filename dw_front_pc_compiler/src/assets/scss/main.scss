@@ -1,0 +1,17 @@
+@import './assets/scss/reset.css';
+// bootstrap custom setting origin -> @import '~bootstrap/scss/bootstrap.scss';
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/_root.scss";
+@import "~bootstrap/scss/_reboot.scss";
+@import "~bootstrap/scss/_type.scss";
+@import "~bootstrap/scss/_grid.scss";
+@import "~bootstrap/scss/utilities";
+// bootstrap custom setting origin
+@import './assets/scss/__common.scss'; 
+
+.container{
+  max-width: 1240px !important;
+  width: 1240px !important;
+}

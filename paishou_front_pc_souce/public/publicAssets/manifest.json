@@ -1,0 +1,24 @@
+{
+    "name" : "paishouTV",
+    "short_name" : "paishouTV",
+    "start_url" : "./source=pwa_app",
+    "display" : "fullscreen",
+    "background_color" : "#a62337",
+    "description" : "paishouTV PWA",
+    "scope": "/",
+    "orientation" : "any",
+    "theme_color" : "#a62337",
+    "Prefer_related_application": false,
+    "icons": [
+        {
+          "sizes": "192x192",
+          "src": "img/appAssets/android-chrome-192x192.png",
+          "type": "image/png"
+        },
+        {
+          "sizes": "512x512",
+          "src": "img/appAssets/android-chrome-512x512.png",
+          "type": "image/png"
+        }
+    ]
+}

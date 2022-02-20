@@ -1,0 +1,25 @@
+// sidebar
+$menuText:rgba(108, 113, 119, 0.87);
+$menuActiveText:rgba(108, 113, 119, 0.87);
+$subMenuActiveText:rgba(108, 113, 119, 0.87);
+
+$menuBg:#ffffff;
+$menuHover:#ffffff;
+
+$subMenuBg:#ffffff;
+$subMenuHover:#ffffff;
+
+$sideBarWidth: 210px;
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  sideBarWidth: $sideBarWidth;
+}

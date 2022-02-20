@@ -1,0 +1,139 @@
+<template lang="pug">
+  .container-fluid
+    data-filter(ref="dataFilter", :filterList="filterList", @change="getData()")
+      el-button.ml-2(v-if="buttonPerms.addInbox", @click="$router.push('/inboxEdit?title=新信件')") 新信件
+    //- 分页 表格上方
+    .justify-content-end
+      el-pagination(
+        :background="true",
+        :hide-on-single-page="true",
+        :pager-count="5",
+        layout="sizes, prev, pager, next, jumper, total",
+        :page-sizes="[20, 50, 100, 200, 300, 400, 500]",
+        :page-size="pageSize",
+        :total="dataTotal",
+        :current-page.sync="currentPage",
+        @current-change="getData",
+        @size-change="size => { pageSize = size; getData() }"
+      )
+    .row
+      el-table(:data="tableData", height="75vh")
+        el-table-column(label="编号", prop="id", align="center")
+        el-table-column(v-if="fieldPerms.memberUserAccount", prop="memberAccount", label="会员帐号", align="center", width="160")
+          template(slot-scope="{ row }")
+            router-link(:to="{ path: '/memberDetail', query: { title: row.memberUserAccount , id: row.memberId } }")
+              | {{ row.memberUserAccount }}
+        el-table-column(v-if="fieldPerms.inboxType", label="类型", align="center", width="120")
+          template(slot-scope="{ row }")
+            | {{ row.inboxType.display }}
+        el-table-column(v-if="fieldPerms.inboxTitle", prop="inboxTitle", label="标题", align="center")
+        el-table-column(v-if="fieldPerms.inboxContent", label="内容", align="center", width="120")
+          template(slot-scope="{ row }")
+            line-clamp(:content="row.inboxContent")
+        el-table-column(v-if="fieldPerms.inboxCreatedUser", label="发送人", align="center")
+          template(slot-scope="{ row }")
+            | {{ row.inboxCreatedUser.display || '--' }}
+        el-table-column(v-if="fieldPerms.inboxScheduledAt", label="设定发送时间", align="center", width="180")
+          template(slot-scope="{ row }")
+            | {{ row.inboxScheduledAt }}
+        el-table-column(v-if="fieldPerms.inboxSendAt", label="实际发送时间", align="center", width="180")
+          template(slot-scope="{ row }")
+            | {{ row.inboxSendAt }}
+        el-table-column(v-if="fieldPerms.inboxStatus", label="状态", align="center")
+          template(slot-scope="{ row }")
+            el-tag(v-if="row.inboxStatus.value === 0", type="danger") {{ row.inboxStatus.display }}
+            el-tag(v-if="row.inboxStatus.value === 1", type="success") {{ row.inboxStatus.display }}
+            el-tag(v-if="row.inboxStatus.value === 1001", type="warning") {{ row.inboxStatus.display }}
+        el-table-column(label="操作", width="200", align="center")
+          template(slot-scope="{ row }")
+            .text-left(v-if="row.inboxStatus && (row.inboxStatus.value === 0 || row.inboxStatus.value === 1001 )")
+              el-link(v-if="buttonPerms.editInbox")
+                router-link.links.mx-1(
+                  :to="{ path:'inboxEdit', query: { title: `${row.id} - ${row.inboxTitle || '站内信'}`, id: row.id } }"
+                ) 编辑
+              el-link.text-danger(v-if="buttonPerms.deleteInbox", @click="deleteInbox(row)") 删除
+</template>
+
+<script>
+import { getInboxesAPI, deleteInboxAPI, getInboxTypesAPI } from '@/api/site/inbox';
+
+export default {
+  data() {
+    return {
+      periods: {},
+      tableData: [],
+      pageSize: 100,
+      dataTotal: 0,
+      currentPage: 1,
+      filterList: [
+        { label: '标题', model: 'title', component: 'filterInput', props: { type: 'text' }},
+        { label: '会员帐号', model: 'account', component: 'filterInput', props: { type: 'text' }},
+        {
+          label: '状态',
+          model: 'status',
+          component: 'filterSelect',
+          props: {
+            options: { 'all': '全部', 0: '未读', 1: '已读', 1001: '待发送' },
+          },
+        },
+        {
+          label: '類型',
+          model: 'inbox_type',
+          component: 'filterSelect',
+          props: {
+            options: {},
+          },
+        },
+      ]
+    }
+  },
+  props: ['fieldPerms', 'buttonPerms', 'blockPerms'],
+  created() {
+    getInboxTypesAPI().then(response => {
+      this.filterList.find(filter => filter.model === 'inbox_type').props.options = response.data.data;
+    })
+    this.getData();
+  },
+  methods: {
+    getData() {
+      const APIParams = {
+        per_page: this.pageSize,
+        page: this.currentPage,
+        platform: 1
+      }
+
+      if (this.$refs.dataFilter) {
+        Object.assign(APIParams, this.$refs.dataFilter.getFilterData());
+      }
+
+      getInboxesAPI(APIParams).then(response => {
+        this.tableData = response.data.data;
+        this.dataTotal = response.data.meta.pagination.total;
+        this.currentPage = response.data.meta.pagination.current_page;
+      })
+    },
+    deleteInbox(inbox) {
+      this.$swal({
+        title: '确定删除？',
+        text: `您即将删除 ${inbox.id} - ${inbox.inboxTitle || '站内信'}`,
+        type: 'warning',
+        showCancelButton: true,
+        confirmButtonText: '确认删除！',
+        cancelButtonText: '取消'
+      })
+        .then(result => {
+          if (result.value) {
+            return deleteInboxAPI(inbox.id);
+          }
+
+          return Promise.reject();
+        })
+        .then(() => {
+          this.getData();
+          this.$message.success('站内信 - 删除成功！');
+        })
+        .catch(() => {})
+    }
+  }
+}
+</script>

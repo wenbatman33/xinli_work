@@ -1,0 +1,130 @@
+@import 'reset.scss';
+@import "_variables.scss";
+@import "bootstrap-scss/_functions.scss";
+@import "bootstrap-scss/_variables.scss";
+@import "bootstrap-scss/mixins";
+@import "bootstrap-scss/_root.scss";
+@import "bootstrap-scss/_reboot.scss";
+@import "bootstrap-scss/_type.scss";
+@import "bootstrap-scss/_grid.scss";
+@import "bootstrap-scss/utilities";
+// 
+html,body{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif !important;
+  user-select: none;
+  background-color: black;
+}
+p{
+  font-size: 14px;
+  margin: 0;
+}
+.mainPage{
+  position: relative;
+  width: 100%;
+}
+.page{
+  width: 100%;
+  height: 100%;
+}
+.httpStatus{
+  width: 100%;
+  @include pc{
+    padding: 100px 0 20px 0;
+  }
+  @include pad{
+    padding: 60px 0 20px 0;
+  }
+  @include sPad{
+    padding: 60px 0 20px 0;
+  }
+  @include phone{
+    padding: 60px 0 20px 0;
+  }
+  img{
+    max-width: 90%;
+  }
+}
+.httpImage{
+  width: 100%;
+  color: #fff;
+  @include pc{
+    padding: 0;
+  }
+  @include pad{
+    padding: 0 20px;
+  }
+  @include sPad{
+    padding: 0 20px;
+  }
+  @include phone{
+    padding: 0 20px;
+  }
+  img{
+    max-width: 90%;
+  }
+  img{
+    max-width: 100%;
+  }
+}
+.httpFooter{
+  width: 100%;
+  background-color: black;
+  height: 32px;
+  line-height: 32px;
+  color: #fff;
+}
+a{
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}
+.linkButton{
+  width: 130px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  color:#58ed9b;
+  text-decoration: none;
+}
+.linkSpeed{
+  line-height: 42px;
+  color:#fff;
+}
+.linkbtns{
+  margin-top: 50px;
+  width: 100%;
+  @include pc{
+    flex-direction: row;
+  }
+  @include pad{
+    flex-direction: row;
+  }
+  @include sPad{
+    flex-direction: column;
+  }
+  @include phone{
+    flex-direction: column;
+  }
+}
+.linkATag{
+  @include pc{
+    flex-direction: column;
+  }
+  @include pad{
+    flex-direction: column;
+  }
+  @include sPad{
+    flex-direction: row;
+  }
+  @include phone{
+    flex-direction: row;
+  }
+
+}
+.maintainingTime{
+  color: #c2aaf2;
+}

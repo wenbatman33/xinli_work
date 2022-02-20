@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Meta -->
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="keywords" content="拍手直播 门兴直播 足球直播 欧洲杯直播" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+		<meta name="description" content="拍手直播是全民参与的体育直播，包括足球、篮球、网球、羽球等体育赛事高清直播，中超、英超、德甲、西甲、意甲、NBA、CBA等热门赛事，电竞、赛事转播、游戏直播、花样吃播、劲歌热舞、视讯交友、K歌聊天、秀场狂欢，一应俱全！" />
+		<!-- End Meta -->
+
+		<!-- Title -->
+		<title>拍手直播|欧洲杯直播|NBA直播|中超直播|西甲直播|英超直播|足球直播</title>
+		<!-- End Title -->
+
+		<!-- WebRTC Adapter -->
+		<script type="text/javascript" src="/publicAssets/js/adapter-latest.js"></script>
+		<!-- End WebRTC Adapter -->
+
+		<!-- Video-js Streaming -->
+		<script type="text/javascript" scr="/publicAssets/js/videojs-http-streaming.min.js"></script>
+		<!-- End Video-js Streaming -->
+
+		<!-- 聽雲 -->
+		<%= process.env.VUE_APP_BRANCH==='master' ? '<script src="/publicAssets/js/tingyun-rum.js"></script>' : '' %>
+		<!-- End 聽雲 -->
+
+		<!-- 版本訊息 -->
+		<script type="text/javascript">
+			console.log('%c 拍手: <%= process.env.VUE_APP_VER %><%= process.env.VUE_APP_BUILDTIME %> ', 'color:#fff;padding:4px;background:#0031d4;background:linear-gradient(to right,#0031d4,#3f91ff);font-size:18px;font-weight:bold;text-shadow: #000 1px 1px;');
+		</script>
+		<!-- End 版本訊息 -->
+
+		<!-- 任務 #5013 SEO 部署 -->
+		<script type="text/javascript">
+			(function () {
+				var bp = document.createElement('script');
+				var curProtocol = window.location.protocol.split(':')[0];
+				if (curProtocol === 'https') {
+					bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+				} else {
+					bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+				}
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(bp, s);
+			})();
+		</script>
+		<!-- End 任務 #5013 SEO 部署 -->
+
+		<!-- Google Tag Manager -->
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, 'script', 'dataLayer', 'GTM-M6K5NZS');
+		</script>
+		<!-- End Google Tag Manager -->
+
+		<!-- 百度 tracking code -->
+		<script>
+			var _hmt = _hmt || [];
+			(function () {
+				var hm = document.createElement('script');
+				hm.src = 'https://hm.baidu.com/hm.js?57d10aa85972f890e8f89645f7674b50';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+		<!-- End 百度 tracking code -->
+
+		<!-- LiveChat -->
+    <script>
+      window.__lc = window.__lc || {};
+      window.__lc.license = 8233741;
+      ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+    </script>
+    <!-- End LiveChat -->
+	</head>
+
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6K5NZS" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
+		<!-- Matomo -->
+		<script type="text/javascript">
+			var _paq = window.paq || [];
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
+			(function () {
+				var u = 'https://mtm.tgcity18.info/';
+				_paq.push(['setTrackerUrl', u + 'matomo.php']);
+				_paq.push(['setSiteId', '<%= process.env.VUE_APP_MATOMO %>']);
+				var d = document,
+					g = d.createElement('script'),
+					s = d.getElementsByTagName('script')[0];
+				g.type = 'text/javascript';
+				g.async = true;
+				g.defer = true;
+				g.src = u + 'matomo.js';
+				s.parentNode.insertBefore(g, s);
+			})();
+		</script>
+		<!-- End Matomo -->
+
+		<!-- No script -->
+		<noscript>
+			<strong>We're sorry but doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+		</noscript>
+		<!-- End No script -->
+
+		<!-- Vue app container -->
+		<div id="app"></div>
+		<!-- End Vue app container -->
+	</body>
+</html>

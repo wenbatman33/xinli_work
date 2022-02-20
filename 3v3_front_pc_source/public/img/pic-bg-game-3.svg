@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="132" height="132" viewBox="0 0 132 132">
+    <defs>
+        <linearGradient id="prefix__a" x1="50%" x2="50%" y1="99.517%" y2="-.273%">
+            <stop offset="0%" stop-color="#DFE1EC"/>
+            <stop offset="48%" stop-color="#F6F6F9"/>
+            <stop offset="100%" stop-color="#FFF"/>
+        </linearGradient>
+        <linearGradient id="prefix__b" x1="50%" x2="50%" y1="-.273%" y2="99.517%">
+            <stop offset="0%" stop-color="#DFE1EC"/>
+            <stop offset="48%" stop-color="#F6F6F9"/>
+            <stop offset="100%" stop-color="#FFF"/>
+        </linearGradient>
+        <linearGradient id="prefix__c" x1="61.148%" x2="61.148%" y1="1.988%" y2="97.715%">
+            <stop offset="0%" stop-color="#70BAFF"/>
+            <stop offset="100%" stop-color="#1890FF"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <circle cx="66" cy="66" r="66" fill="url(#prefix__a)"/>
+        <circle cx="66" cy="66" r="47" fill="url(#prefix__b)" opacity=".589"/>
+        <path fill="url(#prefix__c)" d="M66 4c34.242 0 62 27.758 62 62 0 34.242-27.758 62-62 62-34.242 0-62-27.758-62-62C4 31.758 31.758 4 66 4zm.5 11C38.057 15 15 38.057 15 66.5S38.057 118 66.5 118 118 94.943 118 66.5 94.943 15 66.5 15z"/>
+    </g>
+</svg>

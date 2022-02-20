@@ -1,0 +1,41 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "amd": true,
+        "node": true,
+        "commonjs": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:vue/essential"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly",
+        "Vue": true,
+        "axios": true,
+        "CKEDITOR": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "parser": "babel-eslint"
+    },
+    "parser": "vue-eslint-parser",
+    "plugins": [
+        "vue"
+    ],
+    "rules": {
+      "quotes": [2, "single"],
+      "one-var": [2, {
+        "var": "always",
+        "let": "never",
+        "const": "never"
+      }],
+      "eqeqeq": [2, "smart"],
+      "vue/return-in-computed-property": ["error", {
+        "treatUndefinedAsUnspecified": false
+      }]
+    }
+}

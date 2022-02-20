@@ -1,0 +1,51 @@
+html,body{
+  position: relative;
+  width: 100% !important;
+  height: 100% !important;
+  font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif !important;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+*{
+  box-sizing: border-box;
+}
+input, button{
+  outline: none;
+  outline: 0 !important;
+}
+// 客制
+.BLOCK{
+  width: 100% !important;
+  height: 100% !important;
+  overflow: auto !important;
+  position: relative;
+}
+.CENTER{
+  display: flex;
+  align-self: center !important;
+  justify-content: center !important;
+}
+.CENTER_H{
+  display: flex;
+  justify-content: center !important;
+}
+.CENTER_V{
+  display: flex;
+  align-self: center !important;
+}
+.DF_BETWEEN{
+  display: flex;
+  justify-content:space-between;
+}
+.DF_AROUND{
+  display: flex;
+  justify-content:space-around;
+}
+.DF_CENTER{
+  display: flex;
+  justify-content:center;
+}
+.DF_START{
+  display: flex;
+  justify-content:flex-start;
+}

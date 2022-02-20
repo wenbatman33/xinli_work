@@ -1,0 +1,50 @@
+// 以深色版為基底
+// DW_Color  
+$DW_ColorLight: rgba(0,173,239,1.0);
+$DW_Color: rgba(57,109,238, 1);
+$DW_ColorDark: rgba(0,104,155,1.0);
+// DW_Color Alpha
+$DW_ColorAlpha_10: rgba(57,109,238, 0.1);
+$DW_ColorAlpha_20: rgba(57,109,238, 0.2);
+$DW_ColorAlpha_30: rgba(57,109,238, 0.3);
+$DW_ColorAlpha_40: rgba(57,109,238, 0.4);
+$DW_ColorAlpha_50: rgba(57,109,238, 0.5);
+$DW_ColorAlpha_60: rgba(57,109,238, 0.6);
+$DW_ColorAlpha_70: rgba(57,109,238, 0.7);
+$DW_ColorAlpha_80: rgba(57,109,238, 0.8);
+$DW_ColorAlpha_90: rgba(57,109,238, 0.9);
+// DW_ColorDark Alpha
+$DW_ColorDarkAlpha_10: rgba(0,104,155, 0.1);
+$DW_ColorDarkAlpha_50: rgba(0,104,155, 0.5);
+$DW_ColorDarkAlpha_80: rgba(0,104,155, 0.8);
+// yellow:
+$DW_yellow: rgba(247,186,42,1.0);
+$DW_yellowAlpha_10: rgba(247,186,42,0.1);
+$DW_yellowAlpha_40: rgba(247,186,42,0.4);
+// red
+$DW_red: rgba(219,48,48,1.0);
+$DW_redAlpha_40: rgba(219,48,48,0.4);
+$DW_orange: rgba(255, 117, 25,1.0);
+$DW_orange_30: rgba(255,117,25,0.3);
+$DW_orangeRed: rgba(255,73,73,1.0);
+$DW_pink: rgba(211,148,255,1.0);
+// 
+$DW_purple: rgba(101,0, 255,1);
+$DW_purpleDark: rgba(143, 50, 159,1);
+$DW_purpleDark_30: rgba(143, 50, 159,.3);
+
+$DW_blueberry: rgba(96, 64, 166,1);
+$DW_blueGrey: rgba(32,32,82 ,1);
+$DW_slatBlue: rgba(57, 32, 95 ,1);
+
+// sky
+$DW_sky_1: rgba(32,160,255,1.0);
+$DW_sky_2: rgba(91,122,233,1.0);
+// skyLight
+$DW_skyLight_1: rgba(32,205,255,1.0);
+$DW_skyLight_2: rgba(67,233,218,1.0);
+// green
+$DW_greenLight: rgba(50,255,122,1.0);
+$DW_greenMiddle: rgba(19,206,102,1.0);
+$DW_greenMiddle_30: rgba(19,206,102,0.3);
+$L_DW_greenDark: rgba(0, 154, 124,1.0);

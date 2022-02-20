@@ -1,0 +1,624 @@
+@charset "UTF-8";
+/*-- Css Document --*/
+
+/*-- Game Tab --*/
+.gametab {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.gametab ul {
+	display: inline-block;
+	width: 100%;
+	max-width: 750px;
+	border-bottom: 1px solid rgba(221,221,221,1);
+}
+.gametab ul li {
+	display: block;
+	float: left;
+	text-align: center;
+}
+.gametab a {
+	display: block;
+	margin-bottom: -1px;
+	padding: 20px 0;
+	color: rgba(48,48,48,1);
+	font-family: 'PingFangTC';
+	font-size: 30px;
+}
+.gametab a:hover {
+	color: rgb(46, 76, 114);
+	border-bottom: 4px solid rgba(0,80,179,1);
+	text-decoration: inherit;
+}
+/*-- Mobile --*/
+@media screen and (max-width: 750px) {
+	.gametab a {
+		padding: 13.5% 0;
+		font-size: 4vw;
+	}
+}
+/*-- Mobile End --*/
+
+/*-- Game Brands --*/
+.gamebrands {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.gamebrands ul {
+	display: inline-block;
+	width: 100%;
+	max-width: 750px;
+	text-align: left;
+}
+.gamebrands ul li {
+	display: inline-block;
+	width: 20%;
+	padding: 0 15px;
+	text-align: center;
+}
+.gamebrands ul a {
+	display: block;
+	width: 100%;
+	margin: 15px 0;
+	padding: 15px 0;
+	color: rgba(0,0,0,1);
+	font-family: 'PingFangTC';
+	font-size: 28px;
+	line-height: 28px;
+}
+.gamebrands ul a:hover {
+	color: rgba(0,80,179,1);
+}
+.gamebrand_img, .gamebrands span {
+	display: inline-block;
+}
+.gamebrand_img {
+	width: 70px;
+	height: 70px;
+	border-radius: 50vw;
+	overflow: hidden;
+}
+.gamebrand_img img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.gamebrands span {
+	width: 100%;
+	margin-top: 15px;
+	font-family: 'PingFangTC';
+	font-size: 28px;
+	line-height: 28px;
+}
+/*-- Mobile --*/
+@media screen and (max-width: 750px) {
+	.gamebrands ul li {
+		padding: 0 2vw;
+	}
+	.gamebrands ul a {
+		margin: 2vw 0;
+		padding: 2vw 0;
+		font-size: 3.73vw;
+		line-height: 3.73vw;
+	}
+	.gamebrands span {
+		font-size: 3.73vw;
+		line-height: 3.73vw;
+	}
+	.gamebrand_img {
+		width: 9.33vw;
+		height: 9.33vw;
+	}
+	.gamebrands span {
+		margin-top: 2vw;
+	}
+}
+/*-- Mobile End --*/
+
+/*-- Game List --*/
+.gamelist, .gamelist_hot, .gamelist_favor, .gamelist_recent {
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+}
+.gamelist {
+	border-top: 1px solid rgba(221,221,221,1);
+	padding: 0 4%;
+}
+.gamelist_hot, .gamelist_favor, .gamelist_recent {
+	padding: 4%;
+}
+.gamelist ul, .gamelist ul li, 
+.gamelist_hot ul, .gamelist_hot ul li, 
+.gamelist_favor ul, .gamelist_favor ul li, 
+.gamelist_recent ul, .gamelist_recent ul li {
+	display: block;
+	float: left;
+}
+.gamelist ul, .gamelist_hot ul {
+	width: 100%;
+	padding-bottom: 4%;
+}
+.gamelist_favor ul, .gamelist_recent ul {
+	width: 100%;
+	padding: 4% 0;
+}
+.gamelist ul li, .gamelist_hot ul li, 
+.gamelist_favor ul li, .gamelist_recent ul li {
+	width: 50%;
+	padding: 0 2% 4% 2%;
+	cursor: pointer;
+}
+.gamelist ul a, .gamelist ul span, .gamelist ul img, 
+.gamelist_hot ul a, .gamelist_hot ul span, .gamelist_hot ul img, 
+.gamelist_favor ul a, .gamelist_favor ul span, .gamelist_favor ul img, 
+.gamelist_recent ul a, .gamelist_recent ul span, .gamelist_recent ul img {
+	display: block;
+	float: left;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.gamelist ul a, .gamelist_hot ul a, 
+.gamelist_favor ul a, .gamelist_recent ul a {
+	border-radius: 8px;
+	box-sizing: border-box;
+}
+.gamelist_card {
+	display: block;
+	float: left;
+	width: 100%;
+	border-radius: 8px;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+}
+.gamelist ul span, .gamelist_hot ul span, 
+.gamelist_favor ul span, .gamelist_recent ul span {
+	padding: 20px 10px;
+	background: rgba(0,0,0,0.85);
+	color: rgba(255,255,255,1);
+	font-family: 'PingFangTC';
+	font-size: 28px;
+	line-height: 28px;
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.gl_tgy, .gl_tgr {
+	width: 200px;
+	height: 50px;
+	margin: 75px 0;
+	padding: 13px 0;
+	font-size: 24px;
+	font-family: 'ArialRoundedMTBold';
+	font-weight: bold;
+	line-height: 24px;
+	transform: rotate(-45deg);
+	position: absolute;
+	top: -50px;
+	left: -50px;
+	z-index: 10;
+}
+.gl_tgy {
+	color: rgba(250,85,85,1);
+	background: rgba(250,219,20,1);
+}
+.gl_tgr {
+	color: rgba(250,219,20,1);
+	background: rgba(250,85,85,1);
+}
+.icon_AllProvider {
+	width: 72px;
+	height: 72px;
+	background: rgba(0,0,0,1);
+	border-radius: 8px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	opacity: 0.6;
+	img {
+		width: 100% !important;
+		height: auto !important;
+	};
+}
+.gamelist form {
+	display: inline-block;
+	width: 96%;
+}
+.gamelist_btn, .gamelist_btn:hover {
+	display: block;
+	float: left;
+	width: 100%;
+	margin: 20px 0 80px 0;
+	background: rgba(0,80,179,1);
+	color: rgba(255,255,255,1);
+	font-family: 'PingFangTC';
+	font-size: 30px;
+	text-decoration: inherit;
+	line-height: 90px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.glhot_caption {
+	float: left;
+	width: 100%;
+	padding: 5.8% 2%;
+	color: rgba(38,38,38,1);
+	font-family: 'PingFangSC-Medium';
+	font-size: 52px;
+	font-weight: 500;
+	line-height: 52px;
+	text-align: left;
+	box-sizing: border-box;
+}
+.glhot_caption span {
+	padding: 0 6%;
+	color: rgba(140,140,140,1);
+	font-family: 'PingFangSC-Regular';
+	font-size: 30px;
+	font-weight: normal;
+	line-height: 30px;
+}
+/*-- Mobile --*/
+@media screen and (max-width: 750px) {
+	.gamelist ul span, .gamelist_hot ul span, 
+	.gamelist_favor ul span, .gamelist_recent ul span {
+		padding: 2.67vw 2.67vw;
+		font-size: 3.75vw;
+		line-height: 3.75vw;
+	}
+	.gl_tgy, .gl_tgr {
+		width: 26.67vw;
+		height: 6.67vw;
+		margin: 10vw 0;
+		padding: 1.73vw 0;
+		font-size: 3.2vw;
+		line-height: 3.2vw;
+		top: -6.67vw;
+		left: -6.67vw;
+	}
+	.icon_AllProvider {
+		width: 9.6vw;
+		height: 9.6vw;
+		z-index: 50;
+	}
+	.gamelist_btn, .gamelist_btn:hover {
+		margin: 2.67vw 0 10.67vw 0;
+		font-size: 4vw;
+		line-height: 12vw;
+	}
+	.glhot_caption {
+		font-size: 6.93vw;
+		line-height: 6.93vw;
+	}
+	.glhot_caption span {
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+}
+/*-- Mobile End --*/
+
+/*-- Game Filter --*/
+.filter {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.filter_btn {
+	display: inline-block;
+	margin: 40px 0;
+	padding-left: 50px;
+	background: url("/static/img/icon_filter.svg") 35% 0 no-repeat;
+	background-size: contain;
+	color: rgba(0,80,179,1);
+	font-family: 'PingFangTC';
+	font-size: 30px;
+	line-height: 30px;
+}
+.filter_btn_no {
+	display: inline-block;
+	margin: 40px 0;
+	padding-left: 50px;
+	line-height: 30px;
+}
+.filter_btn:hover {
+	text-decoration: inherit;
+}
+.filter_close {
+	display: block;
+	float: right;
+	width: 48px;
+	height: 48px;
+	/* background: url(../img/close.png) 0 0 no-repeat; */
+	background-size: contain;
+}
+.gamefilter {
+	float: left;
+	width: 100%;
+	min-height: 100vw;
+	padding: 60px;
+	background: rgba(255,255,255,1);
+	box-sizing: border-box;
+}
+.gamefilter span {
+	display: block;
+	float: left;
+	width: 100%;
+	padding: 30px 0;
+	color: rgba(0,0,0,1);
+	font-family: 'PingFangSC';
+	font-size: 30px;
+	line-height: 30px;
+}
+.gamefilter ul, .gamefilter ul li {
+	display: block;
+	float: left;
+}
+.gamefilter ul {
+	width: 100%;
+	padding: 10px 0;
+}
+.gamefilter ul li {
+	display: block;
+	margin: 0 25px 25px 0; 
+	padding: 15px 30px;
+	color: rgba(0,80,179,1);
+	font-family: 'PingFangTC';
+	font-size: 26px;
+	line-height: 26px;
+	border: 2px solid rgba(0,80,179,1);
+	border-radius: 50px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.gamefilter ul li.active {
+	background: rgba(0,80,179,1);
+	color: rgba(255,255,255,1);
+	text-decoration: inherit;
+}
+.gamefilter form {
+	display: block;
+	float: left;
+	width: 48%;
+	margin-right: 4%;
+	text-align: center;
+}
+.gamefilter form:last-child {
+	margin: 0;
+}
+.gamefilter_btn {
+	display: inline-block;
+	width: 100%;
+	margin: 80px 0 40px 0;
+	background: rgba(255,255,255,1);
+	color: rgba(0,80,179,1);
+	font-family: 'PingFangTC';
+	font-size: 30px;
+	line-height: 90px;
+	border: 2px solid rgba(0,80,179,1);
+	border-radius: 10px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.gamefilter_active {
+	background: rgba(0,80,179,1);
+	color: rgba(255,255,255,1);
+	text-decoration: inherit;
+}
+/*-- Mobile --*/
+@media screen and (max-width: 750px) {
+	.filter_btn, .filter_btn_no {
+		margin: 5.45% 0;
+		padding-left: 6.8%;
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+	.filter_close {
+		width: 6.4vw;
+		height: 6.4vw;
+	}
+	.gamefilter {
+		padding: 8%;
+	}
+	.gamefilter span {
+		padding: 4.78% 0;
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+	.gamefilter ul {
+		padding: 1.33vw 0;
+	}
+	.gamefilter ul li {
+		margin: 0 3.34vw 3.34vw 0; 
+		padding: 2vw 4vw;
+		font-size: 3.46vw;
+		line-height: 3.46vw;
+	}
+	.gamefilter_btn {
+		margin: 26.4% 0 13.2% 0;
+		font-size: 4vw;
+		line-height: 12vw;
+	}
+}
+/*-- Mobile End --*/
+
+/*-- Game Popup --*/
+.gamepopup {
+	float: left;
+	width: 100%;
+	min-height: 100vh;
+	padding: 4%;
+	text-align: center;
+	box-sizing: border-box;
+}
+.popup_close {
+	display: block;
+	float: right;
+	width: 48px;
+	height: 48px;
+}
+.gamepopup_caption {
+	float: left;
+	width: 100%;
+	padding: 40px 0;
+	color: rgba(255,255,255,1);
+	font-family: 'PingFangSC-Regular';
+	font-size: 28px;
+	line-height: 28px;
+}
+.gamepopup_caption span {
+	font-size: 28px;
+	line-height: 28px;
+}
+.gamepopup_info {
+	float: left;
+	width: 100%;
+	padding: 40px;
+	box-sizing: border-box;
+}
+.gamepopup_img {
+	display: inline-block;
+	max-width: 315px;
+	border-radius: 10px;
+	box-shadow: 0 4px 24px 0 rgba(0,0,0,0.3);
+	position: relative;
+	overflow: hidden;
+}
+.gamepopup_img img {
+	display: inline-block;
+	width: 42vw;
+	height: 42vw;
+	position: relative;
+}
+.gamepopup_name {
+	float: left;
+	width: 100%;
+	color: rgba(255,255,255,1);
+	font-family: 'PingFangSC-Regular';
+	font-size: 40px;
+	line-height: 40px;
+}
+.gamepopup_favor {
+	float: left;
+	width: 100%;
+	padding: 40px 0;
+}
+.gamepopup_favor span {
+	display: inline-block;
+	padding-right: 40px;
+	color: rgba(255,255,255,1);
+	font-family: 'PingFangTC-Regular';
+	font-size: 28px;
+	line-height: 28px;
+	box-sizing: border-box;
+}
+.gamepopup form {
+	display: inline-block;
+	width: 75%;
+	max-width: 480px;
+	margin: 0 12.5%;
+	box-sizing: border-box;
+}
+.gamepopup_btn, .gamepopup_btn:hover {
+	display: inline-block;
+	width: 100%;
+	margin: 20px 0;
+	background: rgba(0,80,179,1);
+	color: rgba(255,255,255,1);
+	font-family: 'PingFangTC';
+	font-size: 30px;
+	text-decoration: inherit;
+	line-height: 90px;
+	border-radius: 10px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+/*-- Mobile --*/
+@media screen and (max-width: 750px) {
+	.popup_close {
+		width: 6.4vw;
+		height: 6.4vw;
+	}
+	.gamepopup_caption {
+		padding: 6.4% 0;
+		font-size: 3.73vw;
+		line-height: 3.73vw;
+	}
+	.gamepopup_caption span {
+		font-size: 3.73vw;
+		line-height: 3.73vw;
+	}
+	.gamepopup_info {
+		padding: 6.35% 15%;
+	}
+	.gamepopup_name {
+		font-size: 5.34vw;
+		line-height: 5.34vw;
+	}
+	.gamepopup_favor {
+		padding: 6.35% 0;
+	}
+	.gamepopup_favor span {
+		padding-right: 6.35%;
+		font-size: 3.73vw;
+		line-height: 3.73vw;
+	}
+	.gamepopup_btn, .gamepopup_btn:hover {
+		margin: 4.25% 0;
+		font-size: 4vw;
+		line-height: 12vw;
+	}
+}
+/*-- Mobile End --*/
+
+/*-- Brands Bonus --*/
+.brandsbonus {
+	float: left;
+	width: 100%;
+	padding: 35px 0;
+	text-align: center;
+}
+.brandsbonus_caption {
+	float: left;
+	width: 100%;
+	color: rgba(38,38,38,1);
+	font-family: "PingFangTC";
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 36px;
+}
+.brandsbonus span {
+	display: inline-block;
+	margin-top: 10px;
+	color: rgba(255,255,255,1);
+	font-family: 'Arial';
+	font-size: 52px;
+	font-weight: 900;
+	line-height: 52px;
+	letter-spacing: 2px;
+	vertical-align: top;
+	
+}
+/*-- Mobile --*/
+@media screen and (max-width: 750px) {
+	.brandsbonus {
+		padding: 4.75% 0;
+	}
+	.brandsbonus_caption {
+		font-size: 4.8vw;
+		line-height: 4.8vw;
+	}
+	.brandsbonus span {
+		margin-top: 1.35%;
+		font-size: 6.93vw;
+		line-height: 6.93vw;
+		letter-spacing: 0.27vw;
+	}
+}
+/*-- Mobile End --*/

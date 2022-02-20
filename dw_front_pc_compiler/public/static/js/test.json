@@ -1,0 +1,30 @@
+[
+  {
+    "main": "testlaocaitou.net",
+    "resource": "testlaocaitou.net",
+    "app_main": "testyljzxm.com",
+    "matomo": "testmtm.tgcity18.info",
+    "app_login_video": "stage.blstatic.space"
+  },
+  {
+    "main": "testhshup.com",
+    "resource": "testhshup.com",
+    "app_main": "testyljzxm.com",
+    "matomo": "testmtm.tgcity18.info",
+    "app_login_video": "teststage.blstatic.space"
+  },
+  {
+    "main": "testsxdttl.com",
+    "resource": "testsxdttl.com",
+    "app_main": "testyljzxm.com",
+    "matomo": "testmtm.tgcity18.info",
+    "app_login_video": "teststage.blstatic.space"
+  },
+  {
+    "main": "testunyanauto.com",
+    "resource": "testsunyanauto.com",
+    "app_main": "testyljzxm.com",
+    "matomo": "testmtm.tgcity18.info",
+    "app_login_video": "teststage.blstatic.space"
+  }
+]

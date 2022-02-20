@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-mic</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-mic" fill="#000000">
+            <path d="M8,1.786 L8,1.17 C8,0.522 7.426,0 6.716,0 L3.286,0 C2.575,0 2,0.522 2,1.17 L2,1.786 L5.563,1.786 L5.563,2.612 L2,2.612 L2,3.572 L5.563,3.572 L5.563,4.397 L2,4.397 L2,5.357 L5.563,5.357 L5.563,6.183 L2,6.183 L2,7.116 C2,7.763 2.574,8.281 3.287,8.281 L3.992,8.281 L3.992,10 L6.008,10 L6.008,8.281 L6.716,8.281 C7.426,8.281 8,7.763 8,7.116 L8,6.183 L6.687,6.183 L6.687,5.357 L8,5.357 L8,4.397 L6.687,4.397 L6.687,3.571 L8,3.571 L8,2.611 L6.687,2.611 L6.687,1.786 L8,1.786 L8,1.786 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

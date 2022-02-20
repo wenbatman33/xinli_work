@@ -1,0 +1,323 @@
+@import './normalize.css';
+@import './tailwind.css';
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@900&display=swap');
+
+* {
+	box-sizing: border-box !important;
+	-webkit-overflow-scrolling: touch;
+	overflow: auto;
+	overflow: initial;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+// ::-webkit-scrollbar {
+// 	display: none; // Safari and Chrome
+// }
+
+// * {
+// 	-webkit-overflow-scrolling: auto;
+// }
+
+// *::-webkit-scrollbar {
+// 	width: 8px;
+// 	height: 0;
+// }
+
+// *::-webkit-scrollbar-thumb {
+// 	position: absolute;
+// 	background: rgba(0, 0, 0, 0);
+// 	border-radius: 8px;
+// 	z-index: 10;
+// }
+// *:hover::-webkit-scrollbar-thumb {
+// 	background: rgba(0, 0, 0, 0.5);
+// }
+// *::-webkit-scrollbar-thumb:hover {
+// 	background: rgba(0, 0, 0, 0.5);
+// }
+
+.container {
+	margin: 0 auto;
+	width: 1240px !important;
+	min-width: 1240px !important;
+}
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	font-family: 'Avenir Next', 'PingFangTC', 'PingFangSC', 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei', 'Hiragino Sans GB', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	scroll-behavior: smooth !important;
+	box-sizing: border-box;
+	background: #f5f5f5 !important;
+	color: #071f44;
+}
+#main {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.RWD {
+	min-width: none !important;
+}
+.RWD_none {
+	min-width: 1240px;
+}
+#app {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.pageContainer {
+	width: 100%;
+	// min-height: 100vh;
+	margin: 0 auto !important;
+	padding-top: 120px !important;
+}
+.fullScreenContainer {
+	width: 100%;
+	min-height: 100vh;
+	margin: 0 auto !important;
+}
+
+.contentContainer {
+	width: 100%;
+	min-height: 100vh;
+	margin: 0 auto !important;
+}
+
+p {
+	margin: 0;
+	margin-bottom: 0;
+}
+img,
+svg {
+	display: inline-block;
+}
+button:focus {
+	outline: 0 !important;
+}
+
+h1 {
+	// 40px
+	font-size: 2.5em !important;
+	font-weight: bold !important;
+}
+h2 {
+	// 40px
+	font-size: 2.5em !important;
+	font-weight: bold !important;
+}
+h3 {
+	// 36px
+	font-size: 2.25em !important;
+	font-weight: bold !important;
+}
+h4 {
+	// 36px
+	font-size: 2.25em !important;
+	font-weight: bold !important;
+}
+h5 {
+	// 24px
+	font-size: 1.5em !important;
+	font-weight: bold !important;
+}
+h6 {
+	// 24px
+	font-size: 1.5em !important;
+	font-weight: bold !important;
+}
+
+.Subtitle_1 {
+	// 20px
+	font-size: 1.25em !important;
+	font-weight: bold !important;
+}
+.Subtitle_2 {
+	// 18px
+	font-size: 1.125em !important;
+	font-weight: bold !important;
+}
+.Subtitle_3 {
+	// 16px
+	font-size: 1em !important;
+	font-weight: bold !important;
+}
+.Subtitle_4 {
+	// 14px
+	font-size: 0.875em !important;
+	font-weight: bold !important;
+}
+
+.Body_1 {
+	// 20px
+	font-size: 1.25em !important;
+	font-weight: normal !important;
+}
+.Body_2 {
+	// 18px
+	font-size: 1.125em !important;
+	font-weight: normal !important;
+}
+.Body_3 {
+	// 16px
+	font-size: 1em !important;
+	font-weight: normal !important;
+}
+.Body_4 {
+	// 14px
+	font-size: 0.875em !important;
+	font-weight: normal !important;
+}
+
+.Caption_1 {
+	// 12px
+	font-size: 0.75em !important;
+	font-weight: bold !important;
+}
+.Caption_2 {
+	// 12px
+	font-size: 0.75em !important;
+	font-weight: normal !important;
+}
+
+.Paragraph_1 {
+	// 14px
+	font-size: 0.875em !important;
+	font-weight: normal !important;
+	line-height: 25.2px;
+}
+.Paragraph_2 {
+	// 12px
+	font-size: 0.75em !important;
+	font-weight: normal !important;
+	line-height: 19.2px;
+}
+
+.ant-btn-background-ghost {
+	color: #fff;
+	&:hover {
+		color: #fff !important;
+		border-color: #fff !important;
+		background: rgba(255, 255, 255, 0.4) !important;
+	}
+}
+// 時間不夠無法細調 目前暫時使用此disabled樣式
+.ant-btn[disabled] {
+	// border-color: #d9d9d9 !important;
+	opacity: 0.2;
+	&:hover {
+		// border-color: #d9d9d9 !important;
+		// color: rgba(0, 0, 0, 0.25) !important;
+		// background: inherit !important;
+	}
+}
+.ant-btn[disabled]:hover {
+	// border-color: #d9d9d9 !important;
+	// color: rgba(0, 0, 0, 0.25) !important;
+	// background: inherit !important;
+}
+
+.ant-btn-primary[disabled],
+.ant-btn-primary[disabled]:hover,
+.ant-btn-primary[disabled]:focus,
+.ant-btn-primary[disabled]:active {
+	color: #fff !important;
+	background: #f0453a !important;
+	border-color: #f0453a !important;
+	text-shadow: none;
+	box-shadow: none;
+	opacity: 0.2;
+}
+.ant-table-row-expand-icon:focus,
+.ant-table-row-expand-icon:hover,
+.ant-table-row-expand-icon:active {
+	border-color: #d9d9d9 !important;
+}
+.Rubika {
+	font-family: 'Rubik', sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	font-variant: normal !important;
+	font-feature-settings: normal !important;
+}
+
+#globalLoading {
+	top: 0;
+	z-index: 99999;
+}
+
+.highlightTitle {
+	font-size: 30px;
+	font-family: 'Noto Sans SC', sans-serif;
+}
+.highlight {
+	font-size: 50px;
+	background: linear-gradient(to right, #ffdeb8 0%, #dbb172 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.SSO_ERROR_MODAL,
+.SSO_ERROR_MODAL_noCancelBtn {
+	max-width: 350px !important;
+	.ant-modal-confirm-body .ant-modal-confirm-title {
+		font-weight: 900 !important;
+	}
+	.ant-modal-confirm-btns {
+		display: flex !important;
+		width: 100% !important;
+	}
+}
+
+.SSO_ERROR_MODAL_noCancelBtn .ant-modal-confirm-btns {
+	.ant-btn {
+		margin: 0;
+	}
+	.ant-btn:first-child {
+		display: none !important;
+	}
+}
+
+input {
+	outline: 0 !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	transition: all 5000s ease-in-out 0s;
+	// -webkit-text-fill-color: transparent !important;
+}
+
+.ant-input:focus {
+	border-color: none !important;
+	outline: 0 !important;
+	box-shadow: none !important;
+}
+
+.FrostedGlass {
+	backdrop-filter: blur(10px);
+	// background: rgba(255, 255, 255, 0.6);
+}
+
+.bg-transparent {
+	background-color: transparent !important;
+}
+
+.transparentInput {
+	background-color: transparent !important;
+	input {
+		background-color: transparent !important;
+	}
+}

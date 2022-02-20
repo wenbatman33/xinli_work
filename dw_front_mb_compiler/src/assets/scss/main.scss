@@ -1,0 +1,9 @@
+// bootstrap-vue
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+// element-ui
+@import '~element-ui/lib/theme-chalk/index.css';
+
+// common
+@import './common.scss';

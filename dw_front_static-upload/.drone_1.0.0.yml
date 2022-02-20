@@ -1,0 +1,137 @@
+kind: pipeline
+name: drone
+
+steps:
+ - name: Dev_Web_Git-Pull
+   image: appleboy/drone-ssh
+   settings:
+     host:
+       from_secret: Dev_upload_host
+     port:
+       from_secret: ssh_port
+     key:
+       from_secret: ssh_key
+     username:
+       from_secret: ssh_user
+     command_timeout: 3m
+     script:
+     - /bin/bash /Script/Static-Pull.sh Develop
+   when:
+        event: 
+        - push
+        branch: 
+        - Develop
+        
+ - name: Stage_Web_Git-Pull
+   image: appleboy/drone-ssh
+   settings:
+     host:
+       from_secret: Stage_upload_host
+     port:
+       from_secret: ssh_port
+     key:
+       from_secret: ssh_key
+     username:
+       from_secret: ssh_user
+     command_timeout: 3m
+     script:
+     - /bin/bash /Script/Static-Pull.sh Stage
+   when:
+        event: 
+        - push
+        branch: 
+        - Stage
+
+ - name: Stage_Refresh_CDN_Cache
+   image: appleboy/drone-ssh
+   settings:
+     host:
+       from_secret: Refresh_host
+     port:
+       from_secret: ssh_port
+     key:
+       from_secret: ssh_key
+     username:
+       from_secret: ssh_user
+     command_timeout: 3m
+     script:
+     - /bin/bash /Script/RefreshCDN_DW_Stage_Upload
+   when:
+        event:
+        - push
+        branch:
+        - Stage 
+        
+ - name: Production_Web_Git-Pull
+   image: appleboy/drone-ssh
+   settings:
+     host:
+       from_secret: Pro_upload_host
+     port:
+       from_secret: ssh_port
+     key:
+       from_secret: ssh_key
+     username:
+       from_secret: ssh_user
+     command_timeout: 3m
+     script:
+     - /bin/bash /Script/Static-Pull.sh master
+   when:
+        event: 
+        - push
+        branch: 
+        - master
+
+ - name: Pro_Refresh_CDN_Cache
+   image: appleboy/drone-ssh
+   settings:
+     host:
+       from_secret: Refresh_host
+     port:
+       from_secret: ssh_port
+     key:
+       from_secret: ssh_key
+     username:
+       from_secret: ssh_user
+     command_timeout: 3m
+     script:
+     - /bin/bash /Script/RefreshCDN_DW_Pro_Upload
+   when:
+        event:
+        - push
+        branch:
+        - master
+        
+ - name: Pull Status
+   image: appleboy/drone-telegram
+   when:
+        status: 
+        - failure
+   settings:
+    token: 804541138:AAE3_Vt-vwoDZqOjdtpbY9rS7jqpJuoJhmk
+    to: -328412505
+    message: >
+     {{#success build.status}}
+      ✅ build {{build.number}} succeeded. Good job.
+      
+      📝 Commit Info
+       <Project> : `{{repo.name}}`
+       <user> : `{{commit.email}}` `{{commit.author}}`
+       <branch> : `{{commit.branch}}`
+       <Message> : ```
+      {{commit.message}}
+      ```
+      🌐 {{ build.link }}
+     {{else}}
+      ❌ build {{build.number}} failed. Check me please.
+      
+      📝 Commit Info      
+       <Project> : `{{repo.name}}`
+       <user> : `{{commit.email}}` `{{commit.author}}`
+       <branch> : `{{commit.branch}}`
+       <Message> : ```
+      {{commit.message}}
+      ```
+      🌐 {{ build.link }}
+     {{/success}} 
+        

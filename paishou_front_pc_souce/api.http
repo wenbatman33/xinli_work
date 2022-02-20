@@ -1,0 +1,865 @@
+@host = t-api.tg18.net
+@contentType = application/json
+@token= A1eKWW+Hxfb7YdBFE5VTJpXT+L4n9iSkanzu8XoYleIrZnUuOko84pE=
+@uid= 524682
+
+### 用户登录
+POST https://{{host}}/users/login HTTP/1.1
+Content-Type: {{contentType}}
+
+{
+	"user_login": "17377777701",
+	"user_pass": "qwer1234"
+}
+
+### 用户注册
+POST https://{{host}}/users/reg HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 获取注册验证码
+POST https://{{host}}/users/code HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 获取找回密码验证码
+POST https://{{host}}/users/forget/code HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 找回密码
+POST https://{{host}}/users/reset/pass HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 公告列表
+GET https://{{host}}/notice/list HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 公告详情
+GET https://{{host}}/notice/detail HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 热门主播
+GET https://{{host}}/live/hotnanchour HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 热门直播
+GET https://{{host}}/live/hotlive HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 最新直播
+GET https://{{host}}/live/newlive HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 创建开播
+POST https://{{host}}/live/createroom HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 关播
+POST https://{{host}}/live/stoproom HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 推荐直播列表
+GET https://{{host}}/live/recommend HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 赛程列表
+GET https://{{host}}/event/schedule/list HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 主播赛程列表
+GET https://{{host}}/event/anchor/list HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 直播分类
+GET https://{{host}}/live/class HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 直播分类列表
+GET https://{{host}}/users/live/class HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 赛事观看預約
+POST https://{{host}}/event/appointment/watch HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 批次預約
+POST https://{{host}}/competition/booking/batch HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 进入直播间
+GET https://{{host}}/live/room HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 礼物列表
+GET https://{{host}}/live/giftlist HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 背包送禮 香蕉
+POST https://{{host}}/live/sendgift HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 赠送礼物
+POST https://{{host}}/live/sendgift/backpack HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+
+### 直播間禮物列表  20210331 新增
+GET https://{{host}}/gift/list HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 送禮 20210331 新增
+POST https://{{host}}/gift/send HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+
+### 打赏排行榜
+GET https://{{host}}/live/top HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 站内信
+GET https://{{host}}/users/inbox HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 刪除站内信
+POST https://{{host}}/users/readinbox HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 推薦紀錄，顯示用戶推薦領取獎勵的紀錄
+GET https://{{host}}/users/invite/list HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 刪除站内信
+POST https://{{host}}/users/inbox/del HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 轮播图
+GET https://{{host}}/slide HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 等级列表
+GET https://{{host}}/live/level_list HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+//
+GET https://{{host}}/live/liveinfo HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 富豪排行榜
+GET https://{{host}}/leaderboard/zillionaire HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 明星排行榜
+GET https://{{host}}/leaderboard/star HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+
+### 主播 人气主播榜
+GET https://{{host}}/contribution/live/popular HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 主播 超级明星榜
+GET https://{{host}}/contribution/live/superstar HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 用户 富豪贡献榜
+GET https://{{host}}/contribution/user/rich HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 用户 超級明星榜
+GET https://{{host}}/contribution/user/superstar HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+
+### 举报
+POST https://{{host}}/live/report HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 关注
+POST https://{{host}}/users/setattent HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 设置/取消管理员
+POST https://{{host}}/live/setadmin HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 禁言
+POST https://{{host}}/live/shutup HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 禁止访问
+POST https://{{host}}/live/kicking HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+
+### ip禁言
+POST https://{{host}}/live/shutupip HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+
+
+### ip禁止访问
+POST https://{{host}}/live/kickingip HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### ip禁止访问
+GET https://{{host}}/live/char/record HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 修改昵称
+POST https://{{host}}/user/nicename HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 修改资料
+POST https://{{host}}/user/editinfo HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 驗證更換email驗證碼
+POST https://{{host}}/verify/email HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 發送更換email驗證碼
+POST https://{{host}}/verify/email/sms HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 手機號碼更換發送驗證碼 第一步
+POST https://{{host}}/verify/mobile HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 手機號碼更換發送驗證碼 第二步
+POST https://{{host}}/verify/mobile/sms HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 手機號碼更換發送驗證碼 第三步
+POST https://{{host}}/verify/mobile/bind HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+
+### 赛事直播预约
+POST https://{{host}}/event/appointment/live HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 关注直播列表
+GET https://{{host}}/user/follows/list HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 关注直播列表 v2
+GET https://{{host}}/user/follows/list/v2 HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 今日直播赛事列表(今日直播)
+GET https://{{host}}/event/today/live HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 热门赛事（正在直播）
+GET https://{{host}}/event/hot HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 获取管理员列表
+GET https://{{host}}/live/admin/list HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+
+### 主播角色获取管理员列表
+GET https://{{host}}/live/room/manager HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 用户名添加管理员
+POST https://{{host}}/live/manager HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+
+### 用暱稱搜尋用戶
+GET https://{{host}}/user/name/search HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+
+### 主播角色获取u禁封成员列表
+GET https://{{host}}/users/ban/list HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 获取管理员列表
+POST https://{{host}}/users/ban/cancel HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+
+### 获取管理员列表
+POST https://{{host}}/live/admin/list/resignation HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 获取黑名单列表
+GET https://{{host}}/users/black/list HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 获取蕉币红包充值金额列表
+POST https://{{host}}/charge/rules HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 支付宝充值
+POST https://{{host}}/charge/alipay HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 房间公告列表
+GET https://{{host}}/live/room_notice HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 在直播間顯示該主播有預約的賽事
+GET https://{{host}}/room/appointment HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 上传图片
+POST https://{{host}}/upload/file HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 获取个人资料
+GET https://{{host}}/user/info HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 弹幕消息
+POST https://{{host}}/live/sendbarrage HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 红包列表
+POST https://{{host}}/live/redlist HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 发红包
+POST https://{{host}}/live/sendred HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 抢红包
+POST https://{{host}}/live/robred HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 充值记录
+GET https://{{host}}/user/charge/list HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 消费记录
+GET https://{{host}}/user/expenses/list HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 打赏记录
+GET https://{{host}}/user/reward/list HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 直播记录
+GET https://{{host}}/user/live/record HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 直播收益
+GET https://{{host}}/user/live/income HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 直播收益
+GET https://{{host}}/user/live/income/detail HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 添加房间公告
+POST https://{{host}}/live/room/add_notice HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 修改房间標題
+POST https://{{host}}/live/room/edit_title HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 页面管理
+GET https://{{host}}/portal/index HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 我的背包
+GET https://{{host}}/user/knapsack HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 背包礼物赠送
+POST https://{{host}}/live/knapsack/sendgift HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 修改密码
+POST https://{{host}}/user/editpwd HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+//
+GET https://{{host}}/home/getconfig HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 搜索（直播间）
+GET https://{{host}}/home/search HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 主播认证
+POST https://{{host}}/user/auth HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+
+### 取得登入獎勵
+POST https://{{host}}/bonus/get HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 新手任務列表
+GET https://{{host}}/user/task/basic HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 每日任務列表
+GET https://{{host}}/user/task/day HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 限時登入列表
+GET https://{{host}}/user/task/limit/login HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 取得限時登入獎勵
+POST https://{{host}}/bonus/limit/login HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 充值任務，包含，首充任務，累積充值
+GET https://{{host}}/user/task/payment HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 取得充值任務獎勵，包含，首充任務，累積充值
+POST https://{{host}}/user/task/payment/award HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+
+### 取得登入獎勵列表
+GET https://{{host}}/bonus/list HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 取得頭像獎勵
+GET https://{{host}}/user/bonus/avatar HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 取得綁定手機獎勵
+GET https://{{host}}/user/bonus/bind/phone HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 取得註冊獎勵
+GET https://{{host}}/user/bonus/register HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 取得每日任務獎勵
+GET https://{{host}}/user/task/day/award HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 檢查主播有無值播中資訊
+GET https://{{host}}/live/check HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 取得用戶銀行卡資訊
+GET https://{{host}}/user/bankcard HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 綁定與更換銀行卡
+POST https://{{host}}/user/bankcard/bind HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 取得銀行卡驗證碼
+GET https://{{host}}/user/bankcard/sms HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 主播提現
+POST https://{{host}}/live/withdraw HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### ----------------------------------------------------------------------------------------------------------
+### 背包列表
+GET https://{{host}}/backpack HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 主播提現
+POST https://{{host}}/live/use/package HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### ----------------------------------------------------------------------------------------------------------
+
+### 聖誕節活動----------------------------------------------------------------------------------------------------------
+### 取得聖誕節活動抽獎次數
+GET https://{{host}}/event/xmax/bonus/count HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 購買聖誕節活動抽獎次數
+POST https://{{host}}/event/xmax/bonus/buy HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 抽聖誕節活動轉盤獎項
+GET https://{{host}}/event/xmax/bonus HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### ----------------------------------------------------------------------------------------------------------
+### 新年活動----------------------------------------------------------------------------------------------------------
+### 取得新年活動基本訊息
+GET https://{{host}}/event/newyear HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 骰新年活動骰子
+POST https://{{host}}/event/newyear/bonus HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 購買新年活動骰子次數
+POST https://{{host}}/event/newyear HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+
+### 新年活動排行榜
+GET https://{{host}}/event/newyear/leaderboard HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 取得新年活動獎勵列表
+GET https://{{host}}/event/newyear/remain HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 骰新年活動骰子獎勵兌換
+POST https://{{host}}/event/newyear/exchange HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### ----------------------------------------------------------------------------------------------------------
+### 購買五萬元大禮包
+POST https://{{host}}/event/newyear/5million HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### ----------------------------------------------------------------------------------------------------------
+### 活動分類
+GET https://{{host}}/event/category HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+GET https://{{host}}/event HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### ----------------------------------------------------------------------------------------------------------
+### 門興Coming 活動
+### 活動資訊
+GET https://{{host}}/event/mocheng HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 取得抽獎次數
+GET https://{{host}}/event/mocheng/bonus/info HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 抽獎
+GET https://{{host}}/event/mocheng/bonus HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 購買德甲門興抽獎次數
+POST https://{{host}}/event/mocheng/bonus/buy HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+
+### ----------------------------------------------------------------------------------------------------------
+### 登入拍手抽手機 活動
+### 抽獎
+GET https://{{host}}/ HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### ----------------------------------------------------------------------------------------------------------
+### 直播間/競猜資訊API
+GET https://{{host}}/guess/list HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 直播間/競猜資訊API
+GET https://{{host}}/guess/recommend HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 主播建立競猜活動
+POST https://{{host}}/guess/add HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 個人/主播/競猜中心/競猜明細API
+GET https://{{host}}/guess/anchor/detail HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 個人/主播/競猜中心/競猜明細API
+GET https://{{host}}/guess/anchor/list HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 直播間/用戶競猜下注API
+POST https://{{host}}/guess/bet HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 個人/用戶/競猜紀錄/爆擊
+POST https://{{host}}/guess/combo HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### 個人/主播/競猜中心：主播結束競猜
+POST https://{{host}}/guess/end HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+### GuessGameHistoryForUser 個人/用戶/競猜紀錄
+GET https://{{host}}/guess/history HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+
+
+### 個人/用戶/競猜紀錄/領獎
+POST https://{{host}}/guess/receive HTTP/1.1
+Content-Type: {{contentType}}
+token: {{token}}
+uid: {{uid}}
+

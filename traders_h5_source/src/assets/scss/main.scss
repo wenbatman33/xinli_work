@@ -1,0 +1,22 @@
+@import './assets/scss/__common.scss'; 
+*{
+  box-sizing: border-box;
+}
+button{
+  outline: 0 !important;
+}
+.cursorP{
+  cursor: pointer;
+}
+.headerBar{
+  position: relative;
+  height: 60px;
+  line-height: 60px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  .backBtn{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "front_pc_compiler",
+  "short_name": "front_pc_compiler",
+  "icons": [
+    {
+      "src": "./static/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./static/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "https://dw310.com/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#6b49aa"
+}

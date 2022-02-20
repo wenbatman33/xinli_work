@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="/static/pwa/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/static/pwa/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/static/pwa/favicon-16x16.png" />
+		<link rel="alternate icon" href="/static/pwa/favicon.ico" type="image/png" sizes="16x16" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/static/pwa/apple-touch-icon.png" />
+		<title> <%= title %> </title>
+		<script src="https://cdn.dingxiang-inc.com/ctu-group/captcha-ui/index.js"></script>
+	</head>
+
+	<body>
+		<div id="app"></div>
+		<script type="module" src="/src/main.ts"></script>
+		<script>
+			console.log('%c ver: <%= ver %> buildTime:<%= buildTime %> ', 'color:#fff;padding:4px;background:#a62337;font-size:12px;font-weight:bold;text-shadow: #000 1px 1px;');
+		</script>
+	</body>
+</html>

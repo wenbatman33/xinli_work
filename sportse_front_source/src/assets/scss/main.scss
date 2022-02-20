@@ -1,0 +1,12 @@
+@import './assets/scss/reset.css';
+// 拉取只需要的 bootstrap 相關項目';
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/_root.scss";
+@import "~bootstrap/scss/_reboot.scss";
+@import "~bootstrap/scss/_type.scss";
+@import "~bootstrap/scss/_grid.scss";
+@import "~bootstrap/scss/utilities";
+@import '@/assets/scss/__variable.scss'; 
+@import '@/assets/scss/__common.scss'; 

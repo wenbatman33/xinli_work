@@ -1,0 +1,34 @@
+/*! @import */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .FLEX_C {
+    @apply flex flex-col;
+  }
+
+  .FLEX_R {
+    @apply flex flex-row;
+  }
+
+  .CENTER {
+    @apply flex items-center justify-center;
+  }
+
+  .CENTER_R {
+    @apply flex flex-row items-center justify-center;
+  }
+
+  .CENTER_C {
+    @apply flex flex-col items-center justify-center;
+  }
+
+  .BETWEEN {
+    @apply flex justify-between;
+  }
+
+  .CENTER_BETWEEN {
+    @apply flex justify-center items-between;
+  }
+}

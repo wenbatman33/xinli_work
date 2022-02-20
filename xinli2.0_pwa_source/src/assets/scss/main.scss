@@ -1,0 +1,138 @@
+@import './normalize.css';
+@import './tailwind.css';
+
+* {
+  box-sizing: border-box !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: stretch;
+  touch-action: manipulation;
+}
+
+body {
+  overflow: auto;
+}
+
+#app {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+button:focus {
+  outline: 0 !important;
+}
+
+.headline1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.headline2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.headline3 {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.subtitle1 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.subtitle2 {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.subtitle3 {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.body1 {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.body2 {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.body3 {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.caption {
+  font-size: 11px;
+  font-weight: normal;
+}
+
+.paragraph1 {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+.paragraph1 {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 21px;
+}
+
+.paragraph2 {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 21px;
+}
+
+.h-2px {
+  height: 2px;
+}
+
+.w-2px {
+  width: 2px;
+}
+
+.ml-2px {
+  margin-left: 2px;
+}
+
+.mt-2px {
+  margin-top: 2px;
+}
+
+.mr-2px {
+  margin-right: 2px;
+}
+
+.mb-2px {
+  margin-bottom: 2px;
+}

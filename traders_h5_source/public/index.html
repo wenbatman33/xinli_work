@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Traders</title>
+    <meta charset="utf-8">
+    <meta name="version" content='<%= process.env.VUE_APP_VERSION %>'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1.0, user-scalable=0"">
+    <script src="<%= process.env.VUE_APP_JS %><%= process.env.VUE_APP_VUEJS %>"></script>
+    <script src="<%= process.env.VUE_APP_JS %>/static/js/element_ui_2.13.1.js"></script>
+    <link rel="stylesheet" href="<%= process.env.VUE_APP_CSS %>/static/css/theme/index.css" >
+    <link rel="stylesheet" href="<%= process.env.VUE_APP_CSS %>/static/css/fontawesome.com_v5.8.2.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
+  />
+    <script>
+      window.onload=function () {
+        document.addEventListener('touchstart',function (event) {
+          if(event.touches.length>1){
+            event.preventDefault();
+          }
+        });
+        var lastTouchEnd=0;
+        document.addEventListener('touchend',function (event) {
+          var now=(new Date()).getTime();
+          if(now-lastTouchEnd<=300){
+            event.preventDefault();
+          }
+          lastTouchEnd=now;
+        },false);
+        document.addEventListener('gesturestart', function (event) {
+          event.preventDefault();
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>

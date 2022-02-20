@@ -1,0 +1,9 @@
+@import "variables";
+
+//- bootstrap
+@import 'bootstrap-css-only';
+
+//- 专案内
+.loading-class {
+  z-index: 9999 !important;
+}

@@ -1,0 +1,228 @@
+@import './tailwind.css';
+html,
+body {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	// min-width: 1200px;
+	font-family: 'PingFangTC', 'PingFangSC', 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei', 'Hiragino Sans GB', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif !important;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: #fafafa !important;
+	scroll-behavior: smooth !important;
+}
+p {
+	margin: 0;
+}
+#app {
+	color: #191919;
+	width: 100%;
+	height: 100%;
+	min-width: 1200px;
+	position: relative;
+}
+
+.appContainer {
+	min-height: calc(100vh - 350px);
+}
+
+img {
+	display: inline-block !important;
+}
+
+button:focus {
+	outline: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+}
+
+h1 {
+	// 32px
+	font-size: 2em !important;
+}
+h2 {
+	// 26px
+	font-size: 1.625rem !important;
+}
+h3 {
+	// 24px
+	font-size: 1.5em !important;
+}
+h4 {
+	// 20px
+	font-size: 1.25em !important;
+}
+h5 {
+	// 16px
+	font-size: 1em !important;
+}
+h6 {
+	// 14px
+	font-size: 0.875em !important;
+}
+
+.Container {
+	width: 1200px;
+	margin: 0 auto;
+}
+.indexBannerContainer {
+	width: 854px;
+	margin: auto auto;
+	@media screen and (min-width: 1200px) {
+		width: 854px !important;
+	}
+	@media screen and (min-width: 1440px) {
+		width: 1080px !important;
+	}
+	@media screen and (min-width: 1920px) {
+		width: 1240px !important;
+	}
+}
+
+.videoContainer {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-top: 56.25%; // 9 / 16 * 100%
+	// 子元件 position 必須 absolute
+}
+
+// 自製
+.FLEX_C {
+	@apply flex flex-col;
+}
+.FLEX_R {
+	@apply flex flex-row;
+}
+.BLOCK {
+	width: 100% !important;
+	height: 100% !important;
+	overflow: auto !important;
+	position: relative;
+}
+.CENTER {
+	display: flex;
+	align-items: center !important;
+	justify-content: center !important;
+}
+
+.CENTER_R {
+	display: flex;
+	flex-direction: row;
+	align-items: center !important;
+	justify-content: center !important;
+}
+.CENTER_C {
+	display: flex;
+	flex-direction: column;
+	align-items: center !important;
+	justify-content: center !important;
+}
+.BETWEEN {
+	display: flex;
+	justify-content: space-between !important;
+}
+
+.CENTER_BETWEEN {
+	display: flex;
+	align-items: center !important;
+	justify-content: space-between !important;
+}
+
+// 國殤日css
+.dark_mode {
+	* {
+		filter: grayscale(100%) !important;
+		-webkit-filter: grayscale(100%) !important;
+		-moz-filter: grayscale(100%) !important;
+		-ms-filter: grayscale(100%) !important;
+		-o-filter: grayscale(100%) !important;
+	}
+}
+.ant-popover-inner-content {
+	padding: 0 !important;
+}
+
+.grayItem {
+	filter: grayscale(100%) !important;
+	-webkit-filter: grayscale(100%) !important;
+	-moz-filter: grayscale(100%) !important;
+	-ms-filter: grayscale(100%) !important;
+	-o-filter: grayscale(100%) !important;
+}
+
+// 取消 ant-popover-inner 底色 這樣可以客製懸浮樣式
+// template(#content) 子元件須給底色
+
+.ant-popover-inner {
+	background: none !important;
+}
+.ant-popover-arrow {
+	display: none !important;
+}
+
+.radiusModal {
+	border-radius: 16px !important;
+	padding-bottom: 0px !important;
+	overflow: hidden;
+}
+
+// 郵票邊緣型 Modal
+.stampModal {
+	margin-top: 50px;
+	position: relative;
+	background: #fff;
+}
+.stampModal:before {
+	position: absolute;
+	top: -20px;
+	display: block;
+	content: '';
+	background: radial-gradient(circle, transparent 18px, #fff 0px);
+	background-size: 50px 44px;
+	background-position: -20px -20px;
+	width: 100%;
+	height: 40px;
+	z-index: -1;
+}
+.stampModal:after {
+	position: absolute;
+	bottom: -20px;
+	content: '';
+	display: block;
+	background: radial-gradient(circle, transparent 18px, #fff 0px);
+	background-size: 50px 44px;
+	background-position: -20px -20px;
+	width: 100%;
+	height: 40px;
+	z-index: -1;
+}
+
+.pokerGameModal {
+	.ant-modal-content {
+		background: none !important;
+	}
+}
+
+.circleImg {
+	@apply relative rounded-full bg-gray-100 overflow-hidden;
+}
+.AVATAR {
+	@apply relative rounded-full bg-gray-300 overflow-hidden;
+}
+
+.menuItem {
+	@apply text-lg my-4;
+}
+.menuItemActive {
+	@apply font-black text-psV3Red border-l-2 border-psV3Red;
+}

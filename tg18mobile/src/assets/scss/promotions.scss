@@ -1,0 +1,570 @@
+@charset "UTF-8";
+/*-- Css Document --*/
+
+/*-- Promotions & Bulletin & FAQ Header --*/
+.promotionshder, .bulletinhder, .faqhder {
+	width: 100%;
+	padding: 33px 0;
+	color: rgba(255,255,255,1);
+	font-size: 34px;
+	line-height: 34px;
+	text-align: center;
+	box-sizing: border-box;
+}
+/*-- Mobile --*/
+@media screen and (max-width: 750px) {
+	.promotionshder, .bulletinhder, .faqhder {
+		padding: 4.4% 0;
+		font-size: 4.54vw;
+		line-height: 4.54vw;
+	}
+}
+/*-- Mobile End --*/
+
+/*-- Promotions & Bulletin Tab --*/
+.bulletintab, .promotionstab {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.bulletintab ul, .promotionstab ul {
+	display: block;
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid rgba(221,221,221,1);
+}
+.bulletintab ul li, .promotionstab ul li {
+	display: block;
+	float: left;
+	text-align: center;
+}
+.bulletintab ul li {
+	width: 20%;
+}
+.promotionstab ul li {
+	width: 25%;
+}
+.bulletintab button, .promotionstab button {
+	display: block;
+	width: 100%;
+	margin-bottom: -1px;
+	padding: 20px 0;
+	background: rgba(255,255,255,1);
+	color: rgba(48,48,48,1);
+	font-family: 'PingFangTC';
+	font-size: 30px;
+	cursor: pointer;
+}
+.bulletintab button:hover, button.bulletintab_active, 
+.promotionstab button:hover, button.promotionstab_active {
+	color: rgba(0,80,179,1);
+	border-bottom: 4px solid rgba(0,80,179,1);
+}
+button.bulletintab_active, button.promotionstab_active {
+	cursor: default;
+}
+/*-- Mobile --*/
+@media screen and (max-width: 750px) {
+	.bulletintab button, .promotionstab button {
+		padding: 2.67vw 0;
+		font-size: 4vw;
+	}
+}
+/*-- Mobile End --*/
+
+/*-- Promotions & Detail --*/
+.promotions, .promotionslist, 
+.promotionslist ul, .promotionslist ul li, 
+.promotionslist_img, .promotionslist_caption, 
+.promotionslist_content, 
+.promotionsdetail, .promotionsdetail_caption, 
+.promotionsdetail_content {
+	display: block;
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+}
+.promotionslist {
+	min-height: 65vh;
+	padding: 80px 40px;
+}
+.promotionsdetail {
+	padding-bottom: 120px;
+	text-align: center;
+}
+.promotionslist ul li {
+	margin-bottom: 80px;
+	border-radius: 4px;
+	box-shadow: 0 2px 12px 0 rgba(0,0,0,0.2);
+	text-align: center;
+	overflow: hidden;
+}
+.promotionslist_img, .promotionsdetail_img {
+	padding: 0 35px;
+	background: linear-gradient( 180deg, rgba(0,39,102,1), rgba(0,19,50,1));
+	box-shadow: 0 2px 12px 0 rgba(0,0,0,0.2);
+}
+.promotionslist_img {
+	border-radius: 4px;
+}
+.promotionslist_img img, .promotionsdetail_img img {
+	display: inline-block;
+	width: 100%;
+	max-width: 600px;
+	height: auto;
+	background: rgba(255,255,255,1);
+	border-radius: 4px;
+	box-shadow: 0 2px 12px 0 rgba(0,0,0,0.2);
+	z-index: 10;
+}
+.promotionslist_img img {
+	margin: 70px 0 -70px;
+}
+.promotionsdetail_img img {
+	margin: 90px 0 -90px;
+}
+.promotionslist_caption, 
+.promotionsdetail_caption {
+	color: rgba(38,38,38,1);
+	font-family: 'PingFangTC-Medium';
+	font-size: 40px;
+	font-weight: 500;
+	line-height: 56px;
+	text-align: justify;
+}
+.promotionslist_caption {
+	padding: 105px 40px 25px;
+}
+.promotionsdetail_caption {
+	padding: 160px 40px 40px;
+}
+.promotionslist_content, 
+.promotionsdetail_content {
+	padding: 0 40px;
+	color: rgba(89,89,89,1);
+	font-size: 30px;
+	line-height: 46px;
+	text-align: left;
+}
+.promotionsdetail_content img {
+	max-width: 100%;
+}
+.promotions form {
+	display: inline-block;
+	width: 88%;
+}
+.promotions_btn {
+	display: block;
+	float: left;
+	width: 100%;
+	margin: 35px 0 60px 0;
+	background: rgba(0,80,179,1);
+	color: rgba(255,255,255,1);
+	font-family: 'PingFangTC';
+	font-size: 30px;
+	line-height: 90px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+/*-- Mobile --*/
+@media screen and (max-width: 750px) {
+	.promotionslist {
+		padding: 10.67vw 5.33vw;
+	}
+	.promotionsdetail {
+		padding-bottom: 16vw;
+	}
+	.promotionslist ul li {
+		margin-bottom: 10.67vw;
+		box-shadow: 0 0.27vw 1.6vw 0 rgba(0,0,0,0.2);
+	}
+	.promotionslist_img, .promotionsdetail_img {
+		padding: 0 4.67vw;
+		box-shadow: 0 0.27vw 1.6vw 0 rgba(0,0,0,0.2);
+	}
+	.promotionslist_img img {
+		margin: 9.33vw 0 -9.33vw;
+		box-shadow: 0 0.27vw 1.6vw 0 rgba(0,0,0,0.2);
+	}
+	.promotionsdetail_img img {
+		margin: 12vw 0 -12vw;
+		box-shadow: 0 0.27vw 1.6vw 0 rgba(0,0,0,0.2);
+	}
+	.promotionslist_caption, .promotionsdetail_caption {
+		font-size: 5.33vw;
+		line-height: 7.47vw;
+	}
+	.promotionslist_caption {
+		padding: 14vw 5.33vw 3.33vw;
+	}
+	.promotionsdetail_caption {
+		padding: 21.33vw 5.33vw 5.33vw;
+	}
+	.promotionslist_content, .promotionsdetail_content {
+		padding: 0 5.33vw;
+		font-size: 4vw;
+		line-height: 6.13vw;
+	}
+	.promotions_btn {
+		margin: 4.67vw 0 8vw 0;
+		font-size: 4vw;
+		line-height: 12vw;
+	}
+}
+/*-- Mobile End --*/
+
+/*-- Bulletin --*/
+.bulletin, .bulletinlist, 
+.bulletinlist ul, .bulletinlist ul li, 
+.bulletinlist_caption, .bulletinlist_date, .bulletinlist_content {
+	display: block;
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+}
+.bulletinlist {
+	min-height: 140vw;
+	padding: 80px 40px;
+	text-align: center;
+}
+.bulletinlist ul li {
+	margin-bottom: 80px;
+	border-radius: 4px;
+	box-shadow: 0 2px 12px 0 rgba(0,0,0,0.2);
+	overflow: hidden;
+}
+.bulletinlist_caption {
+	padding: 50px 35px;
+	background: linear-gradient( 180deg, rgba(0,39,102,1), rgba(0,19,50,1));
+	color: rgba(255,255,255,1);
+	font-family: 'PingFangTC-Medium';
+	font-size: 40px;
+	line-height: 56px;
+	text-align: justify;
+	border-radius: 4px;
+	box-shadow: 0 2px 12px 0 rgba(0,0,0,0.2);
+}
+.bulletinlist_date {
+	margin-top: 30px;
+	padding: 0 35px;
+	font-size: 26px;
+	font-weight: inherit;
+	text-align: right;
+}
+.bulletinlist_content {
+	padding: 40px 35px;
+	color: rgba(89,89,89,1);
+	font-family: 'PingFangTC-Regular';
+	font-size: 30px;
+	line-height: 46px;
+	text-align: justify;
+	overflow: hidden;
+	/* white-space: nowrap; */
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+}
+.bulletinlist_content a {
+	color: rgba(24,144,255,1);
+}
+.bulletin form {
+	display: inline-block;
+	width: 88%;
+}
+.bulletin_btn {
+	display: block;
+	float: left;
+	width: 100%;
+	margin: 35px 0 60px 0;
+	background: rgba(0,80,179,1);
+	color: rgba(255,255,255,1);
+	font-family: 'PingFangTC';
+	font-size: 30px;
+	line-height: 90px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+/*-- Mobile --*/
+@media screen and (max-width: 750px) {
+	.bulletinlist {
+		padding: 10.67vw 5.33vw;
+	}
+	.bulletinlist ul li {
+		margin-bottom: 10.67vw;
+		box-shadow: 0 0.27vw 1.6vw 0 rgba(0,0,0,0.2);
+	}
+	.bulletinlist_caption {
+		padding: 6.67vw 4.67vw;
+		font-size: 5.33vw;
+		line-height: 7.47vw;
+		box-shadow: 0 0.27vw 1.6vw 0 rgba(0,0,0,0.2);
+	}
+	.bulletinlist_date {
+		padding: 0 4.67vw;
+		margin-top: 4vw;
+		font-size: 3.47vw;
+	}
+	.bulletinlist_content {
+		padding: 5.33vw 4.67vw;
+		font-size: 4vw;
+		line-height: 6.13vw;
+	}
+	.bulletin_btn {
+		margin: 4.67vw 0 8vw 0;
+		font-size: 4vw;
+		line-height: 12vw;
+	}
+}
+/*-- Mobile End --*/
+
+/*-- FAQ --*/
+.faq, 
+.faq_caption, .faq_caption span, 
+.faq_content, .faq_content h1, .faq_content h2, .faq_content h3 {
+	display: block;
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+}
+.faq_caption {
+	padding: 60px 40px 120px;
+	background: url(/static/img/bg-faq.png) 50% 50% no-repeat, linear-gradient( 180deg, rgba(0,39,102,1), rgba(0,19,50,1));
+	background-size: cover;
+	text-align: center;
+	box-shadow: 0 2px 12px 0 rgba(0,0,0,0.2);
+}
+.faq_caption span {
+	padding: 120px 40px;
+	color: rgba(255,255,255,1);
+	font-size: 30px;
+	line-height: 46px;
+}
+.faq_content {
+	padding: 0 40px 120px;
+	color: rgba(89,89,89,1);
+	font-size: 30px;
+	line-height: 46px;
+}
+.faq_content h1, .faq_content h2, .faq_content h3 {
+	margin: 0;
+}
+.faq_content h1, .faq_content h2 {
+	font-family: 'PingFangTC-Medium';
+}
+.faq_content h1 {
+	padding-bottom: 80px;
+	color: rgba(38,38,38,1);
+	font-size: 52px;
+	line-height: 52px;
+}
+.faq_content h2 {
+	color: rgba(38,38,38,1);
+	font-size: 40px;
+	line-height: 56px;
+	text-align: justify;
+	cursor: pointer;
+}
+.faq_content h3 {
+	padding-top: 25px;
+	color: rgba(89,89,89,1);
+	font-size: 30px;
+	font-weight: normal;
+	line-height: 46px;
+	text-align: justify;
+}
+.faq_content ol, .faq_content ol li, 
+.faq_content ul, .faq_content ul li {
+	list-style: decimal;
+	box-sizing: border-box;
+}
+.faq_content ol, .faq_content ul {
+	padding-left: 30px;
+}
+.faq_content ol li, .faq_content ul li {
+	padding: 15px 0;
+}
+.faq_content a {
+	color: rgba(24,144,255,1) !important;
+}
+.faq_content img {
+	float: left;
+	margin-right: 15px;
+	width: 100%;
+	max-width: fit-content;
+	height: auto;
+}
+.faq_caption form, .faq_caption_btn, 
+.faq_content form, a.faq_content_btn {
+	display: inline-block;
+	width: 100%;
+}
+.faq_caption_btn, a.faq_content_btn {
+	font-family: 'PingFangTC';
+	font-size: 30px;
+	line-height: 90px;
+	border-radius: 10px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.faq_caption_btn {
+	width: 90%;
+	margin-bottom: 50px;
+	background: transparent;
+	color: rgba(250,219,20,1);
+	border: 2px solid rgba(250,219,20,1);
+}
+a.faq_content_btn {
+	width: 100%;
+	margin-top: 35px;
+	background: rgba(0,80,179,1);
+	color: rgba(255,255,255,1);
+	text-align: center;
+}
+a.faq_content_btn:hover {
+	color: rgba(255,255,255,1);
+	text-decoration: inherit;
+}
+/*-- Mobile --*/
+@media screen and (max-width: 750px) {
+	.faq_caption {
+		padding: 8vw 5.33vw 16vw;
+		box-shadow: 0 0.27vw 1.6vw 0 rgba(0,0,0,0.2);
+	}
+	.faq_caption span {
+		padding: 16vw 5.33vw;
+		font-size: 4vw;
+		line-height: 6.13vw;
+	}
+	.faq_content {
+		padding: 0 5.33vw 16vw;
+		font-size: 4vw;
+		line-height: 6.13vw;
+	}
+	.faq_content h1 {
+		padding-bottom: 10.67vw;
+		font-size: 6.93vw;
+		line-height: 6.93vw;
+	}
+	.faq_content h2 {
+		padding-top: 10.67vw;
+		font-size: 5.33vw;
+		line-height: 7.47vw;
+	}
+	.faq_content h3 {
+		padding-top: 3.33vw;
+		font-size: 4vw;
+		line-height: 6.13vw;
+	}
+	.faq_content ol, .faq_content ul {
+		padding-left: 4vw;
+	}
+	.faq_content ol li, .faq_content ul li {
+		padding: 2vw 0;
+	}
+	.faq_caption_btn, a.faq_content_btn {
+		font-size: 4vw;
+		line-height: 12vw;
+		border-radius: 1.33vw;
+	}
+	.faq_caption_btn {
+		margin-bottom: 6.67vw;
+		border: 0.27vw solid rgba(250,219,20,1);
+	}
+	a.faq_content_btn {
+		margin-top: 4.67vw;
+	}
+}
+@media screen and (max-width: 450px) {
+	.faq_caption_btn {
+		border: 1px solid rgba(250,219,20,1);
+	}
+}
+/*-- Mobile End --*/
+
+/*-- FAQ input --*/
+.faqinput {
+	float: left;
+	width: 100%;
+	padding: 80px 40px;
+	font-size: 30px;
+	line-height: 30px;
+	box-sizing: border-box;
+}
+.faqinput ul, .faqinput ul li {
+	display: block;
+	float: left;
+	width: 100%;
+}
+.faqinput ul li {
+	margin: 20px 0;
+	border: 2px solid rgba(217,217,217,1);
+	border-radius: 8px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.faqinput ul li:first-child {
+	margin-top: 0;
+}
+.faqinput ul li:last-child {
+	margin-bottom: 0;
+}
+.faqinput ul a {
+	display: block;
+	float: right;
+	padding: 30px 20px;
+	color: rgba(24,144,255,1);
+	text-align: right;
+}
+.faqinput input, .faqinput select {
+	display: block;
+	float: left;
+	box-sizing: border-box;
+	line-height: 30px;
+}
+.faqcategory {
+	width: 100%;
+	padding: 30px 20px;
+	background: transparent url(/static/img/select_arrow.png) 100% 50% no-repeat content-box;
+	background-size: contain;
+	color: rgba(38,38,38,1);
+	appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.faqcategory option {
+	font-size: 30px;
+	line-height: 30px;
+}
+/*-- Mobile --*/
+@media screen and (max-width: 750px) {
+	.faqinput {
+		padding: 10.67vw 5.33vw;
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+	.faqinput ul li {
+		margin: 2.66vw 0;
+		border: 0.26vw solid rgba(217,217,217,1);
+		border-radius: 1.07vw;
+	}
+	.faqinput ul a {
+		padding: 4vw 2.66vw;
+	}
+	.faqinput input, .faqinput select {
+		line-height: 4vw;
+	}
+	.faqcategory {
+		padding: 4vw 2.66vw;
+	}
+	.faqcategory option {
+		font-size: 4vw;
+		line-height: 4vw;
+	}
+}
+@media screen and (max-width: 450px) {
+	.faqinput ul li {
+		border: 1px solid rgba(217,217,217,1);
+	}
+}
+/*-- Mobile End --*/

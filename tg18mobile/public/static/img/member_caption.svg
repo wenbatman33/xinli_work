@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="750px" height="475px" viewBox="0 0 750 475" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>3A9F8447-D257-4AA7-B8AA-42E378E8BBD4</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="100%" x2="0%" y2="5.0532155e-14%" id="linearGradient-1">
+            <stop stop-color="#003FA3" offset="0%"></stop>
+            <stop stop-color="#001332" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="750" height="474"></rect>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Screen" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.4_mb_member-overview" transform="translate(0.000000, -184.000000)">
+            <g id="Banner" transform="translate(0.000000, 184.000000)">
+                <g id="Banner-bg">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                    <rect id="Rectangle" fill="url(#linearGradient-4)" opacity="0.100000001" mask="url(#mask-3)" transform="translate(67.791810, 213.737216) rotate(-30.000000) translate(-67.791810, -213.737216) " x="19.3707577" y="211.967986" width="96.8421053" height="3.53846154" rx="1.76923077"></rect>
+                    <rect id="Rectangle" fill="url(#linearGradient-4)" opacity="0.100000001" mask="url(#mask-3)" transform="translate(-115.676205, 187.381109) rotate(-30.000000) translate(115.676205, -187.381109) " x="-455.407196" y="167.164856" width="679.461981" height="40.4325062" rx="20.2162531"></rect>
+                    <rect id="Rectangle" fill="url(#linearGradient-4)" opacity="0.100000001" mask="url(#mask-3)" transform="translate(866.270462, 272.327775) rotate(-30.000000) translate(-866.270462, -272.327775) " x="526.539471" y="252.111522" width="679.461981" height="40.4325062" rx="20.2162531"></rect>
+                    <rect id="Rectangle" fill="url(#linearGradient-4)" opacity="0.200000003" mask="url(#mask-3)" transform="translate(715.778477, 211.590550) rotate(-30.000000) translate(-715.778477, -211.590550) " x="667.357424" y="209.821319" width="96.8421053" height="3.53846154" rx="1.76923077"></rect>
+                    <rect id="Rectangle" fill="url(#linearGradient-4)" opacity="0.200000003" mask="url(#mask-3)" transform="translate(530.604111, 297.230713) rotate(-30.000000) translate(-530.604111, -297.230713) " x="506.025001" y="295.768092" width="49.1582198" height="2.92524098" rx="1.46262049"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

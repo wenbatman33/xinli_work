@@ -1,0 +1,144 @@
+// garyBlue
+$garyBlue_lightest: #f2f4f7;
+$garyBlue_light: #dfe4ed;
+$garyBlue_default: #bfc7d9;
+$garyBlue_Dark: #939fb8;
+$garyBlue_Darkest: #6C7891;
+// blueDark
+$blueDark_light: #3b465c;
+$blueDark: rgba(26,34,51,1.0);
+$blueDarkAlpha_10: rgba(26,34,51,0.1);
+$blueDarkAlpha_40: rgba(26,34,51,0.4);
+$blueDarkAlpha_100: rgba(26,34,51,1);
+// balckAlpha
+$balckAlpha_00:rgba(0, 0, 0, 0);
+$balckAlpha_10:rgba(0, 0, 0, 0.1);
+$balckAlpha_20:rgba(0, 0, 0, 0.2);
+$balckAlpha_30:rgba(0, 0, 0, 0.3);
+$balckAlpha_40:rgba(0, 0, 0, 0.4);
+$balckAlpha_50:rgba(0, 0, 0, 0.5);
+$balckAlpha_60:rgba(0, 0, 0, 0.6);
+$balckAlpha_70:rgba(0, 0, 0, 0.7);
+$balckAlpha_80:rgba(0, 0, 0, 0.8);
+$balckAlpha_90:rgba(0, 0, 0, 0.9);
+$balckAlpha_100:rgba(0, 0, 0, 1);
+// whiteAlpha
+$whiteAlpha_00:rgba(255, 255, 255, 0);
+$whiteAlpha_10:rgba(255, 255, 255, 0.1);
+$whiteAlpha_20:rgba(255, 255, 255, 0.2);
+$whiteAlpha_30:rgba(255, 255, 255, 0.3);
+$whiteAlpha_40:rgba(255, 255, 255, 0.4);
+$whiteAlpha_50:rgba(255, 255, 255, 0.5);
+$whiteAlpha_60:rgba(255, 255, 255, 0.6);
+$whiteAlpha_70:rgba(255, 255, 255, 0.7);
+$whiteAlpha_80:rgba(255, 255, 255, 0.8);
+$whiteAlpha_90:rgba(255, 255, 255, 0.9);
+$whiteAlpha_100:rgba(255, 255, 255, 1);
+// gray
+$gray_eee : #eee;
+$gray_ccc : #ccc;
+$gray_666 : #666;
+$gray_333 : #333;
+$gray_111 : #111;
+// font-size
+$text-12: 12px;
+$text-13: 13px;
+$text-14: 14px;
+$text-16: 16px;
+$text-18: 18px;
+$text-20: 20px;
+$text-22: 22px;
+$text-24: 24px;
+$text-26: 26px;
+$text-28: 28px;
+$text-32: 32px;
+$text-40: 40px;
+
+// RWD setting
+$xl: 1200px;
+$lg_max: 1199px;
+$lg: 992px;
+$md_max: 991px;
+$md: 768px;
+$sm_max: 767px;
+$sm: 576px;
+$xs_max: 575px;
+$xs: 0px;
+
+// breakpoint up to
+// 小手機
+@mixin media_xs() {
+  @media (min-width: $xs){
+    @content;
+  }
+}
+// 手機
+@mixin media_sm() {
+  @media (min-width: $sm){
+    @content;
+  }
+}
+// 平板直立
+@mixin media_md() {
+  @media (min-width: $md) {
+    @content;
+  }
+}
+// 平板橫向
+@mixin media_lg() {
+  @media (min-width:$lg) {
+    @content;
+  }
+}
+
+// 電腦
+@mixin media_xl() {
+  @media (min-width: $xl) {
+      @content;
+    }
+}
+
+
+// media between
+// 平板橫向
+@mixin media_between_lg() {
+  @media all and (min-width:$lg) and (max-width: $lg_max) {
+    @content;
+  }
+}
+// 平板直立
+@mixin media_between_md() {
+  @media all and (min-width: $md) and (max-width:$md_max) {
+    @content;
+  }
+}
+// 手機
+@mixin media_between_sm() {
+  @media all and (min-width: $sm) and (max-width:$sm_max) {
+    @content;
+  }
+}
+// 小手機
+@mixin media_between_xs() {
+  @media all and (min-width: $xs) and (max-width:$xs_max) {
+    @content;
+  }
+}
+
+// 客制
+.BLOCK{
+  width: 100% !important;
+  height: 100% !important;
+  overflow: auto !important;
+  position: relative;
+}
+.CENTER{
+  align-content: center !important;
+  justify-content: center !important;
+}
+.CENTER_H{
+  justify-content: center !important;
+}
+.CENTER_V{
+  align-content: center !important;
+}

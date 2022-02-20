@@ -1,0 +1,12 @@
+{
+	"i18n-ally.localesPaths": ["src/i18n"],
+	"i18n-ally.keystyle": "nested",
+	"i18n-ally.sourceLanguage": "cn",
+	"i18n-ally.displayLanguage": "cn",
+	"i18n-ally.enabledParsers": ["ts", "json"],
+	"i18n-ally.sortKeys": true,
+	"editor.tabSize": 2,
+	"prettier.tabWidth": 2,
+	"prettier.useTabs": true,
+	"editor.tabCompletion": "on"
+}

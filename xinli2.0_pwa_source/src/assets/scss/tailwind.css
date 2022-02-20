@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .FLEX_C {
+    @apply flex flex-col;
+  }
+  .FLEX_R {
+    @apply flex flex-row;
+  }
+  .CENTER {
+    @apply flex items-center justify-center;
+  }
+  .CENTER_R {
+    @apply flex flex-row items-center justify-center;
+  }
+  .CENTER_C {
+    @apply flex flex-col items-center justify-center;
+  }
+  .BETWEEN {
+    @apply flex justify-between;
+  }
+  .CENTER_BETWEEN {
+    @apply flex justify-center items-between;
+  }
+  .ant-popover-inner-content {
+    padding: 0 !important;
+  }
+  .ant-popover-inner {
+    background: none !important;
+  }
+  .ant-popover-arrow {
+    display: none !important;
+  }
+  /* 圓角Modal */
+  .radiusModal {
+    border-radius: 16px !important;
+    padding-bottom: 0px !important;
+    overflow: hidden;
+  }
+
+  /* 灰階圖片 */
+  .grayImage {
+    filter: grayscale(100%) !important;
+    -webkit-filter: grayscale(100%) !important;
+    -moz-filter: grayscale(100%) !important;
+    -ms-filter: grayscale(100%) !important;
+    -o-filter: grayscale(100%) !important;
+  }
+  /* 國殤模式 */
+  .ALL_SITE_DARK {
+    * {
+      filter: grayscale(100%) !important;
+      -webkit-filter: grayscale(100%) !important;
+      -moz-filter: grayscale(100%) !important;
+      -ms-filter: grayscale(100%) !important;
+      -o-filter: grayscale(100%) !important;
+    }
+  }
+}

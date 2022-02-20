@@ -1,0 +1,298 @@
+@import 'reset.scss';
+@import "_variables.scss";
+@import "bootstrap-scss/_functions.scss";
+@import "bootstrap-scss/_variables.scss";
+@import "bootstrap-scss/mixins";
+@import "bootstrap-scss/_root.scss";
+@import "bootstrap-scss/_reboot.scss";
+@import "bootstrap-scss/_type.scss";
+@import "bootstrap-scss/_grid.scss";
+@import "bootstrap-scss/utilities";
+// 
+html,body{
+  font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif !important;
+  user-select: none;
+  background-color: #000;
+  min-height: -webkit-fill-available; 
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+#fullpage{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+}
+#pcpage {
+  display: none;
+  height: 100%;
+}
+p{
+  font-size: 14px;
+  margin: 0;
+}
+.APPLayer{
+  position: fixed;
+  top: 0;
+  .logo{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 100%;
+    img{
+      width: 100px;
+    }
+  }
+}
+.APPBtn{
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to left, #00689b 0%, #00adef 100%);
+  box-shadow: 0 1px 22px 0 rgba(255,255,255,0.50);
+  border-radius: 24px;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  width: 150px;
+  img{
+    width: 24px !important;
+    height: 24px !important;
+    height: auto;
+    line-height: 40px;
+    margin-right: 6px;
+  }
+}
+
+.deviceTabGroup {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  .deviceTab {
+    font-size: 14px;
+    padding: 10px 20px;
+    flex: 1;
+
+    &.active {
+      background-color: #fff;
+      border-radius: 30px;
+      color: #396dee;
+    }
+  }
+  img{
+    width: 24px !important;
+    height: 24px !important;
+    margin-right: 6px;
+  }
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a{
+  background: #fff!important;
+}
+
+#fp-nav.fp-right {
+  right: 4px;
+}
+.section{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.sectionBg{
+  position: relative;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  height: 100%;
+  background:#000;
+  text-align: center;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+.sectionItem{
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 40px 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .sectionItemMain{
+    height: 50vh;
+    img{
+      max-height: 50vh;
+    }
+  }
+  .sectionItemBottom{
+    height: 120px;
+  }
+  .sectionFixedBottom{
+    font-size: 12px;
+    padding: 16px 0;
+    background-color: black;
+  }
+}
+.steps{
+  text-align: center;
+  img{
+    max-width: 80%;
+  }
+}
+
+.step_1{
+  opacity: 0;
+  margin-left: 1000px;
+  transition: all 1s;
+}
+.step_2{
+  opacity: 0;
+  margin-right: 20px;
+  transition: all 1s;
+}
+.step_3{
+  opacity: 0;
+  margin-left: 20px;
+  transition: all 1s;
+}
+.step_4{
+  width: 28px;
+  margin-top: -30px;
+  opacity: 0;
+  transition: all 1s;
+}
+.step_1_HighMarginTop{
+  margin-top: 220px;
+}
+.active{
+  .step_1{
+    margin-left: 0;
+    opacity: 1 ;
+    transition-delay: .5s;
+  }
+  .step_2{
+    margin-right: 5px;
+    opacity: 1 ;
+    transition-delay: 1.5s;
+  }
+  .step_3{
+    margin-left: 5px;
+    opacity: 1 ;
+    transition-delay: 1.5s;
+  }
+  .step_4{
+    margin-top: 0px;
+    opacity: 1 ;
+    transition-delay: 2s;
+  }
+}
+
+.img-shadow {
+  box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.2);
+}
+
+.qrcode-container {
+  width: 114px;
+  height: 114px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.modal {
+  display: none;
+
+  .close-modal {
+    position: absolute;
+    right: -28px;
+    top: 0;
+    width: 24px;
+
+    &::after {
+      content: 'X';
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      border-radius: 50%;
+    }
+  }
+}
+
+@media(min-width: 768px) {
+  #fullpage {
+    display: none;
+  }
+  #pcpage {
+    background: url('../img/appdownload/page_3/pcDownloadBg.png');
+    display: block;
+
+    .sectionFixedBottom {
+      background-color: black;
+      padding: 12px 0;
+      text-align: center;
+      color: white;
+      font-size: 10px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .modal-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.4);
+      z-index: 0;
+    }
+
+    .modal-container {
+      position: absolute;
+      width: 55%;
+      max-height: 70%;
+      left: 25%;
+      top: 15%;
+      background-color: white;
+      border-radius: 8px;
+      padding: 40px 28px;
+
+      .deviceTabGroup {
+        margin: 0 auto;
+        width: 75%;
+        color: #396dee;
+        border: 1px solid #396dee;
+        .deviceTab {
+          &.active {
+            background-color: #396dee;
+            border-radius: 30px;
+            color: #fff;
+          }
+        }
+      }
+
+      .swiper-container {
+        height: 50vh;
+      }
+
+      .slide-img {
+        max-height: 100%;
+        max-width: 50%;
+      }
+
+      .swiper-button-prev {
+        color: #dfe4ed;
+      }
+
+      .swiper-button-next {
+        color: #dfe4ed;
+      }
+    }
+  }
+}

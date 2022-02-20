@@ -1,0 +1,203 @@
+@import './tailwind.scss';
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&display=swap');
+
+* {
+	box-sizing: border-box !important;
+	-webkit-overflow-scrolling: touch;
+	overflow: auto;
+	overflow: initial;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+#app {
+	height: 100%;
+}
+#main {
+	height: 100%;
+}
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	font-family: 'Bodoni', 'PingFangTC', 'PingFangSC', 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei', 'Hiragino Sans GB', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: black;
+	background-image: url('/static/img/bg.jpg');
+	background-size: cover;
+	background-position: center center;
+	padding-bottom: constant(safe-area-inset-bottom);
+	padding-bottom: env(safe-area-inset-bottom);
+}
+
+#app {
+	width: 100%;
+	height: 100%;
+	max-width: 768px;
+	margin: 0 auto;
+	color: #fff;
+	background: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+	margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+}
+
+h1 {
+	// 32px
+	font-size: 2em !important;
+}
+h2 {
+	// 26px
+	font-size: 1.625rem !important;
+}
+h3 {
+	// 24px
+	font-size: 1.5em !important;
+}
+h4 {
+	// 20px
+	font-size: 1.25em !important;
+}
+h5 {
+	// 16px
+	font-size: 1em !important;
+}
+h6 {
+	// 14px
+	font-size: 0.875em !important;
+}
+button:focus {
+	outline: 0 !important;
+}
+
+input {
+	outline: 0 !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	transition: all 5000s ease-in-out 0s;
+}
+.bodoni {
+	// font-family: 'Bodoni Moda', serif !important;
+}
+.container {
+	margin: 0 auto;
+	max-width: 768px;
+}
+
+.goldGradient {
+	background: linear-gradient(302.01deg, #cda269 32.92%, #ffd49a 97.96%);
+}
+.darkGradient {
+	background: linear-gradient(155.07deg, #343434 5.26%, #181818 84.13%);
+}
+
+.xInput {
+	padding: 0 !important;
+}
+.xInput input {
+	color: #fff !important;
+
+	border-bottom: 1px solid #fff !important;
+}
+.xInput::after {
+	border: none !important;
+}
+
+.BG_GRADIENT_1 {
+	background: linear-gradient(155.07deg, #343434 5.26%, #010101 150%) !important;
+}
+
+.BG_GRADIENT_GRAY {
+	background: linear-gradient(155.07deg, #343434 5.26%, #181818 84.13%);
+}
+.BG_GRADIENT_GLOD {
+	background: linear-gradient(302.01deg, #cda269 32.92%, #ffd49a 97.96%);
+}
+
+.goldGradient {
+	background: linear-gradient(302.01deg, #cda269 32.92%, #ffd49a 97.96%);
+}
+.darkGradient {
+	background: linear-gradient(155.07deg, #343434 5.26%, #181818 84.13%);
+}
+
+.van-tabbar--fixed {
+	position: relative !important;
+	width: 101%;
+}
+
+:root {
+	--van-button-primary-background-color: red;
+	--van-cell-background-color: black;
+	--van-cell-text-color: #fff;
+	--van-field-label-color: #967140;
+	--van-field-input-text-color: #fff;
+	--van-calendar-background-color: black;
+	--van-calendar-day-disabled-color: #7f7f7f;
+	--van-calendar-range-middle-color: #fff;
+	--van-calendar-range-edge-background-color: #cda269;
+	--van-calendar-range-middle-background-opacity: 0.5;
+	--van-calendar-month-mark-color: #ffffff80;
+	--van-popup-background-color: #3c3c3c;
+	--van-toast-background-color: #cda269;
+	--van-collapse-item-content-background-color: black;
+	--van-cell-active-color: #4a4a4a;
+	--van-cell-background-color: transparent;
+	--van-field-label-width: 8rem;
+	--van-calendar-month-mark-color: rgba(255, 255, 255, 0.1);
+	--van-cell-border-color: rgba(255, 255, 255, 0.4);
+
+	// --van-picker-confirm-action-color:#CDA269;
+	// --van-picker-cancel-action-color:#CDA269;
+	// --van-picker-option-text-color:#FFF;
+}
+
+.blackTable {
+	--el-table-tr-background-color: transparent !important;
+	--el-table-row-hover-background-color: #505050 !important;
+	--el-table-header-font-color: #fff !important;
+	--el-table-header-background-color: transparent !important;
+	--el-table-font-color: #fff !important;
+	--el-table-background-color: transparent !important;
+	--el-table-border-color: rgba(255, 255, 255, 0.2) !important;
+	border: none !important;
+}
+
+.van-tabs__wrap {
+	height: 60px !important;
+	background: linear-gradient(101.58deg, #333333 3.4%, #1a1a1a 97.37%) !important;
+}
+
+.van-tabs__line {
+	bottom: 0px !important;
+}
+
+.van-tabs__nav--line {
+	padding-bottom: 0 !important;
+}

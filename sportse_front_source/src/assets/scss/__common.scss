@@ -1,0 +1,125 @@
+html,body{
+  position: relative;
+  width: 100% !important;
+  height: 100% !important;
+  font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif !important;
+  user-select: none;
+  scroll-behavior: smooth;
+  touch-action: manipulation;
+}
+*{
+  box-sizing: border-box;
+  touch-action: manipulation;
+}
+input, button{
+  outline: none;
+  outline: 0 !important;
+}
+a:-webkit-any-link {
+  color: none !important;
+}
+
+a{
+  color: inherit;
+  text-decoration: inherit;
+  &:hover{
+    color: inherit;
+    text-decoration: inherit;
+  }
+}
+h1,h2,h3,h4,h5,h6,p,div{
+  margin: 0;
+  letter-spacing: 1px !important;
+}
+p{
+  margin: 0 !important;
+}
+.container-fluid{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+.cursorPointer{
+  cursor:pointer !important;
+}
+
+.BottomMargin{
+  margin-bottom: 98px;
+}
+.BottomPadding{
+  padding-bottom: 78px;
+}
+.pageContent{
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+}
+// 客制
+.BLOCK{
+  width: 100% !important;
+  height: 100% !important;
+  overflow: auto !important;
+  position: relative;
+}
+.CENTER{
+  display: flex;
+  align-self: center !important;
+  justify-content: center !important;
+}
+.CENTER_H{
+  display: flex;
+  justify-content: center !important;
+}
+.CENTER_V{
+  display: flex;
+  align-self: center !important;
+}
+.F_BETWEEN{
+  display: flex;
+  justify-content:space-between;
+}
+.F_AROUND{
+  display: flex;
+  justify-content:space-around;
+}
+.F_CENTER{
+  display: flex;
+  justify-content:center;
+}
+.F_START{
+  display: flex;
+  justify-content:flex-start;
+}
+
+
+
+// 
+.W_Alpha_60{ color: rgba(255, 255, 255, 0.6);}
+.W_Alpha_50{ color: rgba(255, 255, 255, 0.5);}
+.W_Alpha_40{ color: rgba(255, 255, 255, 0.4);}
+
+.T_Color_1{ color: $Color_1!important;}
+.T_Color_2{ color: $Color_2!important;}
+.T_Color_3{ color: $Color_3!important;}
+.T_Color_4{ color: $Color_4!important;}
+.T_Color_5{ color: $Color_5!important;}
+.T_Color_6{ color: $Color_6!important;}
+// 
+.Gray_1{ color: $gray_1!important;}
+.Gray_3{ color: $gray_3!important;}
+.Gray_6{ color: $gray_6!important;}
+.Gray_9{ color: $gray_9!important;}
+.Gray_c{ color: $gray_c!important;}
+.Gray_c7{ color: $gray_c7!important;}
+
+// 
+.fs12{ font-size: 12px;}
+.fs13{ font-size: 13px;}
+.fs14{ font-size: 14px;}
+.fs16{ font-size: 16px;}
+.fs18{ font-size: 18px;}
+.fs20{ font-size: 20px;}
+.el-input__inner{
+  height: 48px !important;
+  line-height: 48px !important;
+}

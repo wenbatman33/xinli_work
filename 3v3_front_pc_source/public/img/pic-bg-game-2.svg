@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="132" height="132" viewBox="0 0 132 132">
+    <defs>
+        <linearGradient id="prefix__a" x1="50%" x2="50%" y1="99.517%" y2="-.273%">
+            <stop offset="0%" stop-color="#DFE1EC"/>
+            <stop offset="48%" stop-color="#F6F6F9"/>
+            <stop offset="100%" stop-color="#FFF"/>
+        </linearGradient>
+        <linearGradient id="prefix__b" x1="50%" x2="50%" y1="-.273%" y2="99.517%">
+            <stop offset="0%" stop-color="#DFE1EC"/>
+            <stop offset="48%" stop-color="#F6F6F9"/>
+            <stop offset="100%" stop-color="#FFF"/>
+        </linearGradient>
+        <linearGradient id="prefix__e" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#FAD961"/>
+            <stop offset="100%" stop-color="#F76B1C"/>
+        </linearGradient>
+        <filter id="prefix__c" width="111.3%" height="111.3%" x="-5.6%" y="-4%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.980392157 0 0 0 0 0.850980392 0 0 0 0 0.380392157 0 0 0 0.398656031 0"/>
+        </filter>
+        <path id="prefix__d" d="M66 4c34.242 0 62 27.758 62 62 0 34.242-27.758 62-62 62-34.242 0-62-27.758-62-62C4 31.758 31.758 4 66 4zm.5 11C38.057 15 15 38.057 15 66.5S38.057 118 66.5 118 118 94.943 118 66.5 94.943 15 66.5 15z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <circle cx="66" cy="66" r="66" fill="url(#prefix__a)"/>
+        <circle cx="66" cy="66" r="47" fill="url(#prefix__b)" opacity=".589"/>
+        <use fill="#000" filter="url(#prefix__c)" xlink:href="#prefix__d"/>
+        <use fill="url(#prefix__e)" xlink:href="#prefix__d"/>
+    </g>
+</svg>

@@ -1,0 +1,163 @@
+/*-- Content --*/
+.content {
+  background: url('/static/moon18/pic-ptns.png') 50% 0 repeat, linear-gradient(180deg, rgba(0,67,141,1), rgba(0,32,84,1));
+  .eventpage {
+    width: 100%;
+    background: rgba(0,35,89,0.6);
+    border-radius: 20px;
+    button.btn {
+      color: rgba(255,255,255,1);
+      font-size: 16px;
+      background: rgba(42,82,152,1);
+      border-radius: 20px;
+    };
+    .sharecode {
+      width: 100%;
+      padding: 10px 15px;
+      color: rgba(90,90,90,1);
+      font-size: 14px;
+      border: 1px solid #D9D9D9;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+  };
+  .eventtitl {
+    color: rgba(255,255,255,1);
+    font-size: 32px;
+    font-family: 'STXingkaiTC-Bold';
+  };
+  .eventcaption {
+    color: rgba(255,255,255,1);
+    font-size: 18px;
+  };
+  .eventcontent {
+    color: rgba(255,255,255,1);
+    font-size: 18px;
+    img {
+      width: 100%;
+      max-width: fit-content;
+      height: auto;
+    };
+    .datalist {
+      width: 100%;
+      color: rgba(255,255,255,1);
+      font-size: 14px;
+      border: 1px solid rgba(255,255,255,1);
+      ul, li {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      };
+      ul {
+        border-bottom: 1px solid rgba(255,255,255,1);
+        &:first-child {
+          background: rgba(217,217,217,0.1);
+        };
+        &:last-child {
+          border-bottom: none;
+        };
+      };
+      li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-right: 1px solid rgba(255,255,255,1);
+        &:last-child {
+          border-right: none;
+        };
+      };
+    };
+  };
+  .share {
+    width: 100%;
+    button.wechat, button.weibo, button.qq, button.copy {
+      padding: 10px 10px 10px 50px;
+      color: rgba(255,255,255,1);
+      font-size: 16px;
+      border-radius: 8px;
+    };
+    button.wechat {
+      background: url('/static/moon18/icon-wechat.svg') 5% 50% no-repeat, rgba(59,175,52,1);
+    };
+    button.weibo {
+      background: url('/static/moon18/icon-Weibo.svg') 5% 50% no-repeat, rgba(175,52,52,1);
+    };
+    button.qq {
+      background: url('/static/moon18/icon-qq.svg') 5% 50% no-repeat, rgba(52,84,175,1);
+    };
+    button.copy {
+      background: url('/static/moon18/icon-copy.svg') 5% 50% no-repeat, rgba(0,32,84,1);
+    };
+  };
+}
+/*-- Menu --*/
+.menu {
+  width: 100%;
+  background: url('/static/moon18/bg-lines-left.png') 0 50% no-repeat, url('/static/moon18/bg-lines-right.png') 100% 50% no-repeat, rgba(0,32,84,1);
+  a.evbtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 57px;
+    align-items: center;
+    overflow: hidden;
+    img {
+      width: fit-content;
+    };
+    &:hover, &:active {
+      justify-content: flex-end;
+    };
+  };
+}
+.notes {
+  background:rgba(0,19,50,1);
+  span.notestitle {
+    width: auto;
+    padding: 25px 90px;
+    background: url('/static/moon18/pic-lantern-left.png') 0 50% no-repeat, url('/static/moon18/pic-lantern-right.png') 100% 50% no-repeat;
+    color: rgba(255,255,255,1);
+    font-size: 24px;
+  };
+  ol, li {
+    color: rgba(255,255,255,1);
+    font-size: 16px;
+    line-height: 28px;
+    list-style: decimal;
+    box-sizing: border-box;
+  };
+  li {
+    a {
+      color: rgba(0,123,255,1) !important;
+      cursor: pointer;
+      &:hover {
+        color: rgba(0,86,179,1) !important;
+        text-decoration: none;
+      };
+    };
+  };
+}
+
+@media screen and (max-width: 750px) {
+  .content {
+    .eventtitl {
+      font-size: 20px;
+    };
+    .eventcaption {
+      font-size: 16px;
+    };
+    .eventcontent {
+      font-size: 16px;
+    };
+  };
+  .notes {
+    span.notestitle {
+      padding: 20px 70px;
+      background-size: contain;
+      font-size: 20px;
+    };
+    ol, li {
+      font-size: 14px;
+      line-height: 28px;
+    };
+  }
+}

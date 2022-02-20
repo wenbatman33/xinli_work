@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	.WH_FULL {
+		@apply w-full h-full;
+	}
+	.WH_HALF {
+		@apply w-1/2 h-1/2;
+	}
+	.FLEX_C {
+		@apply flex flex-col;
+	}
+	.FLEX_R {
+		@apply flex flex-row;
+	}
+	.FLEX_C_CENTER {
+		@apply flex flex-col justify-center;
+	}
+	.FLEX_R_CENTER {
+		@apply flex flex-row items-center;
+	}
+	.CENTER {
+		@apply flex items-center justify-center;
+	}
+	.CENTER_C {
+		@apply flex flex-col items-center justify-center;
+	}
+	.BETWEEN {
+		@apply flex justify-between;
+	}
+	.BETWEEN_C {
+		@apply flex flex-col justify-between;
+	}
+	.BETWEEN_CENTER {
+		@apply flex items-center justify-between;
+	}
+	.bodoni {
+		// font-family: 'Bodoni Moda', serif !important;
+	}
+	/* 灰階圖片 */
+	.grayImage {
+		filter: grayscale(100%) !important;
+		-webkit-filter: grayscale(100%) !important;
+		-moz-filter: grayscale(100%) !important;
+		-ms-filter: grayscale(100%) !important;
+		-o-filter: grayscale(100%) !important;
+	}
+	/* 國殤模式 */
+	.ALL_SITE_DARK {
+		* {
+			filter: grayscale(100%) !important;
+			-webkit-filter: grayscale(100%) !important;
+			-moz-filter: grayscale(100%) !important;
+			-ms-filter: grayscale(100%) !important;
+			-o-filter: grayscale(100%) !important;
+		}
+	}
+}

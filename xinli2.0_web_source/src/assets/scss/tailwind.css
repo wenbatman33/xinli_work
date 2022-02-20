@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	button,
+	[type='button'],
+	[type='reset'],
+	[type='submit'] {
+		background-color: none;
+		/* @apply bg-xRed; */
+	}
+	.WH_FULL {
+		@apply w-full h-full;
+	}
+	.WH_HALF {
+		@apply w-1/2 h-1/2;
+	}
+	.FLEX_C {
+		@apply flex flex-col;
+	}
+	.FLEX_R {
+		@apply flex flex-row;
+	}
+	.FLEX_C_CENTER {
+		@apply flex flex-col justify-center;
+	}
+	.FLEX_R_CENTER {
+		@apply flex flex-row items-center;
+	}
+	.CENTER {
+		@apply flex items-center justify-center;
+	}
+	.CENTER_C {
+		@apply flex flex-col items-center justify-center;
+	}
+	.BETWEEN {
+		@apply flex justify-between;
+	}
+	.BETWEEN_C {
+		@apply flex flex-col justify-between;
+	}
+	.BETWEEN_CENTER {
+		@apply flex items-center justify-between;
+	}
+	.BG_GRADIENT_1 {
+		/* background: linear-gradient(90deg, #db082d 0%, #f0453a 52.97%, #fe693b 100%) !important; */
+		@apply bg-opacity-100 bg-gradient-to-r from-[#db082d] via-[#f0453a] to-[#fe693b];
+	}
+	.BG_GRADIENT_1_opacity_50 {
+		/* background: linear-gradient(90deg, #db082d 0%, #f0453a 52.97%, #fe693b 100%) !important; */
+		@apply bg-opacity-50 bg-gradient-to-r from-[#db082d] via-[#f0453a] to-[#fe693b];
+	}
+	.BG_GRADIENT_2 {
+		@apply bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500;
+	}
+	.BG_GRADIENT_GOLD {
+		/* background: linear-gradient(90deg, #db082d 0%, #f0453a 52.97%, #fe693b 100%) !important; */
+		@apply bg-opacity-100 bg-gradient-to-r from-[#ECCC95] to-[#AC8954];
+	}
+	.ant-popover-inner-content {
+		padding: 0 !important;
+	}
+	.ant-popover-inner {
+		background: none !important;
+	}
+	.ant-popover-arrow {
+		display: none !important;
+	}
+	/* 灰階圖片 */
+	.grayImage {
+		filter: grayscale(100%) !important;
+		-webkit-filter: grayscale(100%) !important;
+		-moz-filter: grayscale(100%) !important;
+		-ms-filter: grayscale(100%) !important;
+		-o-filter: grayscale(100%) !important;
+	}
+	/* 國殤模式 */
+	.ALL_SITE_DARK {
+		* {
+			filter: grayscale(100%) !important;
+			-webkit-filter: grayscale(100%) !important;
+			-moz-filter: grayscale(100%) !important;
+			-ms-filter: grayscale(100%) !important;
+			-o-filter: grayscale(100%) !important;
+		}
+	}
+	.radiusModal {
+		border-radius: 8px !important;
+		padding-bottom: 0px !important;
+		overflow: hidden;
+	}
+	.radiusNoPaddingModal {
+		border-radius: 20px !important;
+		padding-bottom: 0px !important;
+		overflow: hidden;
+		.ant-modal-body {
+			padding: 0px !important;
+		}
+	}
+}
+.ant-popover-inner {
+	background: none !important;
+}
+.ant-popover-arrow {
+	display: none !important;
+}
+.ant-btn-primary {
+	@apply bg-xRed;
+	background-color: #f0453a;
+}
+
+.xBlueBtn {
+	@apply px-4 font-semibold text-white border-none rounded bg-xBlue hover:bg-xBlue hover:text-white hover:opacity-80 focus:opacity-80 focus:bg-xBlue focus:text-white disabled:cursor-not-allowed disabled:opacity-20  !important;
+}
+.xRedBtn {
+	@apply px-4 font-semibold text-white border-none rounded bg-xRed hover:bg-xRed hover:text-white hover:opacity-80 focus:opacity-80 focus:bg-xRed focus:text-white disabled:cursor-not-allowed disabled:opacity-20  !important;
+}
+.primaryBtn {
+	@apply px-4 font-semibold text-white border-none rounded BG_GRADIENT_1 hover:BG_GRADIENT_1 hover:text-white hover:opacity-80 focus:opacity-80 focus:BG_GRADIENT_1 focus:text-white disabled:cursor-not-allowed disabled:opacity-20 !important;
+}
+.cancelBtn {
+	@apply px-4 font-semibold border-none rounded bg-xBlue bg-opacity-5 hover:bg-xBlue hover:bg-opacity-20 focus:bg-xBlue focus:bg-opacity-20 disabled:cursor-not-allowed disabled:opacity-20  !important;
+}
+
+.hoverJump {
+	@apply transition hover:transform hover:-translate-y-3 hover:shadow-xl;
+}
+.navHoverJump {
+	@apply transition hover:transform hover:-translate-y-3;
+}
+
+.promoModal {
+	.ant-modal {
+		max-width: 100%;
+		top: 0;
+		padding-bottom: 0;
+		margin: 0;
+		@apply flex flex-col items-center justify-center;
+	}
+	.ant-modal-content {
+		width: 100%;
+		height: 100%;
+		flex-direction: column;
+		height: calc(100vh);
+		background-color: transparent !important;
+		@apply flex flex-col items-center justify-center;
+	}
+	.ant-modal-close {
+		position: absolute;
+		top: 10px;
+		width: 56px;
+		left: calc(((100vw - 930px) / 2) + 840px) !important;
+		@apply bg-white rounded bg-opacity-60;
+	}
+}
+.ant-notification {
+	width: auto !important;
+	margin-right: 80px !important;
+	top: 120px !important;
+}
+.ant-notification-notice {
+	border-radius: 20px;
+}

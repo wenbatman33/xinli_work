@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68" height="68" viewBox="0 0 68 68">
+    <defs>
+        <linearGradient id="prefix__c" x1="0%" x2="100%" y1="49.999%" y2="49.999%">
+            <stop offset="0%" stop-color="#00AFAF"/>
+            <stop offset="100%" stop-color="#00FFEB"/>
+        </linearGradient>
+        <filter id="prefix__a" width="124.1%" height="131.1%" x="-12.1%" y="-11.1%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 1 0 0 0 0 0.921568627 0 0 0 0.399284309 0"/>
+        </filter>
+        <path id="prefix__b" d="M60.929 12H7.07C5.926 12 5 12.914 5 14.045v40.91C5 56.085 5.926 57 7.071 57H60.93C62.074 57 63 56.086 63 54.955v-40.91c0-1.13-.926-2.045-2.071-2.045zM9.66 16.602h48.678v7.67H9.661v-7.67zm48.678 35.796H9.661v-22.5h48.678v22.5zm-15.341-4.091h10.68c.285 0 .518-.23.518-.512v-4.602c0-.281-.233-.511-.517-.511H42.998c-.285 0-.518.23-.518.511v4.602c0 .282.233.512.518.512z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <use fill="#000" filter="url(#prefix__a)" xlink:href="#prefix__b"/>
+        <use fill="url(#prefix__c)" xlink:href="#prefix__b"/>
+    </g>
+</svg>

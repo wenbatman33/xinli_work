@@ -1,0 +1,34 @@
+{
+	"pcUrl": {
+		"name": "pc站台url1",
+		"url": "http://www-d.182ga.com:21080\n"
+	},
+	"h5Url": {
+		"name": "h5站台Url1",
+		"url": "http://m-d.182ga.com:21080"
+	},
+	"api": {
+		"name": "apiUrl",
+		"url": "https://api-d.182ga.com"
+	},
+	"app": {
+		"name": "appDownload",
+		"url": "app.domain.com"
+	},
+	"img": {
+		"name": "imgUrl",
+		"url": "http://35.220.154.121:20100"
+	},
+	"event": {
+		"name": "eventUrl",
+		"url": "event.domain.com"
+	},
+	"api_event": {
+		"name": "eventApi",
+		"url": "apievent.domain.com"
+	},
+	"memberUrl": {
+		"name": "member站台",
+		"url": "http://sso-d.182ga.com:21080"
+	}
+}
